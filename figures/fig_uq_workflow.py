@@ -75,8 +75,8 @@ for i in range(len(bs_steps) - 1):
 bay_steps = [
     (7.9, 'Prior specification\nβ ~ N(0,1), σ ~ HalfN(1)'),
     (6.6, 'Prior predictive check\n(plausible TS range?)'),
-    (5.3, 'NUTS sampling\n4 chains × 2000 draws'),
-    (4.0, 'Posterior predictive interval\n(90% / 95% credible)'),
+    (5.3, 'NUTS sampling\n4 chains × 1000 draws'),
+    (4.0, 'Posterior predictive interval\n(90% / 95% nominal)'),
     (2.7, 'PICP, MPIW, CRPS\n(Uncertainty Toolbox)'),
 ]
 for y, txt in bay_steps:

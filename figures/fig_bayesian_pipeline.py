@@ -76,7 +76,7 @@ ax.text(0.97, 0.82, 'ESS > 400 ✓', transform=ax.transAxes,
 
 ax.set_xlabel('Draw index', fontsize=10)
 ax.set_ylabel('β₁ (slope) value', fontsize=10)
-ax.set_title('(b) NUTS trace — 4 chains, 2000 draws\nGood mixing ≈ stationary, overlapping chains',
+ax.set_title('(b) NUTS trace — 4 chains, 1000 post-warmup draws\nGood mixing ≈ stationary, overlapping chains',
              fontsize=9, pad=5)
 ax.grid(True, linestyle=':', linewidth=0.5, color='#BBBBBB')
 ax.spines[['top', 'right', 'bottom', 'left']].set_color('black')
@@ -97,16 +97,16 @@ y_fit  = 52 + 4.5 * x_line
 # 90% and 95% posterior predictive bands
 sigma_post = 9.0
 ax.fill_between(x_line, y_fit - 1.960 * sigma_post, y_fit + 1.960 * sigma_post,
-                alpha=0.18, color=COL_POST, label='95% Credible Interval')
+                alpha=0.18, color=COL_POST, label='95% Posterior Predictive Interval')
 ax.fill_between(x_line, y_fit - 1.645 * sigma_post, y_fit + 1.645 * sigma_post,
-                alpha=0.32, color=COL_POST, label='90% Credible Interval')
+                alpha=0.32, color=COL_POST, label='90% Posterior Predictive Interval')
 ax.plot(x_line, y_fit, color='#1A1A2E', lw=1.5, label='Posterior mean')
 ax.scatter(x_data, y_data, s=24, color=COL_DATA, zorder=5,
            edgecolors='none', label='Schematic data')
 
 ax.set_xlabel('CNT Weight Fraction [wt%]', fontsize=10)
 ax.set_ylabel('Tensile Strength [MPa]', fontsize=10)
-ax.set_title('(c) Posterior predictive interval\n95% credible band on held-out subset',
+ax.set_title('(c) Posterior predictive interval\n95% predictive band — schematic illustration',
              fontsize=9, pad=5)
 ax.grid(True, linestyle=':', linewidth=0.5, color='#BBBBBB')
 ax.spines[['top', 'right', 'bottom', 'left']].set_color('black')

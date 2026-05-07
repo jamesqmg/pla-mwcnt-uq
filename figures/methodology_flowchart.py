@@ -12,8 +12,7 @@ from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 import os
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                   "figures", "methodology_flowchart.png")
-os.makedirs(os.path.dirname(OUT), exist_ok=True)
+                   "methodology_flowchart.png")
 
 # ── colors ────────────────────────────────────────────────────────────────────
 C = {
@@ -155,8 +154,8 @@ box(ax, LM, Y_DATA, W, H_DATA,
     body_lines=[
         "▸  Literature dataset: Hiremath et al. (2025) — 200 rows, CNT/polymer tensile",
         "▸  Three-axis filter: PLA matrix   |   FDM / 3D-print processing   |   ASTM D638 / ISO 527",
-        "▸  Supplementary extraction: PLA+FDM papers from literature (~60 rows combined)",
-        "▸  Output: filtered training dataset, n ≈ 30–60 rows",
+        "▸  Supplementary extraction: PLA+FDM papers from literature (master_dataset.csv, n=44)",
+        "▸  Output: filtered training dataset, n = 26 rows (PLA + FDM + ASTM D638/ISO 527)",
     ])
 
 # Arrow: data → shared model note
@@ -189,8 +188,8 @@ box(ax, X_P1, Y_PH12, HALF_W, H_PH12,
     body_lines=[
         "▸  Bootstrap resampling with replacement",
         "    B = 1,000 resamples",
-        "▸  Prediction intervals at 95% nominal",
-        "▸  Metrics: PICP, MPIW",
+        "▸  Prediction intervals at 90% nominal",
+        "▸  Metrics: PICP, MPIW, CRPS",
         "▸  Tool: scikit-learn resample",
     ])
 
@@ -202,7 +201,7 @@ box(ax, X_P2, Y_PH12, HALF_W, H_PH12,
     fontsize_hdr=8.8,
     body_lines=[
         "▸  Bayesian linear regression via PyMC",
-        "    NUTS sampler: 4 chains × 2,000 draws",
+        "    NUTS sampler: 4 chains × 1,000 draws (1,000 tune)",
         "▸  Priors: β ~ N(0,1), σ ~ HalfNormal(1)",
         "▸  Metrics: PICP, MPIW, CRPS",
         "▸  Diagnostics: R̂, ESS (arviz)",
@@ -223,7 +222,7 @@ box(ax, LM, Y_P3, W, H_P3,
     hdr_h=0.042,
     body_lines=[
         "▸  Both methods applied at descending sample sizes (n-ladder):",
-        "    n = 60  →  40  →  25  →  15  →  10",
+        "    n = 44  →  35  →  30  →  26  →  20  →  15  →  10  →  8  →  5",
         "▸  At each n: refit model, rerun UQ, evaluate PICP and MPIW",
         "▸  Output: divergence curves  —  PICP(n) and MPIW(n) for Bootstrap vs. Bayesian",
         "▸  Decision threshold: sample size at which Bayesian calibration diverges from Bootstrap",

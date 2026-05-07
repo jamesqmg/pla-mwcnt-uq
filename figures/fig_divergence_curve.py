@@ -103,7 +103,7 @@ ax2.grid(True, alpha=0.3, lw=0.5)
 fig.text(
     0.5, -0.04,
     "Figure. Divergence curves for bootstrap and Bayesian NUTS at 90% nominal coverage.\n"
-    "Bootstrap: B=1000, add_noise=True, 30 repeats per n (error bands = ±1 SD). "
+    "Bootstrap: B=500, add_noise=True, 20 repeats per n (error bands = ±1 SD). "
     "Bayesian: draws=500, tune=500, 4 chains, 5 repeats per n.\n"
     "Threshold n*≈10: largest n where |PICP_boot − PICP_Bayes| > 0.05. "
     "Both methods converge at n≥20.",
