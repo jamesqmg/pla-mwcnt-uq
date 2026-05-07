@@ -1,0 +1,36 @@
+{
+  "phase1_bootstrap_loo": {
+    "eval_mode": "loo",
+    "n": 26,
+    "B": 1000,
+    "degree": 1,
+    "seed": 42,
+    "picp_90": 0.8461538461538461,
+    "picp_95": 0.9615384615384616,
+    "mpiw_90": 25.912149473237157,
+    "mpiw_95": 30.853218902271806,
+    "crps": 4.589414433470273
+  },
+  "phase2_bayesian_insample": {
+    "eval_mode": "in_sample",
+    "n": 26,
+    "draws": 500,
+    "chains": 4,
+    "picp_90": 1.0,
+    "picp_95": 1.0,
+    "mpiw_90": 28.833895376229727,
+    "crps": 4.59432829744935,
+    "rhat_max": 1.0046062521014023,
+    "ess_min": 2106.9929616411764
+  },
+  "phase2_bayesian_loo": {
+    "eval_mode": "loo",
+    "n": 26,
+    "draws_per_fold": 300,
+    "chains_per_fold": 2,
+    "picp_90": 1.0,
+    "picp_95": 1.0,
+    "mpiw_90": 28.654839694175582,
+    "note": "Manual LOO: 26 refits on n-1, posterior predictive on held-out point"
+  }
+}

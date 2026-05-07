@@ -1,0 +1,8 @@
+.ruff_cache/
+__pycache__/
+.ipynb_checkpoints/
+~$*
+.DS_Store
+*.pyc
+data/raw/hiremath/
+data/extraction/markdown_cache/

@@ -1,0 +1,40 @@
+{
+  "phase1_bootstrap": {
+    "n": 26,
+    "dataset": "PLA+FDM+D638 (master_dataset_strict.csv)",
+    "B": 1000,
+    "degree": 1,
+    "eval": "in-sample",
+    "picp_90": 0.962,
+    "picp_95": 0.923,
+    "mpiw_90": 25.9,
+    "crps": 4.59
+  },
+  "phase2_bayesian": {
+    "n": 26,
+    "dataset": "PLA+FDM+D638 (master_dataset_strict.csv)",
+    "draws": 1000,
+    "tune": 1000,
+    "chains": 4,
+    "degree": 1,
+    "picp_90": 1.0,
+    "picp_95": 1.0,
+    "mpiw_90": 28.6,
+    "crps": 4.57,
+    "rhat_max": 1.0007,
+    "ess_min": 4073,
+    "converged": true
+  },
+  "divergence_threshold": {
+    "threshold_n": 10,
+    "max_divergence": 0.05999999999999994,
+    "divergence_per_n": {
+      "5": 0.040000000000000036,
+      "10": 0.05999999999999994,
+      "20": 0.0,
+      "26": 0.030769230769230882,
+      "44": 0.004545454545454519
+    }
+  },
+  "subsampling_parent": "master_dataset.csv (n=44, all PLA, mixed processing)"
+}
