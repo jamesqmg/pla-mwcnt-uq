@@ -11,6 +11,10 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).parents[2]))
 
+from unittest.mock import MagicMock, patch
+
+import arviz as az
+
 from src.uq.bayesian import (
     standardize,
     unstandardize_predictions,
@@ -20,6 +24,7 @@ from src.uq.bayesian import (
     posterior_predict,
     prior_predictive_check,
     run_bayesian_pipeline,
+    compute_bayesian_nlpd,
 )
 
 RNG = np.random.default_rng(42)
@@ -317,3 +322,42 @@ class TestRunBayesianPipeline:
               f"ESS={conv['ess_min']:.0f}, passed={conv['passed']}")
         print(f"PICP@90%={result['picp_90']:.3f}, MPIW@90%={result['mpiw_90']:.2f} MPa, "
               f"CRPS={result['crps']:.4f}")
+
+
+# ── compute_bayesian_nlpd ─────────────────────────────────────────────────────
+
+class TestComputeBayesianNlpd:
+
+    def _mock_idata(self):
+        return MagicMock(spec=az.InferenceData)
+
+    def test_returns_negative_elpd_over_n(self):
+        mock_loo = MagicMock()
+        mock_loo.elpd_loo = -50.0   # sum over 10 obs → per-obs = -5.0 → NLPD = 5.0
+        with patch("src.uq.bayesian.az.loo", return_value=mock_loo):
+            result = compute_bayesian_nlpd(self._mock_idata(), n=10)
+        assert result == pytest.approx(5.0)
+
+    def test_result_is_float(self):
+        mock_loo = MagicMock()
+        mock_loo.elpd_loo = -30.0
+        with patch("src.uq.bayesian.az.loo", return_value=mock_loo):
+            result = compute_bayesian_nlpd(self._mock_idata(), n=10)
+        assert isinstance(result, float)
+
+    def test_higher_elpd_lower_nlpd(self):
+        idata_mock = self._mock_idata()
+        for elpd, expected in [(-20.0, 2.0), (-40.0, 4.0)]:
+            mock_loo = MagicMock()
+            mock_loo.elpd_loo = elpd
+            with patch("src.uq.bayesian.az.loo", return_value=mock_loo):
+                nlpd = compute_bayesian_nlpd(idata_mock, n=10)
+            assert nlpd == pytest.approx(expected)
+
+    def test_positive_nlpd(self):
+        # elpd_loo should always be negative (log probabilities < 1) → NLPD > 0
+        mock_loo = MagicMock()
+        mock_loo.elpd_loo = -25.3
+        with patch("src.uq.bayesian.az.loo", return_value=mock_loo):
+            result = compute_bayesian_nlpd(self._mock_idata(), n=5)
+        assert result > 0.0

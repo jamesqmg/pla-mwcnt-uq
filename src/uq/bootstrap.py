@@ -12,8 +12,14 @@ __all__ = [
     "compute_picp",
     "compute_mpiw",
     "compute_crps",
+    "compute_nlpd",
+    "compute_ece",
     "run_bootstrap_pipeline",
+    "COVERAGE_LEVELS",
 ]
+
+# Coverage levels for ECE computation — [0.50 … 0.95]
+COVERAGE_LEVELS: list[float] = [0.50, 0.60, 0.70, 0.80, 0.90, 0.95]
 
 
 def fit_regression(
@@ -109,6 +115,43 @@ def compute_crps(y_true: np.ndarray, boot_samples: np.ndarray) -> float:
     return float((e_fy - e_ff).mean())
 
 
+def compute_nlpd(
+    y_true: np.ndarray,
+    pred_mean: np.ndarray,
+    pred_std: np.ndarray,
+) -> float:
+    """NLPD = -mean log N(y_true; pred_mean, pred_std). Lower is better.
+
+    Approximates the bootstrap predictive distribution as a Gaussian using
+    per-fold bootstrap sample mean and standard deviation. Used under LOO.
+    """
+    from scipy import stats as _stats
+    pred_std = np.asarray(pred_std, dtype=float)
+    if np.any(pred_std <= 0):
+        raise ValueError("pred_std must be strictly positive")
+    return float(-np.mean(_stats.norm.logpdf(y_true, loc=pred_mean, scale=pred_std)))
+
+
+def compute_ece(
+    y_true: np.ndarray,
+    lowers_by_coverage: dict[float, np.ndarray],
+    uppers_by_coverage: dict[float, np.ndarray],
+    coverage_levels: list[float] | None = None,
+) -> float:
+    """ECE = mean |empirical_picp(level) - level| across coverage levels. Lower is better.
+
+    Perfect calibration gives ECE = 0. Coverage levels are nominal fractions in (0, 1),
+    e.g. 0.90 = 90% prediction interval.
+    """
+    if coverage_levels is None:
+        coverage_levels = COVERAGE_LEVELS
+    deviations = [
+        abs(compute_picp(y_true, lowers_by_coverage[lv], uppers_by_coverage[lv]) - lv)
+        for lv in coverage_levels
+    ]
+    return float(np.mean(deviations))
+
+
 def run_bootstrap_pipeline(
     x: np.ndarray,
     y: np.ndarray,
@@ -147,6 +190,13 @@ def run_bootstrap_pipeline(
         loo_up_90 = np.empty(n)
         loo_lo_95 = np.empty(n)
         loo_up_95 = np.empty(n)
+        # Per-fold storage for NLPD and ECE
+        loo_y_true    = np.empty(n)
+        loo_pred_mean = np.empty(n)
+        loo_pred_std  = np.empty(n)
+        loo_lowers: dict[float, np.ndarray] = {lv: np.empty(n) for lv in COVERAGE_LEVELS}
+        loo_uppers: dict[float, np.ndarray] = {lv: np.empty(n) for lv in COVERAGE_LEVELS}
+
         for i in range(n):
             idx = np.delete(np.arange(n), i)
             rng_i90 = np.random.default_rng(child_seeds[i])
@@ -162,13 +212,23 @@ def run_bootstrap_pipeline(
             loo_up_90[i] = np.quantile(mat90, 0.95)
             loo_lo_95[i] = np.quantile(mat95, 0.025)
             loo_up_95[i] = np.quantile(mat95, 0.975)
+            # Per-fold moments from mat90 (sufficient for Gaussian NLPD approximation)
+            samples_i = mat90.flatten()
+            loo_y_true[i]    = y[i]
+            loo_pred_mean[i] = samples_i.mean()
+            loo_pred_std[i]  = max(samples_i.std(ddof=1), 1e-6)  # guard against zero std
+            for lv in COVERAGE_LEVELS:
+                tail = (1.0 - lv) / 2.0
+                loo_lowers[lv][i] = np.quantile(samples_i, tail)
+                loo_uppers[lv][i] = np.quantile(samples_i, 1.0 - tail)
+
         eval_lo_90, eval_up_90 = loo_lo_90, loo_up_90
         eval_lo_95, eval_up_95 = loo_lo_95, loo_up_95
     else:
         eval_lo_90, eval_up_90 = lo_90, up_90
         eval_lo_95, eval_up_95 = lo_95, up_95
 
-    return {
+    result: dict = {
         "picp_90":       compute_picp(y, eval_lo_90, eval_up_90),
         "picp_95":       compute_picp(y, eval_lo_95, eval_up_95),
         "mpiw_90":       compute_mpiw(eval_lo_90, eval_up_90),
@@ -188,3 +248,23 @@ def run_bootstrap_pipeline(
         "degree":        degree,
         "add_noise":     add_noise,
     }
+    if eval_mode == "loo":
+        result["nlpd"] = compute_nlpd(loo_y_true, loo_pred_mean, loo_pred_std)
+        result["ece"]  = compute_ece(loo_y_true, loo_lowers, loo_uppers, COVERAGE_LEVELS)
+        result["ece_by_coverage"] = {
+            str(lv): abs(
+                compute_picp(loo_y_true, loo_lowers[lv], loo_uppers[lv]) - lv
+            )
+            for lv in COVERAGE_LEVELS
+        }
+        # Per-fold predictions for parity + reliability figures
+        result["loo_y_true"]    = loo_y_true.tolist()
+        result["loo_pred_mean"] = loo_pred_mean.tolist()
+        result["loo_pred_std"]  = loo_pred_std.tolist()
+        result["loo_lower_90"]  = loo_lowers[0.9].tolist()
+        result["loo_upper_90"]  = loo_uppers[0.9].tolist()
+        result["picp_by_coverage"] = {
+            str(lv): compute_picp(loo_y_true, loo_lowers[lv], loo_uppers[lv])
+            for lv in COVERAGE_LEVELS
+        }
+    return result

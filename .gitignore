@@ -6,3 +6,6 @@ __pycache__/
 *.pyc
 data/raw/hiremath/
 data/extraction/markdown_cache/
+data/pdfs/
+manuscript/*backup*.docx
+*.tmp

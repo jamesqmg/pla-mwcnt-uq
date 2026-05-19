@@ -5,13 +5,14 @@ import numpy as np
 from pathlib import Path
 
 _COL_MAP = {
-    "Polymer":                      "polymer",
-    "Processing Method":            "process",
-    "CNT Weight Fraction (%)":      "cnt_wt_pct",
-    "Tensile Strength Output (MPa)":"tensile_mpa",
-    "Testing Standard":             "testing_std",
-    "source_paper":                 "source_paper",
-    "quality_tier":                 "quality_tier",
+    "Polymer":                        "polymer",
+    "Processing Method":              "process",
+    "CNT Weight Fraction (%)":        "cnt_wt_pct",
+    "Tensile Strength Output (MPa)":  "tensile_mpa",
+    "Matrix Tensile Strength (MPa)":  "matrix_tensile_mpa",
+    "Testing Standard":               "testing_std",
+    "source_paper":                   "source_paper",
+    "quality_tier":                   "quality_tier",
 }
 
 _FDM_PATTERN  = r"fdm|fused.?deposition|fused.?filament|fff"
@@ -37,7 +38,7 @@ def load_dataset(csv_path: str | Path) -> pd.DataFrame:
     rename = {k: v for k, v in _COL_MAP.items() if k in df.columns}
     df = df.rename(columns=rename)
 
-    for col in ("cnt_wt_pct", "tensile_mpa"):
+    for col in ("cnt_wt_pct", "tensile_mpa", "matrix_tensile_mpa"):
         if col in df.columns:
             df[col] = parse_numeric_column(df[col])
     if "tensile_mpa" in df.columns:

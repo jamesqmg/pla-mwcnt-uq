@@ -81,6 +81,16 @@ class TestLoadDataset:
         df = load_dataset(STRICT_CSV)
         assert len(df) == len(raw)
 
+    def test_matrix_tensile_mpa_is_numeric(self):
+        """Matrix Tensile Strength annotations ([GRAPHICAL], [INFERRED]) stripped to float."""
+        df = load_dataset(STRICT_CSV)
+        assert "matrix_tensile_mpa" in df.columns, "matrix_tensile_mpa column missing"
+        assert pd.api.types.is_float_dtype(df["matrix_tensile_mpa"]), (
+            "matrix_tensile_mpa must be float, not mixed-text"
+        )
+        non_nan = df["matrix_tensile_mpa"].dropna()
+        assert (non_nan > 0).all(), "All non-NaN matrix_tensile_mpa values must be positive"
+
 
 class TestFilterPlaFdm:
     """filter_pla_fdm returns only PLA + FDM/FFF + D638/ISO527 rows with clean x,y."""

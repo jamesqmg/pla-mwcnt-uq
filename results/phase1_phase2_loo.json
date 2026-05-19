@@ -9,7 +9,17 @@
     "picp_95": 0.9615384615384616,
     "mpiw_90": 25.912149473237157,
     "mpiw_95": 30.853218902271806,
-    "crps": 4.589414433470273
+    "crps": 4.589414433470273,
+    "nlpd": 3.5909903762259727,
+    "ece": 0.1044871794871795,
+    "ece_by_coverage": {
+      "0.5": 0.11538461538461536,
+      "0.6": 0.1769230769230769,
+      "0.7": 0.16153846153846152,
+      "0.8": 0.06923076923076932,
+      "0.9": 0.05384615384615388,
+      "0.95": 0.050000000000000044
+    }
   },
   "phase2_bayesian_insample": {
     "eval_mode": "in_sample",
@@ -31,6 +41,9 @@
     "picp_90": 1.0,
     "picp_95": 1.0,
     "mpiw_90": 28.654839694175582,
-    "note": "Manual LOO: 26 refits on n-1, posterior predictive on held-out point"
+    "note": "Manual LOO: 26 refits on n-1, posterior predictive on held-out point",
+    "nlpd": 1.4903738904662907,
+    "ece": 0.06346153846153844,
+    "ece_note": "in-sample posterior predictive; LOO PICP@90=1.000 confirmed"
   }
 }

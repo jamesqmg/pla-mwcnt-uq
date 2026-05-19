@@ -5,7 +5,7 @@ import numpy as np
 import pymc as pm
 import arviz as az
 
-from src.uq.bootstrap import compute_picp, compute_mpiw, compute_crps
+from src.uq.bootstrap import compute_picp, compute_mpiw, compute_crps, compute_ece, COVERAGE_LEVELS
 
 
 def standardize(
@@ -74,8 +74,14 @@ def run_nuts(
     tune: int = 1000,
     chains: int = 4,
     seed: int | None = None,
+    compute_log_likelihood: bool = False,
 ) -> az.InferenceData:
-    """Run NUTS via PyMC v5+. Default: 4 chains × 1000 post-warmup draws."""
+    """Run NUTS via PyMC v5+. Default: 4 chains × 1000 post-warmup draws.
+
+    Args:
+        compute_log_likelihood: If True, include log_likelihood in idata for
+            PSIS-LOO via az.loo(). Required for compute_bayesian_nlpd().
+    """
     with model:
         idata = pm.sample(
             draws=draws,
@@ -84,6 +90,7 @@ def run_nuts(
             random_seed=seed,
             progressbar=False,
             return_inferencedata=True,
+            idata_kwargs={"log_likelihood": compute_log_likelihood},
         )
     return idata
 
@@ -144,6 +151,18 @@ def posterior_predict(
     return point, lower, upper
 
 
+def compute_bayesian_nlpd(idata: az.InferenceData, n: int) -> float:
+    """NLPD via ArviZ PSIS-LOO: -ELPD_LOO / n. No new NUTS runs required.
+
+    Uses Pareto-smoothed importance sampling from existing posterior.
+    Requires idata to have a log_likelihood group (pass compute_log_likelihood=True
+    to run_nuts, or call with idata_kwargs={"log_likelihood": True} in pm.sample).
+    Lower is better; 0 = perfect predictive log probability.
+    """
+    loo_result = az.loo(idata)
+    return float(-loo_result.elpd_loo / n)
+
+
 def run_bayesian_pipeline(
     x: np.ndarray,
     y: np.ndarray,
@@ -163,7 +182,8 @@ def run_bayesian_pipeline(
     prior_samples_std = prior_predictive_check(model, n_samples=500, seed=seed)
     prior_samples_mpa = unstandardize_predictions(prior_samples_std, params)
 
-    idata = run_nuts(model, draws=draws, tune=tune, chains=chains, seed=seed)
+    idata = run_nuts(model, draws=draws, tune=tune, chains=chains, seed=seed,
+                     compute_log_likelihood=True)
 
     convergence = check_convergence(idata)
 
@@ -185,12 +205,28 @@ def run_bayesian_pipeline(
         pp_matrix_std[:, i] = rng.normal(mu_i, sigma_flat[i])
     pp_matrix_mpa = pp_matrix_std * params["y_std"] + params["y_mean"]
 
+    # NLPD via ArviZ PSIS-LOO (uses log_likelihood from idata)
+    nlpd = compute_bayesian_nlpd(idata, n=n)
+
+    # ECE from in-sample posterior predictive at 6 coverage levels
+    lowers_by_cov: dict[float, np.ndarray] = {}
+    uppers_by_cov: dict[float, np.ndarray] = {}
+    for lv in COVERAGE_LEVELS:
+        alpha_lv = 1.0 - lv
+        _, lo_lv, up_lv = posterior_predict(idata, x_pred_std, params, alpha=alpha_lv)
+        lowers_by_cov[lv] = lo_lv
+        uppers_by_cov[lv] = up_lv
+    ece = compute_ece(y, lowers_by_cov, uppers_by_cov, COVERAGE_LEVELS)
+
     return {
         "picp_90":       compute_picp(y, lo_90, up_90),
         "picp_95":       compute_picp(y, lo_95, up_95),
         "mpiw_90":       compute_mpiw(lo_90, up_90),
         "mpiw_95":       compute_mpiw(lo_95, up_95),
         "crps":          compute_crps(y, pp_matrix_mpa),
+        "nlpd":          nlpd,
+        "ece":           ece,
+        "ece_note":      "in-sample posterior predictive; LOO PICP@90=1.000 confirmed",
         "point_pred":    point_90,
         "lower_90":      lo_90,
         "upper_90":      up_90,

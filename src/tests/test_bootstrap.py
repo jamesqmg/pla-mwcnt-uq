@@ -16,6 +16,8 @@ from src.uq.bootstrap import (
     compute_picp,
     compute_mpiw,
     compute_crps,
+    compute_nlpd,
+    compute_ece,
     run_bootstrap_pipeline,
 )
 
@@ -276,3 +278,119 @@ class TestRunBootstrapPipeline:
         result = run_bootstrap_pipeline(x, y, B=200, alpha=0.10, seed=42)
         assert np.isfinite(result["picp_90"])
         assert result["mpiw_90"] > 0
+
+
+# ── compute_nlpd ──────────────────────────────────────────────────────────────
+
+class TestComputeNlpd:
+
+    def test_known_gaussian_value(self):
+        # log N(0; 0, 1) = -0.5*log(2π) ≈ -0.9189 → NLPD ≈ 0.9189
+        y = np.array([0.0])
+        result = compute_nlpd(y, np.array([0.0]), np.array([1.0]))
+        assert abs(result - 0.9189) < 0.001
+
+    def test_better_prediction_lower_nlpd(self):
+        y = np.array([5.0, 5.0, 5.0])
+        good = compute_nlpd(y, np.array([5.0, 5.0, 5.0]), np.array([1.0, 1.0, 1.0]))
+        bad  = compute_nlpd(y, np.array([0.0, 0.0, 0.0]), np.array([1.0, 1.0, 1.0]))
+        assert good < bad
+
+    def test_tighter_correct_prediction_lower_nlpd(self):
+        y = np.array([5.0])
+        wide   = compute_nlpd(y, np.array([5.0]), np.array([10.0]))
+        narrow = compute_nlpd(y, np.array([5.0]), np.array([0.5]))
+        assert narrow < wide
+
+    def test_zero_std_raises(self):
+        with pytest.raises((ValueError, ZeroDivisionError, FloatingPointError)):
+            compute_nlpd(np.array([1.0]), np.array([1.0]), np.array([0.0]))
+
+    def test_returns_positive_float(self):
+        y = np.array([1.0, 2.0, 3.0])
+        result = compute_nlpd(y, y, np.ones(3))
+        assert isinstance(result, float) and result > 0
+
+    def test_symmetric_error_same_nlpd(self):
+        y = np.array([5.0])
+        above = compute_nlpd(y, np.array([6.0]), np.array([1.0]))
+        below = compute_nlpd(y, np.array([4.0]), np.array([1.0]))
+        assert abs(above - below) < 1e-10
+
+
+# ── compute_ece ───────────────────────────────────────────────────────────────
+
+class TestComputeEce:
+
+    def test_perfect_calibration_zero_ece(self):
+        # Perfect calibration: at level 0.8, exactly 8/10 points inside → ECE = |0.8-0.8| = 0
+        y = np.zeros(10)
+        lowers = {0.8: np.concatenate([np.full(8, -1.0), np.full(2, 1.5)])}
+        uppers = {0.8: np.concatenate([np.full(8,  1.0), np.full(2, 2.5)])}
+        assert compute_ece(y, lowers, uppers, [0.8]) == pytest.approx(0.0, abs=1e-10)
+
+    def test_known_deviation(self):
+        # 10 points; only 8 inside the "90%" interval → empirical = 0.80 → dev = 0.10
+        y = np.array([0.0] * 10)
+        lowers = {0.9: np.concatenate([np.full(8, -0.5), np.full(2, 1.0)])}
+        uppers = {0.9: np.concatenate([np.full(8,  0.5), np.full(2, 2.0)])}
+        ece = compute_ece(y, lowers, uppers, [0.9])
+        assert abs(ece - 0.10) < 0.01
+
+    def test_result_between_zero_and_one(self):
+        y = np.zeros(10)
+        lowers = {lv: np.full(10, -1.0) for lv in [0.5, 0.9]}
+        uppers = {lv: np.full(10,  1.0) for lv in [0.5, 0.9]}
+        ece = compute_ece(y, lowers, uppers, [0.5, 0.9])
+        assert 0.0 <= ece <= 1.0
+
+    def test_total_miss_gives_known_ece(self):
+        # 10 points all outside both intervals
+        y = np.full(10, 100.0)
+        lowers = {lv: np.full(10, -1.0) for lv in [0.5, 0.9]}
+        uppers = {lv: np.full(10,  1.0) for lv in [0.5, 0.9]}
+        ece = compute_ece(y, lowers, uppers, [0.5, 0.9])
+        # empirical = 0 for both levels → ECE = mean(|0-0.5|, |0-0.9|) = mean(0.5, 0.9) = 0.70
+        assert abs(ece - 0.70) < 0.01
+
+    def test_default_coverage_levels_used_when_none(self):
+        # Perfect calibration at all 6 default levels: exactly lv*100 points inside at each level
+        y = np.zeros(100)
+        lowers, uppers = {}, {}
+        for lv in [0.50, 0.60, 0.70, 0.80, 0.90, 0.95]:
+            n_in = int(lv * 100)
+            lowers[lv] = np.concatenate([np.full(n_in, -1.0), np.full(100 - n_in, 1.5)])
+            uppers[lv] = np.concatenate([np.full(n_in,  1.0), np.full(100 - n_in, 2.5)])
+        ece = compute_ece(y, lowers, uppers)   # no coverage_levels arg
+        assert ece == pytest.approx(0.0, abs=1e-10)
+
+
+# ── LOO produces nlpd and ece keys ───────────────────────────────────────────
+
+class TestBootstrapLooElevationMetrics:
+
+    def test_loo_result_has_nlpd_key(self, linear_data):
+        x, y = linear_data
+        result = run_bootstrap_pipeline(x, y, B=200, seed=42, eval_mode="loo")
+        assert "nlpd" in result
+
+    def test_loo_result_has_ece_key(self, linear_data):
+        x, y = linear_data
+        result = run_bootstrap_pipeline(x, y, B=200, seed=42, eval_mode="loo")
+        assert "ece" in result
+
+    def test_nlpd_is_positive_finite(self, linear_data):
+        x, y = linear_data
+        result = run_bootstrap_pipeline(x, y, B=200, seed=42, eval_mode="loo")
+        assert np.isfinite(result["nlpd"]) and result["nlpd"] > 0
+
+    def test_ece_between_zero_and_one(self, linear_data):
+        x, y = linear_data
+        result = run_bootstrap_pipeline(x, y, B=200, seed=42, eval_mode="loo")
+        assert 0.0 <= result["ece"] <= 1.0
+
+    def test_bootstrap_mode_no_nlpd_key(self, linear_data):
+        # In-sample bootstrap mode should NOT add nlpd (only LOO does)
+        x, y = linear_data
+        result = run_bootstrap_pipeline(x, y, B=200, seed=42, eval_mode="bootstrap")
+        assert "nlpd" not in result
