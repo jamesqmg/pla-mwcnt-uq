@@ -1,62 +1,110 @@
 {
-  "bootstrap": {
-    "picp_90": [
-      {
-        "target": 0.875,
-        "n_min": 5.0
-      },
-      {
-        "target": 0.88,
-        "n_min": 28.0
-      },
-      {
-        "target": 0.9,
-        "n_min": null
-      }
-    ],
-    "mpiw_90": [
-      {
-        "target": 50.0,
-        "n_min": 5.0
-      },
-      {
-        "target": 47.5,
-        "n_min": 6.0
-      },
-      {
-        "target": 45.0,
-        "n_min": null
-      }
-    ]
-  },
-  "bayesian": {
-    "picp_90": [
-      {
-        "target": 0.875,
-        "n_min": 5.0
-      },
-      {
-        "target": 0.88,
-        "n_min": 5.0
-      },
-      {
-        "target": 0.9,
-        "n_min": null
-      }
-    ],
-    "mpiw_90": [
-      {
-        "target": 50.0,
-        "n_min": 9.0
-      },
-      {
-        "target": 47.5,
-        "n_min": null
-      },
-      {
-        "target": 45.0,
-        "n_min": null
-      }
-    ]
-  }
+ "bootstrap": {
+  "picp_90": [
+   {
+    "target": 0.85,
+    "n_min": 5.0
+   },
+   {
+    "target": 0.86,
+    "n_min": 5.0
+   },
+   {
+    "target": 0.87,
+    "n_min": 5.0
+   },
+   {
+    "target": 0.88,
+    "n_min": 5.0
+   },
+   {
+    "target": 0.89,
+    "n_min": null
+   },
+   {
+    "target": 0.9,
+    "n_min": null
+   }
+  ],
+  "mpiw_90": [
+   {
+    "target": 55.0,
+    "n_min": 5.0
+   },
+   {
+    "target": 50.0,
+    "n_min": 5.0
+   },
+   {
+    "target": 45.0,
+    "n_min": null
+   },
+   {
+    "target": 40.0,
+    "n_min": null
+   },
+   {
+    "target": 35.0,
+    "n_min": null
+   },
+   {
+    "target": 30.0,
+    "n_min": null
+   }
+  ]
+ },
+ "bayesian": {
+  "picp_90": [
+   {
+    "target": 0.85,
+    "n_min": 5.0
+   },
+   {
+    "target": 0.86,
+    "n_min": 5.0
+   },
+   {
+    "target": 0.87,
+    "n_min": 5.0
+   },
+   {
+    "target": 0.88,
+    "n_min": 5.0
+   },
+   {
+    "target": 0.89,
+    "n_min": null
+   },
+   {
+    "target": 0.9,
+    "n_min": null
+   }
+  ],
+  "mpiw_90": [
+   {
+    "target": 55.0,
+    "n_min": 5.0
+   },
+   {
+    "target": 50.0,
+    "n_min": 31.0
+   },
+   {
+    "target": 45.0,
+    "n_min": null
+   },
+   {
+    "target": 40.0,
+    "n_min": null
+   },
+   {
+    "target": 35.0,
+    "n_min": null
+   },
+   {
+    "target": 30.0,
+    "n_min": null
+   }
+  ]
+ }
 }

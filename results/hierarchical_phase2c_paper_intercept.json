@@ -1,0 +1,43 @@
+{
+  "description": "Phase 2c hierarchical model: Option B slope pooling + per-paper random intercept.",
+  "n": 44,
+  "n_groups": 2,
+  "n_papers": 6,
+  "papers": [
+    "dasilva_2025_polymers",
+    "hardani_2024_pen",
+    "luo_2018_micromachines",
+    "mohammed_2025_ije",
+    "velu_2025_manufacturing-letters",
+    "vidakis_2021_taylorandfrancis"
+  ],
+  "note": "7th source (sankar_2025) contributed a single row excluded for missing data; 6 papers carry complete (wt%, strength) pairs in the n=44 pool.",
+  "seed": 42,
+  "sampler": {
+    "draws": 1000,
+    "tune": 1000,
+    "chains": 4,
+    "target_accept": 0.99
+  },
+  "tau_alpha_posterior_mean": 0.6194615533038327,
+  "tau_beta_posterior_mean": 0.2682703573755773,
+  "beta_g_slope_fdm": 0.3959865542097339,
+  "beta_g_slope_non_fdm": 0.19891591536646694,
+  "alpha_paper_posterior_mean": {
+    "dasilva_2025_polymers": 0.6692627028079239,
+    "hardani_2024_pen": 0.17467409214027396,
+    "luo_2018_micromachines": 0.17269095675521112,
+    "mohammed_2025_ije": -0.8365494387567928,
+    "velu_2025_manufacturing-letters": -0.40268371704198835,
+    "vidakis_2021_taylorandfrancis": 0.2510286896719449
+  },
+  "picp_90": 0.9545454545454546,
+  "picp_95": 0.9545454545454546,
+  "mpiw_90_mpa": 41.35047944421142,
+  "crps": 5.953625251088718,
+  "convergence": {
+    "rhat_max": 1.0040615903024188,
+    "ess_min": 1282.0778456321448,
+    "passed": true
+  }
+}

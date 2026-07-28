@@ -1,0 +1,31 @@
+{
+  "config": {
+    "domain": 12.0,
+    "vf": 0.12,
+    "n_side": 24,
+    "n_waves": 3,
+    "note": "QUALITATIVE: fixed mesh, magnitudes resolution-limited (sec 14)."
+  },
+  "rows": [
+    {
+      "w": 0.0,
+      "e_axial": 124.35465520751205,
+      "e_transverse": 6.289874771141932
+    },
+    {
+      "w": 0.1,
+      "e_axial": 83.19253366631506,
+      "e_transverse": 7.407888635065787
+    },
+    {
+      "w": 0.2,
+      "e_axial": 45.470578207806064,
+      "e_transverse": 8.595389369045503
+    },
+    {
+      "w": 0.3,
+      "e_axial": 27.15187930928606,
+      "e_transverse": 10.067682228311849
+    }
+  ]
+}

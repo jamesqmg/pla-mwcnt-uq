@@ -1,0 +1,59 @@
+{
+  "config": {
+    "domain": 12.0,
+    "vf": 0.07,
+    "waviness": 0.2,
+    "n_waves": 3,
+    "n_samples": 40,
+    "axis": 2,
+    "matrix_E_nu": [
+      3.023,
+      0.35
+    ],
+    "inclusion_E_nu": [
+      1000.0,
+      0.2
+    ]
+  },
+  "mesh_convergence": [
+    {
+      "n_side": 12,
+      "n_elements": 10368,
+      "e_axial": 34.3324520396057,
+      "e_transverse": 5.4767690786716825,
+      "element_vf": 0.06867283950617284
+    },
+    {
+      "n_side": 16,
+      "n_elements": 24576,
+      "e_axial": 21.731769757357625,
+      "e_transverse": 4.922521211299361,
+      "element_vf": 0.07132975260416667
+    },
+    {
+      "n_side": 20,
+      "n_elements": 48000,
+      "e_axial": 20.668592026345888,
+      "e_transverse": 4.687003074266247,
+      "element_vf": 0.07333333333333333
+    },
+    {
+      "n_side": 24,
+      "n_elements": 82944,
+      "e_axial": 17.783637262808742,
+      "e_transverse": 4.5080063719515895,
+      "element_vf": 0.07124083719135803
+    }
+  ],
+  "plateau_n_side": 24,
+  "realization_scatter": {
+    "n_side": 24,
+    "n_realizations": 4,
+    "e_axial_mean": 19.18395055790512,
+    "e_axial_se": 0.4440427296368901,
+    "e_transverse_mean": 4.578178134491052,
+    "e_transverse_se": 0.03150416768116428,
+    "e_axial_cov": 0.046293147836946824,
+    "e_transverse_cov": 0.01376275311081426
+  }
+}

@@ -1,0 +1,61 @@
+{
+ "dataset": "master_dataset_strict.csv (PLA+FDM+D638)",
+ "n": 26,
+ "n_papers": 3,
+ "eval_scheme": "leave-one-paper-out",
+ "bootstrap_paper_loo": {
+  "eval_scheme": "leave-one-group-out",
+  "n_groups": 3,
+  "picp_90": 0.7692307692307693,
+  "picp_95": 0.8846153846153846,
+  "mpiw_90": 24.76229537927397,
+  "crps": 4.589414433470273,
+  "nlpd": 3.650942594918495,
+  "nlpd_se": 0.13465983293811593,
+  "ece": 0.11987179487179485,
+  "per_paper_coverage_90": {
+   "hardani_2024_pen": {
+    "n": 15,
+    "coverage_90": 0.8
+   },
+   "velu_2025_manufacturing-letters": {
+    "n": 5,
+    "coverage_90": 0.4
+   },
+   "vidakis_2021_taylorandfrancis": {
+    "n": 6,
+    "coverage_90": 1.0
+   }
+  }
+ },
+ "bayesian_paper_loo": {
+  "eval_scheme": "leave-one-group-out",
+  "n_groups": 3,
+  "picp_90": 0.9230769230769231,
+  "picp_95": 1.0,
+  "mpiw_90": 30.285606665691585,
+  "crps": 5.2514884250828695,
+  "nlpd": 3.6334268378113093,
+  "nlpd_se": 0.0920574069146271,
+  "ece": 0.04807692307692311,
+  "per_paper_coverage_90": {
+   "hardani_2024_pen": {
+    "n": 15,
+    "coverage_90": 1.0
+   },
+   "velu_2025_manufacturing-letters": {
+    "n": 5,
+    "coverage_90": 0.6
+   },
+   "vidakis_2021_taylorandfrancis": {
+    "n": 6,
+    "coverage_90": 1.0
+   }
+  }
+ },
+ "nlpd_paired": {
+  "bootstrap_minus_bayesian_mean": 0.01751575710718563,
+  "se": 0.04564934435255241,
+  "note": "|mean| < ~2*se => statistical tie"
+ }
+}
