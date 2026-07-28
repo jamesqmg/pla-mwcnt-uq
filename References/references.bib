@@ -1,0 +1,726 @@
+% references.bib — Thesis 1: Bayesian / Bootstrap UQ for CNT-Reinforced Polymer Nanocomposites
+% Citekeys follow firstauthor_year convention (matches renamed PDF scheme).
+% Status: [RESOLVED] PDF on disk + DOI confirmed | [TEXTBOOK] standard ref, no PDF needed
+%         [NO-PDF] DOI confirmed, arXiv acceptable | [GAP] citation unresolved — see notes
+%
+% Last updated: 2026-04-29
+% ─────────────────────────────────────────────────────────────────────────────
+
+% ── ANCHOR / KEY REFERENCES ──────────────────────────────────────────────────
+
+@article{hiremath_2025,
+  % [RESOLVED] PDF: RRL/Raw RRL/Key Anchors/hiremath_2025_jcs.pdf
+  author  = {Hiremath, Pavan and Bhat, Subraya Krishna and Jayashree, P. K. and
+             Rao, P. Krishnananda and Ambiger, Krishnamurthy D. and
+             Murthy, B. R. N. and Shetty, S. V. Udaya Kumar and Naik, Nithesh},
+  title   = {Data-Driven Prediction of Polymer Nanocomposite Tensile Strength
+             Through {Gaussian} Process Regression and {Monte Carlo} Simulation
+             with Enhanced Model Reliability},
+  journal = {Journal of Composites Science},
+  year    = {2025},
+  volume  = {9},
+  number  = {7},
+  pages   = {364},
+  doi     = {10.3390/jcs9070364}
+}
+
+@article{catalanotti_2022,
+  % [RESOLVED] PDF: RRL/Raw RRL/Key Anchors/catalanotti_2022_composites-parta.pdf
+  author  = {Catalanotti, Giuseppe},
+  title   = {Uncertainty quantification for advanced progressive damage models
+             for composites by means of efficient emulators and bootstrapping},
+  journal = {Composites Part A: Applied Science and Manufacturing},
+  year    = {2022},
+  volume  = {163},
+  pages   = {107238},
+  doi     = {10.1016/j.compositesa.2022.107238}
+}
+
+@article{catalanotti_2024,
+  % [RESOLVED] PDF: RRL/Raw RRL/Key Anchors/catalanotti_2024_composites-sci-tech.pdf
+  author  = {Catalanotti, Giuseppe},
+  title   = {Navigating the unknown: Tackling high-dimensional challenges in
+             composite damage modeling with bootstrapping and {Bayesian}
+             uncertainty quantification},
+  journal = {Composites Science and Technology},
+  year    = {2024},
+  volume  = {248},
+  pages   = {110462},
+  doi     = {10.1016/j.compscitech.2024.110462}
+}
+
+@article{thomas_2022,
+  % [RESOLVED] PDF: RRL/Raw RRL/Key Anchors/thomas_2022_composites-sci-tech.pdf
+  author  = {Thomas, Akshay J. and Barocio, Eduardo and Bilionis, Ilias and
+             Pipes, R. Byron},
+  title   = {Bayesian inference of fiber orientation and polymer properties in
+             short fiber-reinforced polymer composites},
+  journal = {Composites Science and Technology},
+  year    = {2022},
+  volume  = {228},
+  pages   = {109630},
+  doi     = {10.1016/j.compscitech.2022.109630}
+}
+
+@article{doh_2020,
+  % [RESOLVED] PDF: RRL/Raw RRL/Key Anchors/doh_2020_carbon.pdf
+  author  = {Doh, Jaehyeok and Park, Sang-In and Yang, Qing and
+             Raghavan, Nagarajan},
+  title   = {Uncertainty quantification of percolating electrical conductance
+             for wavy carbon nanotube-filled polymer nanocomposites using
+             {Bayesian} inference},
+  journal = {Carbon},
+  year    = {2020},
+  volume  = {172},
+  pages   = {308--323},
+  doi     = {10.1016/j.carbon.2020.09.092}
+}
+
+@article{tang_2025,
+  % [RESOLVED] PDF: RRL/Raw RRL/Key Anchors/tang_2025_jcim.pdf
+  author  = {Tang, Hao and Yue, Tianle and Li, Ying},
+  title   = {Assessing Uncertainty in Machine Learning for Polymer Property
+             Prediction: {A} Benchmark Study},
+  journal = {Journal of Chemical Information and Modeling},
+  year    = {2025},
+  volume  = {65},
+  pages   = {6585--6598},
+  doi     = {10.1021/acs.jcim.5c00550}
+}
+
+@article{champa-bujaico_2022,
+  % [RESOLVED] PDF: RRL/Raw RRL/Key Anchors/champa-bujaico_2022_ijms.pdf
+  % ACTIVE CITEKEY for Ch. 1 [9] and Ch. 2 [11] — replaces the erroneously cited
+  % 2024 indcrop paper (PBSA/SWCNT, not on disk). Swap confirmed 2026-04-29.
+  author  = {Champa-Bujaico, Elizabeth and Garc{\'i}a-D{\'i}az, Pilar and
+             D{\'i}ez-Pascual, Ana M.},
+  title   = {Machine Learning for Property Prediction and Optimization of
+             Polymeric Nanocomposites: {A} State-of-the-Art},
+  journal = {International Journal of Molecular Sciences},
+  year    = {2022},
+  volume  = {23},
+  number  = {18},
+  pages   = {10712},
+  doi     = {10.3390/ijms231810712}
+}
+
+@article{chahar_2026,
+  % [RESOLVED] PDF: RRL/Raw RRL/Key Anchors/chahar_2026_composite-structures.pdf
+  % Added to Ch. 2 §2.3 as additional Bayesian UQ in composites context (2026-04-29).
+  author  = {Chahar, R. S. and Mukhopadhyay, T.},
+  title   = {Bayesian uncertainty quantification of residual mechanical properties
+             post lightning strike: Stochastic multi-physical simulations of
+             composite laminates including spatially-random void distribution},
+  journal = {Composite Structures},
+  year    = {2026},
+  volume  = {382},
+  pages   = {120102},
+  doi     = {10.1016/j.compstruct.2026.120102}
+}
+
+% ── METHODS / EVALUATION FRAMEWORK ───────────────────────────────────────────
+
+@book{efron_1993,
+  % [TEXTBOOK] Standard reference — no PDF needed.
+  author    = {Efron, Bradley and Tibshirani, Robert J.},
+  title     = {An Introduction to the Bootstrap},
+  publisher = {Chapman and Hall/{CRC}},
+  year      = {1993},
+  address   = {New York},
+  isbn      = {978-0412042317}
+}
+
+@book{gelman_2013,
+  % [TEXTBOOK] Standard reference — no PDF needed.
+  author    = {Gelman, Andrew and Carlin, John B. and Stern, Hal S. and
+               Dunson, David B. and Vehtari, Aki and Rubin, Donald B.},
+  title     = {Bayesian Data Analysis},
+  edition   = {3},
+  publisher = {{CRC} Press},
+  year      = {2013},
+  address   = {Boca Raton},
+  isbn      = {978-1439840955}
+}
+
+@article{tran_2020,
+  % [RESOLVED] PDF: data/pdfs/tran_2020_mlst.pdf
+  % Authors confirmed from PDF title page (IOP publisher page — open access).
+  author  = {Tran, Kevin and Neiswanger, Willie and Yoon, Janice and
+             Zhang, Qingyang and Xing, Eric and Ulissi, Zachary W.},
+  title   = {Methods for comparing uncertainty quantifications for material
+             property predictions},
+  journal = {Machine Learning: Science and Technology},
+  year    = {2020},
+  volume  = {1},
+  number  = {2},
+  pages   = {025006},
+  doi     = {10.1088/2632-2153/ab7e1a}
+}
+
+@misc{chung_2021,
+  % [NO-PDF] Cite as arXiv preprint — standard practice for software tools.
+  author        = {Chung, Youngseog and Char, Ian and Guo, Han and
+                   Schneider, Jeff and Neiswanger, Willie},
+  title         = {{Uncertainty Toolbox}: an Open-Source Library for Assessing,
+                   Visualizing, and Improving Uncertainty and Calibration in
+                   Machine Learning},
+  year          = {2021},
+  howpublished  = {arXiv preprint arXiv:2109.10254},
+  eprint        = {2109.10254},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG}
+}
+
+@article{salvatier_2016,
+  % [RESOLVED] PDF: data/pdfs/salvatier_2016_peerj-cs.pdf
+  % Confirmed: Salvatier J, Wiecki TV, Fonnesbeck C. PeerJ Comput Sci 2:e55.
+  author  = {Salvatier, John and Wiecki, Thomas V. and Fonnesbeck, Christopher},
+  title   = {Probabilistic programming in {Python} using {PyMC3}},
+  journal = {PeerJ Computer Science},
+  year    = {2016},
+  volume  = {2},
+  pages   = {e55},
+  doi     = {10.7717/peerj-cs.55}
+}
+
+% [DROPPED — 2026-04-29] kamath_2019 citation removed.
+% PMC6754704 verified via pmc.ncbi.nlm.nih.gov: actual paper is
+%   Mostofian B, Zuckerman DM. "Statistical uncertainty analysis for
+%   small-sample, high log-variance data: Cautions for bootstrapping
+%   and Bayesian bootstrapping." J. Chem. Theory Comput. 2019.
+%   DOI: 10.1021/acs.jctc.9b00015
+% Domain: computational chemistry / protein folding simulations.
+% "Kamath et al." attribution in prior drafts was WRONG (different author).
+% The specific "42-60% coverage" numbers cannot be verified from this paper
+%   and the domain-specific conditions (log-variance spanning orders of
+%   magnitude) do not match the PLA/MWCNT CV=47.3% scenario.
+% PATH B taken: all citations replaced with Efron & Tibshirani (1993) §13.
+% Updated in: chapter_2_draft.md §2.1, §2.6, §2.7 table, footnote [3];
+%   chapter_3_p5a_objectives.md sub-obj 3.5;
+%   chapter_3_p5b_expected_outputs.md (3 instances + figure note + lit anchor).
+
+% ── MATERIAL SYSTEM / DATASET CONTEXT ────────────────────────────────────────
+
+@article{deyro_2023,
+  % [RESOLVED] PDF: RRL/Raw RRL/Key Anchors/deyro_2023_materialscienceforum.pdf
+  % Confirmed: De Yro PA, Cochon KN, Rueda JB, Quiachon GM, Ebarvia ML, Basilia BA.
+  % Materials Science Forum 1085, pp. 29–34. Trans Tech Publications. 2023.
+  author  = {de~Yro, Persia Ada N. and Cochon, Kaela Nichole M. and
+             Rueda, Jocel Bianca P. and Quiachon, Gerald Mari O. and
+             Ebarvia, Madelaine L. and Basilia, Blessie A.},
+  title   = {{PLA/MWCNT} Nanocomposite: Improved Electrical, Thermal and
+             Antibacterial Properties for Fused Deposition Modelling Additive
+             Manufacturing Applications},
+  journal = {Materials Science Forum},
+  year    = {2023},
+  volume  = {1085},
+  pages   = {29--34},
+  doi     = {10.4028/p-04wj70},
+  publisher = {Trans Tech Publications}
+}
+
+@article{vidakis_2021,
+  % [RESOLVED] PDF: data/pdfs/vidakis_2021_taylorandfrancis.pdf
+  % Confirmed: Vidakis N, Petousis M, Kourinou M, Velidakis E, Mountakis N,
+  % Fischer-Griffiths PE, Grammatikos S, Tzounis L.
+  % Nanocomposites 7:1, pp. 184–199. Taylor & Francis, 2021.
+  author  = {Vidakis, Nectarios and Petousis, Markos and Kourinou, Mirto and
+             Velidakis, Emmanuel and Mountakis, Nikolaos and
+             Fischer-Griffiths, Peder Erik and Grammatikos, Sotirios and
+             Tzounis, Lazaros},
+  title   = {Additive manufacturing of multifunctional polylactic acid ({PLA})
+             ---multiwalled carbon nanotubes ({MWCNTs}) nanocomposites},
+  journal = {Nanocomposites},
+  year    = {2021},
+  volume  = {7},
+  number  = {1},
+  pages   = {184--199},
+  doi     = {10.1080/20550324.2021.2000231}
+}
+
+% ── CHAPTER 1 BACKGROUND CITES [1]–[4] ───────────────────────────────────────
+
+@article{arash_2014,
+  % [RESOLVED] PDF: RRL/Raw RRL/Dataset scoping/arash_2014_scientific-reports.pdf
+  % Assigned as Ch. 1 [1] (general CNT/polymer mechanical properties review).
+  % Context: "carbon nanotubes improve mechanical, thermal, and electrical
+  %   properties of polymer matrices at low filler concentrations [1, 2]"
+  author  = {Arash, B. and Wang, Q. and Varadan, V. K.},
+  title   = {Mechanical properties of carbon nanotube/polymer composites},
+  journal = {Scientific Reports},
+  year    = {2014},
+  volume  = {4},
+  pages   = {6479},
+  doi     = {10.1038/srep06479}
+}
+
+@article{farah_2016,
+  % [RESOLVED] PDF: data/pdfs/farah_2016_addr.pdf
+  % Confirmed: Farah S, Anderson DG, Langer R. Adv Drug Deliv Rev 107, pp. 367–392. 2016.
+  % Assigned as Ch. 1 [3] (PLA physical and mechanical properties).
+  author  = {Farah, Shady and Anderson, Daniel G. and Langer, Robert},
+  title   = {Physical and mechanical properties of {PLA}, and their functions in
+             widespread applications --- {A} comprehensive review},
+  journal = {Advanced Drug Delivery Reviews},
+  year    = {2016},
+  volume  = {107},
+  pages   = {367--392},
+  doi     = {10.1016/j.addr.2016.06.012}
+}
+
+@article{luo_2018,
+  % [RESOLVED] PDF: data/pdfs/luo_2018_micromachines.pdf
+  % Assigned as Ch. 1 [4] (FDM/PLA processing with MWCNTs).
+  % Also a P6 data-extraction paper: 5 rows extracted to per_paper/luo_2018_micromachines.csv
+  author  = {Luo, Jinjie and Wang, Haibao and Zuo, Duquan and
+             Ji, Anping and Liu, Yaowen},
+  title   = {Research on the Application of {MWCNTs/PLA} Composite Material
+             in the Manufacturing of Conductive Composite Products in {3D} Printing},
+  journal = {Micromachines},
+  year    = {2018},
+  volume  = {9},
+  pages   = {635},
+  doi     = {10.3390/mi9120635}
+}
+
+% ── ON-DISK DATA PAPERS (P6 extraction, not directly cited in current drafts) ─
+
+@article{hardani_2024,
+  % [RESOLVED] PDF: data/pdfs/hardani_2024_polymer-eng-sci.pdf
+  % P6 extraction: 15 RSM rows to per_paper/hardani_2024_pen.csv
+  author  = {Hardani, Hatam and Afshari, Mahmoud and Allahyari, Fatemeh and
+             Samadi, Mohammad Reza and Afshari, Hossein and
+             Medina, Edison Marcelo Melendres},
+  title   = {Optimization of {FFF} process parameters to improve the tensile
+             strength and impact energy of polylactic acid/carbon nanotube composite},
+  journal = {Polymer Engineering \& Science},
+  year    = {2024},
+  volume  = {64},
+  number  = {10},
+  pages   = {5047--5060},
+  doi     = {10.1002/pen.26900}
+}
+
+@article{dasilva_2025,
+  % [RESOLVED] PDF: data/pdfs/dasilva_2025_polymers.pdf
+  % P6 extraction: 5 partial rows to per_paper/dasilva_2025_polymers.csv
+  author  = {da~Silva, Fl{\'a}vio Urbano and Luna, Carlos Bruno Barreto and
+             da~Silva, Fabiano Santana and Barreto, Jos{\'e} Vin{\'i}cius Melo and
+             Schmitz, Debora Pereira and Soares, Bluma Guenther and
+             Wellen, Renate Maria Ramos and Ara{\'u}jo, Edcleide Maria},
+  title   = {Exploring the Effect of Annealing on {PLA/Carbon} Nanotube
+             Nanocomposites: {In} Search of Efficient {PLA/MWCNT} Nanocomposites
+             for Electromagnetic Shielding},
+  journal = {Polymers},
+  year    = {2025},
+  volume  = {17},
+  pages   = {246},
+  doi     = {10.3390/polym17020246}
+}
+
+@article{mohammed_2025,
+  % [RESOLVED] PDF: data/pdfs/mohammed_2025_ije.pdf
+  % P6 extraction: 8 rows (4 wt% × 2 orientations) to per_paper/mohammed_2025_ije.csv
+  author  = {Mohammed, O. K. and Hassani, A. and Zolfaghari, A. and Diwan, A. A.},
+  title   = {Mechanical Performance of {3D} Printed Polylactic Acid/{MWCNT} Brackets:
+             Effects of {CNT} Concentration and Printing Orientation on Stress-Strain
+             Behavior and Deflection Characteristics},
+  journal = {International Journal of Engineering, Transactions {B}: Applications},
+  year    = {2025},
+  volume  = {38},
+  number  = {8},
+  pages   = {1782--1792},
+  doi     = {10.5829/ije.2025.38.08b.05}
+}
+
+@article{velu_2025,
+  % [RESOLVED] PDF: data/pdfs/velu_2025_manufacturing-letters.pdf
+  % Confirmed correct PLA/MWCNT paper (not Ti6Al4V). P6 extraction pending.
+  author  = {Anand~Sankar, M. and Velu, Rajkumar and Anand~Kumar, S. and
+             Thomas, Sabu},
+  title   = {Development and characterisation of {PLA-MWCNT} filaments for
+             multifunctional hybrid composites reinforced with continuous carbon
+             fibre via {3D} printing},
+  journal = {Manufacturing Letters},
+  year    = {2025},
+  volume  = {44},
+  pages   = {1139--1148},
+  doi     = {10.1016/j.mfglet.2025.07.004}
+}
+
+% ── MSE-FRAME CITATIONS (§2.1–2.3 P-S-P-P SUPPORT) ─────────────────────────
+% Added 2026-05-14. All 7 citations from mse_citations_v1.md.
+% [19] brackett_2022, [20] ayatollahi_2020, [21] yu_2019, [22] yohannan_2024,
+% [23] mani_2021, [24] spinelli_2020 map to docx reference list numbers.
+% thirugnanasambandam_2025 is in mse_citations_v1.md but not yet cited in docx body.
+
+@article{brackett_2022,
+  % [VERIFY] DOI confirmed from docx reference list [19].
+  % Use in §2.1 (Processing): infill density and layer height → void fraction → tensile strength.
+  author  = {Brackett, J. and Yan, Y. and Cauthen, D. and Kishore, V. and
+             Pflug, L. and Smith, T. and Duty, C.},
+  title   = {The impact of infill percentage and layer height in small-scale
+             material extrusion on porosity and tensile properties},
+  journal = {Additive Manufacturing},
+  year    = {2022},
+  volume  = {58},
+  pages   = {103063},
+  doi     = {10.1016/j.addma.2022.103063}
+}
+
+@article{ayatollahi_2020,
+  % [VERIFY] DOI confirmed from docx reference list [20].
+  % Use in §2.1 (Processing): raster angle anisotropy → tensile and fracture strength.
+  author  = {Ayatollahi, M. R. and Nabavi-Kivi, A. and Bahrami, B. and
+             Yazid~Yahya, M. and Khosravani, M. R.},
+  title   = {The influence of in-plane raster angle on tensile and fracture
+             strengths of {3D}-printed {PLA} specimens},
+  journal = {Engineering Fracture Mechanics},
+  year    = {2020},
+  volume  = {237},
+  pages   = {107225},
+  doi     = {10.1016/j.engfracmech.2020.107225}
+}
+
+@article{yu_2019,
+  % [VERIFY] DOI confirmed from docx reference list [21].
+  % Use in §2.1–2.2 (Processing → Structure): FDM thermal cycle → PLA crystallinity.
+  author  = {Yu, W. and Dong, X. and Maazouz, A.},
+  title   = {Melt crystallization of {PLA/Talc} in fused filament fabrication},
+  journal = {Materials \& Design},
+  year    = {2019},
+  volume  = {182},
+  pages   = {108085},
+  doi     = {10.1016/j.matdes.2019.108085}
+}
+
+@article{yohannan_2024,
+  % [VERIFY] DOI confirmed from docx reference list [22].
+  % Use in §2.2 (Structure): MWCNT agglomeration threshold, percolation-to-agglomeration transition.
+  author  = {Yohannan, A. and Vincent, S. and Divakaran, N. and
+             Sabarinathan, V. and Suhail, A. H.},
+  title   = {Experimental and simulation studies of hybrid {MWCNT/montmorillonite}
+             reinforced {FDM}-based {PLA} filaments with multifunctional properties
+             enhancement},
+  journal = {Polymer Composites},
+  year    = {2024},
+  volume  = {45},
+  number  = {1},
+  pages   = {507--522},
+  doi     = {10.1002/pc.27794}
+}
+
+@article{mani_2021,
+  % [RESOLVED] Full DOI confirmed from docx reference list [23] (resolves partial DOI in mse_citations_v1.md).
+  % Use in §2.2 (Structure): CNT–polymer interfacial shear strength, stress transfer mechanisms.
+  author  = {Mani, A. and Sharma, S.},
+  title   = {Interfacial shear strength of carbon nanotube reinforced polymer
+             composites: {A} review},
+  journal = {Materials Today: Proceedings},
+  year    = {2021},
+  volume  = {44},
+  pages   = {3780--3785},
+  doi     = {10.1016/j.matpr.2021.03.544}
+}
+
+@article{spinelli_2020,
+  % [VERIFY] DOI confirmed from docx reference list [24].
+  % Use in §2.1–2.2 (Processing → Structure): extrusion-induced CNT alignment, FDM as structure-forming step.
+  author  = {Spinelli, G. and Kotsilkova, R. and Ivanov, E. and
+             Petrova-Doycheva, I. and Menseidov, D. and Georgiev, V. and
+             Di~Maio, R. and Silvestre, C.},
+  title   = {Effects of filament extrusion, {3D} printing and hot-pressing on
+             electrical and tensile properties of poly(lactic acid) composites
+             filled with carbon nanotubes and graphene},
+  journal = {Nanomaterials},
+  year    = {2020},
+  volume  = {10},
+  number  = {1},
+  pages   = {35},
+  doi     = {10.3390/nano10010035}
+}
+
+@article{thirugnanasambandam_2025,
+  % [VERIFY] DOI from mse_citations_v1.md — NOT yet cited in docx body (not in [19]–[24]).
+  % Needs to be added to §2.1 (Processing) + §2.2 (Structure): full P→S chain for PLA/MWCNT,
+  % ultrasonication + magnetic stirring + solution casting + melt extrusion processing route.
+  author  = {Thirugnanasambandam, H. and Dutta, H. and Gnanasagaran, C. L. and
+             Kechagias, J. D.},
+  title   = {Mechanical performance of {PLA-MWCNT} nanocomposite developed by
+             ecofriendly hybrid filament processing method for fused deposition
+             modeling applications},
+  journal = {Polymer Composites},
+  year    = {2025},
+  doi     = {10.1002/pc.30141}
+}
+
+% ─────────────────────────────────────────────────────────────────────────────
+% GAP STATUS — 2026-05-14
+% ─────────────────────────────────────────────────────────────────────────────
+% kamath_2019 dropped 2026-04-29 (wrong author attribution; domain = protein folding).
+% Replaced throughout with efron_1993 §13.
+%
+% MSE-frame citations [19]–[24] added 2026-05-14 (brackett_2022, ayatollahi_2020,
+% yu_2019, yohannan_2024, mani_2021, spinelli_2020). These correspond to docx
+% reference list numbers and are used in §2.1–2.3 body text.
+%
+% thirugnanasambandam_2025 added 2026-05-14 but NOT YET cited in docx body —
+% requires manual insertion in §2.1 (Processing route) before step 30 audit.
+% ─────────────────────────────────────────────────────────────────────────────
+
+% ─────────────────────────────────────────────────────────────────────────────
+% MICROMECHANICS HOMOGENISATION — added 2026-05-30 (methodology revision)
+% Cited in §3.5 (physics-informed prior) and §3.7 (Phase 4 physics-based validation).
+% PDFs/metadata: data/pdfs/methodology/. halpin_1976 + mori_1973 are the foundational
+% equation sources [TEXTBOOK]; the rest are modern CNT/polymer applications [RESOLVED].
+% ─────────────────────────────────────────────────────────────────────────────
+@article{halpin_1976,
+  % [TEXTBOOK] foundational Halpin-Tsai equation source.
+  author  = {Halpin, John C. and Kardos, J. L.},
+  title   = {The {Halpin-Tsai} equations: {A} review},
+  journal = {Polymer Engineering \& Science},
+  year    = {1976},
+  volume  = {16},
+  number  = {5},
+  pages   = {344--352},
+  doi     = {10.1002/pen.760160512}
+}
+
+@article{mori_1973,
+  % [TEXTBOOK] foundational Mori-Tanaka mean-field homogenisation source.
+  author  = {Mori, T. and Tanaka, K.},
+  title   = {Average stress in matrix and average elastic energy of materials
+             with misfitting inclusions},
+  journal = {Acta Metallurgica},
+  year    = {1973},
+  volume  = {21},
+  number  = {5},
+  pages   = {571--574},
+  doi     = {10.1016/0001-6160(73)90064-3}
+}
+
+% ─────────────────────────────────────────────────────────────────────────────
+% FFT-based (spectral) homogenisation — Tier-3 FE-RVE wavy-fiber reopen (2026-07-18).
+% moulinec_suquet_1998 is the basic-scheme source; willot_2015 the rotated-scheme
+% discrete Green operator that pins wavy-absolute-E1 at the 330x contrast where
+% voxel-FE fails; backus_1962 the exact laminate closed form used as the solver
+% validation gate (src/uq/rve_fft.py, see fe-rve-asset-inventory.md sec 17).
+@article{moulinec_suquet_1998,
+  % [METHOD] FFT basic scheme for periodic elastic homogenisation.
+  author  = {Moulinec, H. and Suquet, P.},
+  title   = {A numerical method for computing the overall response of nonlinear
+             composites with complex microstructure},
+  journal = {Computer Methods in Applied Mechanics and Engineering},
+  year    = {1998},
+  volume  = {157},
+  number  = {1--2},
+  pages   = {69--94},
+  doi     = {10.1016/S0045-7825(97)00218-1}
+}
+
+@article{willot_2015,
+  % [METHOD] rotated-scheme discrete Green operator; accurate local fields at high
+  % contrast. Eq. 36 gives the modified frequency used in src/uq/rve_fft.py.
+  author  = {Willot, Fran\c{c}ois},
+  title   = {Fourier-based schemes for computing the mechanical response of
+             composites with accurate local fields},
+  journal = {Comptes Rendus M\'ecanique},
+  year    = {2015},
+  volume  = {343},
+  number  = {3},
+  pages   = {232--245},
+  doi     = {10.1016/j.crme.2014.12.005}
+}
+
+@article{backus_1962,
+  % [METHOD] exact long-wave stiffness of a layered medium; solver-validation gate.
+  author  = {Backus, George E.},
+  title   = {Long-wave elastic anisotropy produced by horizontal layering},
+  journal = {Journal of Geophysical Research},
+  year    = {1962},
+  volume  = {67},
+  number  = {11},
+  pages   = {4427--4440},
+  doi     = {10.1029/JZ067i011p04427}
+}
+
+@phdthesis{krenchel_1964,
+  % [TEXTBOOK] foundational source for the orientation-efficiency factors eta_0 used
+  % in micromechanics.py's ORIENTATION_FACTORS (1 aligned, 3/8 in-plane-random,
+  % 1/5 3D-random). Confirmed 2026-07-09: hassanzadeh_2019's own orientation factor
+  % (fR=1/3 planar, 1/6 3D, via Cox 1952) is NOT the source of these values -- Krenchel's
+  % factors are the standard ones widely reproduced secondhand in composites textbooks
+  % (e.g. Agarwal & Broutman, Hull & Clyne) since this 1964 Danish thesis predates DOIs
+  % and has no accessible PDF in this repo; cited via secondary literature per standard
+  % practice for this reference.
+  author  = {Krenchel, Herbert},
+  title   = {Fibre Reinforcement: Theoretical and Practical Investigations of the
+             Elasticity and Strength of Fibre-Reinforced Materials},
+  school  = {Technical University of Denmark},
+  year    = {1964},
+  address = {Copenhagen},
+  note    = {Akademisk Forlag}
+}
+
+@software{bauer_mechmean_2022,
+  % [VALIDATION] independent open-source Eshelby/Mori-Tanaka reference
+  % implementation (KIT, Boehlke group) used 2026-07-09 to spot-check
+  % mori_tanaka.py's mori_tanaka_modulus_aligned() -- see test_mori_tanaka.py
+  % module docstring for the comparison results. Not a project dependency.
+  author  = {Bauer, Julian Karl},
+  title   = {mechmean},
+  year    = {2022},
+  version = {v0.1.0},
+  doi     = {10.5281/zenodo.6461940},
+  url     = {https://github.com/JulianKarlBauer/mechmean}
+}
+
+@article{hassanzadeh_2019,
+  % [RESOLVED] PDF: data/pdfs/methodology/hassanzadeh-aghdam_jamali_2019_halpin-tsai-cnt.pdf
+  % Modern Halpin-Tsai form for CNT-reinforced polymer; informs §3.5 slope prior.
+  author  = {Hassanzadeh-Aghdam, M. K. and Jamali, J.},
+  title   = {A new form of a {Halpin--Tsai} micromechanical model for characterizing
+             the mechanical properties of carbon nanotube-reinforced polymer nanocomposites},
+  journal = {Bulletin of Materials Science},
+  year    = {2019},
+  volume  = {42},
+  pages   = {117},
+  doi     = {10.1007/s12034-019-1784-6}
+}
+
+@article{luo_2018b,
+  % [RESOLVED] metadata: data/pdfs/methodology/luo_2018_modified-rom-halpin-tsai-tensile-strength.md
+  % Modified ROM + Halpin-Tsai for tensile STRENGTH — supports modulus->strength caveat in §3.7.
+  author  = {Luo, Zirong and Li, Xin and Shang, Jianzhong and Zhu, Hongping and Fang, Delei},
+  title   = {Modified rule of mixtures and {Halpin--Tsai} model for prediction of
+             tensile strength of micron-sized reinforced composites and {Young's}
+             modulus of multiscale reinforced composites for direct extrusion fabrication},
+  journal = {Advances in Mechanical Engineering},
+  year    = {2018},
+  volume  = {10},
+  number  = {7},
+  doi     = {10.1177/1687814018785286}
+}
+
+@article{alasfar_2022,
+  % [RESOLVED] metadata: data/pdfs/methodology/alasfar_2022_review-modulus-yield-polymer-nanocomposites.md
+  % Review of modulus/yield modeling for polymer nanocomposites; umbrella cite §3.7.
+  author  = {Alasfar, Reema H. and Ahzi, Said and Barth, Nicolas and Kochkodan, Viktor
+             and Khraisheh, Marwan and Ko\c{c}, Muammer},
+  title   = {A review on the modeling of the elastic modulus and yield stress of
+             polymers and polymer nanocomposites},
+  journal = {Polymers},
+  year    = {2022},
+  volume  = {14},
+  number  = {3},
+  pages   = {360},
+  doi     = {10.3390/polym14030360}
+}
+
+@article{papageorgiou_2020,
+  % [RESOLVED] PDF: data/pdfs/methodology/papageorgiou_2020_reinforcement-mechanisms-cnt-graphene.pdf
+  % Reinforcement mechanisms (dispersion/voids) — supports the "diverge -> physical cause" reading in §3.7.
+  author  = {Papageorgiou, Dimitrios G. and Li, Zheling and Liu, Mufeng and
+             Kinloch, Ian A. and Young, Robert J.},
+  title   = {Mechanisms of mechanical reinforcement by graphene and carbon nanotubes
+             in polymer nanocomposites},
+  journal = {Nanoscale},
+  year    = {2020},
+  volume  = {12},
+  number  = {4},
+  pages   = {2228--2267},
+  doi     = {10.1039/c9nr06952f}
+}
+
+% ── TIER-3 FE-RVE: CNT WAVINESS / EFFECTIVE ASPECT RATIO JUSTIFICATION ──────
+% Added 2026-07-09, paper-scout literature pass. Cite these together wherever
+% the FE-RVE mesh's EFFECTIVE_ASPECT_RATIO (~20) is justified as distinct
+% from the true 2609 (length/diameter) used in the Halpin-Tsai comparison.
+
+@article{berhan_2004,
+  % [NO-PDF] DOI confirmed via CrossRef 2026-07-09; not yet downloaded.
+  % Foundational waviness-reduces-effective-modulus result (sinusoidal fiber model).
+  author  = {Berhan, L. and Yi, Y. B. and Sastry, A. M.},
+  title   = {Effect of nanorope waviness on the effective moduli of nanotube sheets},
+  journal = {Journal of Applied Physics},
+  year    = {2004},
+  volume  = {95},
+  number  = {9},
+  pages   = {5027--5034},
+  doi     = {10.1063/1.1687989}
+}
+
+@article{shao_2009,
+  % [NO-PDF] DOI confirmed via CrossRef 2026-07-09; not yet downloaded.
+  % Extends waviness modeling to effective-modulus prediction with debonding.
+  author  = {Shao, L. H. and Luo, R. Y. and Bai, S. L. and Wang, J.},
+  title   = {Prediction of effective moduli of carbon nanotube--reinforced
+             composites with waviness and debonding},
+  journal = {Composite Structures},
+  year    = {2009},
+  volume  = {87},
+  number  = {3},
+  pages   = {274--281},
+  doi     = {10.1016/j.compstruct.2008.02.011}
+}
+
+@article{gao_2019,
+  % [NO-PDF] DOI confirmed via CrossRef 2026-07-09; not yet downloaded.
+  % States literal high-aspect-ratio explicit FE packing is impractical; uses
+  % orientation-distribution functions cross-checked against Mori-Tanaka instead
+  % -- precedent for not packing at the true aspect ratio.
+  author  = {Gao, Jianhong and Yang, Xiaoxiang and Huang, Lihong},
+  title   = {A Numerical Model to Predict the Anisotropy of Polymer Composites
+             Reinforced with High-Aspect-Ratio Short Aramid Fibers},
+  journal = {Advances in Polymer Technology},
+  year    = {2019},
+  volume  = {2019},
+  pages   = {1--12},
+  doi     = {10.1155/2019/5484675}
+}
+
+@article{lee_2010,
+  % [NO-PDF] DOI confirmed via CrossRef 2026-07-09; not yet downloaded.
+  % Direct precedent for RSA-packed elongated inclusions in a periodic 3D
+  % FE-RVE, validated against experiment -- supports the RSA method itself.
+  author  = {Lee, Wook Jin and Son, Jae Hyoung and Park, Ik Min and
+             Oak, Jeong-Jung and Kimura, Hisamichi and Park, Yong Ho},
+  title   = {Analysis of 3{D} Random {Al$_{18}$B$_4$O$_{33}$} Whisker Reinforced
+             {Mg} Composite Using {FEM} and Random Sequential Adsorption},
+  journal = {Materials Transactions},
+  year    = {2010},
+  volume  = {51},
+  number  = {6},
+  pages   = {1089--1093},
+  doi     = {10.2320/matertrans.m2009208}
+}
+
+@article{wang_2023,
+  % [RESOLVED] PDF: data/pdfs/methodology/wang_2023_multiscale-strain-sensor-cnp-polymer.pdf
+  % Multiscale RVE + FE post-processing style reference (2026-07-24 figure-style comparison).
+  author  = {Wang, Junpu and Wang, Zhu and Zuo, Yanjiang and Wang, Wenzhi},
+  title   = {Multiscale Analysis of the Highly Stretchable Carbon-Based
+             Polymer Strain Sensor},
+  journal = {Polymers},
+  year    = {2023},
+  volume  = {15},
+  number  = {7},
+  pages   = {1780},
+  doi     = {10.3390/polym15071780}
+}
+
+@article{fachinotti_2023,
+  % [RESOLVED] PDF: data/pdfs/methodology/fachinotti_2023_automatic-rve-generation-foamed-concrete.pdf
+  % Automatic high-fidelity RVE generation + computational homogenization workflow;
+  % candidate reference for RVE-generation methodology comparison (2026-07-24).
+  author  = {Fachinotti, V{\'\i}ctor D. and Peralta, Ignacio and Toro, Sebasti{\'a}n and
+             Storti, Bruno A. and Caggiano, Antonio},
+  title   = {Automatic Generation of High-Fidelity Representative Volume Elements
+             and Computational Homogenization for the Determination of Thermal
+             Conductivity in Foamed Concretes},
+  journal = {Materials and Structures},
+  year    = {2023},
+  volume  = {56},
+  pages   = {179},
+  doi     = {10.1617/s11527-023-02253-2}
+}

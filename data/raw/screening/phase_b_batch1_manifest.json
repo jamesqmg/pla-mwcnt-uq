@@ -1,0 +1,52 @@
+[
+  {
+    "doi": "10.1016/j.mfglet.2025.07.004",
+    "title": "Development and characterisation of PLA-MWCNT filaments for multifunctional hybrid composites reinforced with continuous carbon fibre via 3D printing",
+    "year": "2025",
+    "journal": "Manufacturing Letters",
+    "pdf_url": "https://doi.org/10.1016/j.mfglet.2025.07.004",
+    "pdf_path": null,
+    "markdown_path": null,
+    "priority": "FDM"
+  },
+  {
+    "doi": "10.5829/ije.2025.38.08b.05",
+    "title": "Mechanical Performance of 3D Printed Polylactic Acid/MWCNT Brackets: Effects of CNT Concentration and Printing Orientation on Stress-Strain Behavior and Deflection Characteristics",
+    "year": "2025",
+    "journal": "International Journal of Engineering Transactions B Applications",
+    "pdf_url": "https://www.ije.ir/article_210111_64ff20849f5a4846aa8a82afc19d7962.pdf",
+    "pdf_path": "/Users/jimbo/Downloads/MAPUA/Thesis 1/data/pdfs/10_5829_ije_2025_38_08b_05.pdf",
+    "markdown_path": "/Users/jimbo/Downloads/MAPUA/Thesis 1/data/extraction/10_5829_ije_2025_38_08b_05.md",
+    "priority": "FDM"
+  },
+  {
+    "doi": "10.3390/mi9120635",
+    "title": "Research on the application of MWCNTs/PLA composite material in the manufacturing of conductive composite products in 3D printing",
+    "year": "2018",
+    "journal": "Micromachines",
+    "pdf_url": "https://www.mdpi.com/2072-666X/9/12/635/pdf?version=1543556599",
+    "pdf_path": null,
+    "markdown_path": null,
+    "priority": "FDM"
+  },
+  {
+    "doi": "10.1002/pen.26900",
+    "title": "Optimization of FFF process parameters to improve the tensile strength and impact energy of polylactic acid/carbon nanotube composite",
+    "year": "2024",
+    "journal": "Polymer Engineering and Science",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pen.26900",
+    "pdf_path": null,
+    "markdown_path": null,
+    "priority": "FDM"
+  },
+  {
+    "doi": "10.3390/polym17020246",
+    "title": "Exploring the Effect of Annealing on PLA/Carbon Nanotube Nanocomposites: In Search of Efficient PLA/MWCNT Nanocomposites for Electromagnetic Shielding",
+    "year": "2025",
+    "journal": "Polymers",
+    "pdf_url": "https://www.mdpi.com/2073-4360/17/2/246/pdf?version=1737359539",
+    "pdf_path": null,
+    "markdown_path": null,
+    "priority": "TSE"
+  }
+]

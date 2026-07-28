@@ -1,0 +1,2463 @@
+[
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105007986103",
+    "eid": "2-s2.0-105007986103",
+    "dc:title": "Exploring the mechanical response of PLA/MWCNT and PLA/HNT composites obtained by additive manufacturing",
+    "dc:creator": "Cobos C.M.",
+    "prism:publicationName": "Rapid Prototyping Journal",
+    "prism:coverDate": "2025-01-01",
+    "prism:doi": "10.1108/RPJ-07-2024-0308",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "_abstract": "",
+    "_abstract_cr": "Purpose \n                     This paper aims to show the mechanical properties of neat polylactic acid (PLA) and PLA with two types of nanoparticles as reinforcement, multi-walled carbon nanotubes (MWCNT) and halloysite nanotubes (HNT) with and without maleinized linseed oil (MLO) as plasticizer, for applications in industrial models and the biomedical field, respectively. \n                   \n                   \n                     Design/methodology/approach \n                     This research evaluates the mechanical response of PLA/MWCNT and PLA/HNT nanocomposites, at concentrations of 0.5 and 1Wt.%, with and without MLO plasticizer at a ratio of 5 phr, which were obtained by melting in a twin-screw extruder. The standardized specimens were manufactured on a Tumaker NX Pro 3D printer with pellets instead of filaments. The studies carried out were tensile and flexural tests, Charpy impact test, microhardness and field emission scanning electron microscope (FESEM). \n                   \n                   \n                     Findings \n                     Tensile tests revealed that neat PLA has a tensile strength of 50.7 MPa, an elastic modulus of 1366.8 MPa and a stretch factor of 6.9%, while the values of MWCNT and HNT nanocomposites without plasticizer are 50% below these figures. The MWCNTs composites with plasticizer increase tensile strength by about 20% over neat PLA, indicating that the nanomaterials with MLO have better mechanical properties due to the plasticizing effect. Neat PLA showed a flexural strength of 93.83 MPa and a flexural modulus of 2657.51 MPa, respectively. The MWCNTs and HNTs composites without plasticizer reveal a 60% and 30% decrease compared to neat PLA, respectively. In comparison, the composites with plasticizer have no more than 10% variation concerning neat PLA. In Charpy impact tests, neat PLA absorbed 19.75 kJ/m2 of the energy in the resilience test. At the same time, MWCNTs nanocomposites without plasticizer show a substantial reduction of about 80%, and those with plasticizer absorbed about 15% less energy. HNTs nanocomposites show similar results to those of neat PLA. FESEM shows different nanocomposite fracture types, distributions and miscibility of nanoloads and plasticizer in the polymer matrix. The 20% increase in tensile strength of MWCNTs composites with plasticizer suggests their potential use for applications requiring durability, such as biomedical devices and structural components. In addition, the improved mechanical properties of the nanomaterials, especially MLO, highlight their viability for the development of conductive polymers in flexible electronics and sensors. \n                   \n                   \n                     Originality/value \n                     This study explores the mechanical response of PLA/HNTs and PLA/MWCNTs nanomaterials obtained by 3D printing. It suggests their potential use as biomaterials in the biomedical field, tissue engineering, and industrial polymeric materials."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105030379412",
+    "eid": "2-s2.0-105030379412",
+    "dc:title": "Enhanced Mechanical, Thermal, and Electrical Properties of PLA via PTMEG Plasticization and MWCNT Reinforcement",
+    "dc:creator": "Farhoush M.M.",
+    "prism:publicationName": "Journal of Applied Polymer Science",
+    "prism:coverDate": "2026-05-05",
+    "prism:doi": "10.1002/app.70582",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "ABSTRACT \n                   \n                    This study investigates the effects of polytetramethylene ether glycol (PTMEG) plasticizer and multi‐walled carbon nanotubes (MWCNTs) on the physical, mechanical, thermal, structural, and electrical properties of poly(lactic acid) (PLA)–based composites. PLA was first blended with varying PTMEG contents (10–20 wt%), followed by incorporation of surface‐modified MWCNTs (0.25–1 wt%). Miscibility evaluation using Flory–Huggins interaction parameters confirmed near‐miscible PLA/PTMEG behavior (χ &lt; 0.5). Differential scanning calorimetry showed a significant reduction in glass transition temperature (\n                     T \n                     g \n                    ) from 56°C in neat PLA to 24°C at 20 wt% PTMEG, accompanied by increased crystallinity. Tensile testing revealed striking ductility improvements, with elongation at break increasing up to 82‐fold, though strength and modulus decreased due to plasticization. Incorporation of MWCNTs improved modulus and tensile strength but reduced ductility; 0.75 wt% MWCNT yielded the optimal balance, with a 20‐fold increase in elongation compared to virgin PLA and a modulus 4.3× higher than plasticized PLA. XRD confirmed enhanced α‐phase crystallization, supported by FE‐SEM images showing uniform CNT dispersion with limited aggregation. Electrical testing revealed a ~10\n                     6 \n                    ‐fold reduction in resistivity at 1 wt% MWCNT, indicating formation of conductive pathways. Overall, combined PTMEG and MWCNT addition significantly improved toughness, crystallinity, and electrical performance of PLA, providing a promising route for advanced biodegradable composite applications."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85089985714",
+    "eid": "2-s2.0-85089985714",
+    "dc:title": "PLA/PEG/MWCNT composites with improved processability and mechanical properties",
+    "dc:creator": "Wang S.",
+    "prism:publicationName": "Polymer Plastics Technology and Materials",
+    "prism:coverDate": "2021-01-01",
+    "prism:doi": "10.1080/25740881.2020.1811324",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85134229324",
+    "eid": "2-s2.0-85134229324",
+    "dc:title": "A novel PLA/P(3HB-co-4HB)/MWCNT composite featuring enhanced mechanical properties and excellent thermal stability based on elongational rheology",
+    "dc:creator": "Li X.",
+    "prism:publicationName": "Polymer Testing",
+    "prism:coverDate": "2022-10-01",
+    "prism:doi": "10.1016/j.polymertesting.2022.107700",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85046102023",
+    "eid": "2-s2.0-85046102023",
+    "dc:title": "PLA/ESO/MWCNT nanocomposite: a study on mechanical, thermal and electroactive shape memory properties",
+    "dc:creator": "Raghunath S.",
+    "prism:publicationName": "Journal of Polymer Research",
+    "prism:coverDate": "2018-05-01",
+    "prism:doi": "10.1007/s10965-018-1523-5",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105014763014",
+    "eid": "2-s2.0-105014763014",
+    "dc:title": "Development and characterisation of PLA-MWCNT filaments for multifunctional hybrid composites reinforced with continuous carbon fibre via 3D printing",
+    "dc:creator": "Sankar M.A.",
+    "prism:publicationName": "Manufacturing Letters",
+    "prism:coverDate": "2025-08-01",
+    "prism:doi": "10.1016/j.mfglet.2025.07.004",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherhybridgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Hybrid Gold"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85196864875",
+    "eid": "2-s2.0-85196864875",
+    "dc:title": "Tuning multifunctional behavior of PLA/POE-g-GMA/MWCNT nanocomposites: Mechanical, rheological, thermal, thermomechanical, and electromagnetic properties",
+    "dc:creator": "Luna C.B.B.",
+    "prism:publicationName": "Journal of Applied Polymer Science",
+    "prism:coverDate": "2024-10-05",
+    "prism:doi": "10.1002/app.55931",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "Abstract  Nanocomposites of polylactic acid (PLA) and poly(ethylene‐octene) grafted with glycidyl methacrylate (POE‐g‐GMA) were prepared using multi‐walled carbon nanotubes (MWCNT) as conductive nanofillers. The PLA/POE‐g‐GMA/MWCNT nanocomposites were processed through extrusion and injection molding for rheological, mechanical, electromagnetic, thermal, thermomechanical, and morphological characterization. The carbon nanotubes were dispersed in the PLA/POE‐g‐GMA chain, as seen by Raman spectroscopy. With higher MWCNT content, the complex viscosity (η*) and storage modulus (G') significantly increased in the nanocomposites, suggesting percolation formation. The nanocomposites melt flow index (MFI) results indicated lower fluidity, confirming the trend in η*. Electrical conductivity was optimal for PLA/POE‐g‐GMA/MWCNT (5 phr), reaching a value of 2.21 × 10 −6  S/cm and providing electromagnetic shielding of 8 dB across the entire Ku band (12.2–18 GHz). The impact strength of the nanocomposites was higher than that of pure PLA and the PLA/POE‐g‐GMA blend, while the heat deflection temperature (HDT) remained stable at around 56°C. Increased MWCNT content in the nanocomposites promoted recovery of the elastic modulus, tensile strength, and Shore D hardness compared to PLA/POE‐g‐GMA blend. Overall, the results indicate that the PLA/POE‐g‐GMA/MWCNT (5 phr) nanocomposite has potential antistatic applications."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85216123923",
+    "eid": "2-s2.0-85216123923",
+    "dc:title": "Exploring the Effect of Annealing on PLA/Carbon Nanotube Nanocomposites: In Search of Efficient PLA/MWCNT Nanocomposites for Electromagnetic Shielding",
+    "dc:creator": "da Silva F.U.",
+    "prism:publicationName": "Polymers",
+    "prism:coverDate": "2025-01-01",
+    "prism:doi": "10.3390/polym17020246",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "In this research, poly(lactic acid) (PLA) nanocomposites with multi-walled carbon nanotubes (MWCNT) were produced by extrusion, injection, and compression molding, focusing on electromagnetic shielding. Various amounts of carbon nanotubes (MWCNTs) were tested in PLA matrix, specifically ranging from 1 to 4 parts per hundred resin (phr). The resulting nanocomposites were analyzed before and after undergoing annealing heat treatment. It was observed that as the MWCNT content increased, the melt flow index of PLA decreased. This reduction indicates that the nanotubes were effectively accommodated into the PLA chain. The PLA/MWCNT (2 phr) formulation presented the greatest balance of properties, with potential for electromagnetic shielding application. Scanning electron microscopy (SEM) demonstrated that incorporating 2 phr of carbon nanotubes in PLA promoted good distribution, favoring high electrical conductivity and electromagnetic shielding between 20–22 dB (8.2–18 GHz), corresponding to approximately 99% attenuation. Furthermore, its properties, such as elastic modulus (3156 MPa), tensile strength (65.1 MPa), hardness (77.8 Shore D), and heat deflection temperature (55.3 °C), increased compared to pure PLA. After annealing, the PLA/MWCNT (2 phr) nanocomposite underwent a molecular reordering, resulting in an increased crystalline fraction, as confirmed by X-ray diffraction (XRD). However, the electrical conductivity maintained the same order of magnitude, while the electromagnetic shielding varied from 19.7 to 20 dB. The results indicate that these nanocomposites are promising for electromagnetic shielding applications and can be manufactured in the molten state."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105018516036",
+    "eid": "2-s2.0-105018516036",
+    "dc:title": "Rheological and Nonlinear Mechanical Behavior of PLA/MWCNT/MMT Nanocomposites Under Cyclic Loading: Influence of Hybrid Filler Concentration and Dispersion",
+    "dc:creator": "Sanusi O.M.",
+    "prism:publicationName": "Polymer Composites",
+    "prism:coverDate": "2026-03-20",
+    "prism:doi": "10.1002/pc.70507",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "ABSTRACT \n                   This study examines the rheological and nonlinear mechanical behavior of polylactic acid (PLA) nanocomposites reinforced with hybrid multi‐walled carbon nanotubes (MWCNTs) and montmorillonite (MMT) nanoplatelets. Three hybrid compositions were investigated, all maintaining a fixed MMT:MWCNT weight ratio of 2:1, and compared against neat PLA. Oscillatory shear rheometry revealed that, at low frequencies, the hybrid nanocomposite with 2 wt% total filler content exhibited a frequency‐independent storage modulus and yield stress—indicative of pseudo‐solid‐like behavior and the formation of a percolated filler network. Cyclic tensile testing further demonstrated enhanced mechanical performance, with the 2 wt% hybrid sample showing a 25% increase in elastic modulus and a 38% improvement in toughness under cyclic loading compared to neat PLA. Notably, the incorporation of 1.0 wt% MMT/MWCNT led to significant reductions in deformation‐related degradation: 60% in damage and 100% in plasticity. Transmission electron microscopy (TEM) confirmed a homogeneous dispersion of the hybrid fillers, which supports the observed synergistic improvements in both rheological and mechanical properties. These findings highlight the effectiveness of MMT/MWCNT nanofillers in tailoring the structure–property relationships of PLA‐based materials. The resulting nanocomposites offer enhanced performance and processability, making them promising candidates for structural, packaging, and automotive applications where lightweight, biodegradable, and mechanically robust materials are essential."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84927940928",
+    "eid": "2-s2.0-84927940928",
+    "dc:title": "Promising PLA-functionalized MWCNT composites to use in nanotechnology",
+    "dc:creator": "Seligra P.G.",
+    "prism:publicationName": "Polymer Composites",
+    "prism:coverDate": "2016-10-01",
+    "prism:doi": "10.1002/pc.23504",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfree2read"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Bronze"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "Films based on polylactic acid (PLA) reinforced with multi‐walled carbon nanotubes (MWCNT) were developed after using an excellent methodology to ensure an optimum dispersion of the filler in the matrix. The functionalization of MWCNT was carried out through a Fenton reaction to generate hydroxyl (OH) and carboxyl (COOH) groups on their walls. After that, COOH groups were lengthened by reacting with thionyl chloride and then with triethylene glycol to achieve a terminal OH distanced from the wall of the MWCNT. Nanocomposites based on PLA containing different concentrations of functionalized filler (fMWCNT: 0.026, 0.10, and 0.18 wt%) were prepared by casting. The influence of filler concentration was investigated using some techniques such as scanning electron microscopy (SEM), Fourier transform infrared spectroscopy (FT‐IR), thermogravimetric analysis (TGA), water vapor permeability (WVP) and uniaxial tensile mechanical properties. Excellent dispersion of fMWCNT was observed suggesting that the technique of functionalization used was appropriate. All nanocomposites presented great stability, allowing them to be processed to temperatures reaching 300°C. Furthermore, an increasing trend of ultimate tensile strength ( σ  u ) up to 20% and a decrease of WVP around 40% with the addition of only 0.10 wt% of fMWCNT were obtained. Considering these results, the new biodegradable nanocomposites developed in this work could be very promising to replace synthetic plastics that currently are used in different areas such as nanotechnology, packaging and biomedicine. POLYM. COMPOS., 37:3066–3072, 2016. © 2015 Society of Plastics Engineers"
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85217525278",
+    "eid": "2-s2.0-85217525278",
+    "dc:title": "Mechanical Performance of 3D Printed Polylactic Acid/MWCNT Brackets: Effects of CNT Concentration and Printing Orientation on Stress-Strain Behavior and Deflection Characteristics",
+    "dc:creator": "Mohammed O.K.",
+    "prism:publicationName": "International Journal of Engineering Transactions B Applications",
+    "prism:coverDate": "2025-08-01",
+    "prism:doi": "10.5829/ije.2025.38.08b.05",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherhybridgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Hybrid Gold"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85173981854",
+    "eid": "2-s2.0-85173981854",
+    "dc:title": "Experimental and simulation studies of hybrid MWCNT/montmorillonite reinforced FDM based PLA filaments with multifunctional properties enhancement",
+    "dc:creator": "Yohannan A.",
+    "prism:publicationName": "Polymer Composites",
+    "prism:coverDate": "2024-01-10",
+    "prism:doi": "10.1002/pc.27794",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "Abstract \n                   \n                     \n                     The recent investigation in the development of novel multifunctional thermoplastic polymer‐based filaments has contributed to the extensive use of hybrid nanofiller combinations. Montmorillonite (MMT) and multiwalled carbon nanotubes (MWCNT) are nanofillers with exceptional properties and their combination tends to induce synergistic property enhancement on incorporation within the polymer matrix. In our current study, CNT‐MMT hybrid has been synthesized, while XRD, FTIR, Raman, and TEM confirmed its successful formation. Different wt% (0.5–2) of CNT‐MMT were reinforced into polylactic acid (PLA) matrix and their inclusive properties were analyzed in order to obtain percolation threshold concentration. The tensile strength analysis of PLA with 1% CNT‐MMT displayed 47.4% enhancement as compared to virgin PLA, while DMA analysis confirmed storage modulus enhancement. These results were also corroborated with simulation studies using ANSYS. However, with 2% addition of CNT‐MMT, the tensile strength reduced due to nanofiller agglomeration, which was also verified with SEM studies. The thermal and electrical properties of nanocomposites also augmented considerably due to CNT‐MMT reinforcement with electrical conductivity of PLA + 1% CNT‐MMT enhanced by 9 orders of magnitude. These multifunctional filaments tend to produce refined 3D printed structure using FDM and could be harnessed toward advanced 3D printing applications for commercial devices. \n                   \n                   \n                     Highlights \n                     \n                       \n                         \n                           Different wt% of CNT‐MMT were reinforced into polylactic acid (PLA) matrix and their inclusive properties were analyzed. \n                         \n                         \n                           The tensile strength analysis of PLA with 1% CNT‐MMT displayed 47.4% enhancement as compared to virgin PLA, simulation studies using ANSYS confirmed it. \n                         \n                         \n                           The thermal and electrical properties of nanocomposites also augmented considerably due to CNT‐MMT reinforcement. \n                         \n                         \n                           These multifunctional filaments tend to produce refined 3D printed structure using FDM. \n                         \n                         \n                           This could be harnessed toward advanced 3D printing applications for commercial devices."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105033471486",
+    "eid": "2-s2.0-105033471486",
+    "dc:title": "Morphology-dependent multifunctional properties of MWCNT/PLA composite films: An integrated characterization",
+    "dc:creator": "Li R.",
+    "prism:publicationName": "Journal of Materials Science",
+    "prism:coverDate": "2026-04-01",
+    "prism:doi": "10.1007/s10853-026-12555-9",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105008407478",
+    "eid": "2-s2.0-105008407478",
+    "dc:title": "Mechanical Performance of PLA-MWCNT Nanocomposite Developed by Ecofriendly Hybrid Filament Processing Method for Fused Deposition Modeling Applications",
+    "dc:creator": "Thirugnanasambandam A.",
+    "prism:publicationName": "Polymer Composites",
+    "prism:coverDate": "2025-12-10",
+    "prism:doi": "10.1002/pc.30141",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "ABSTRACT \n                   The synthesis of biodegradable polylactic acid (PLA)‐based nanocomposites has received considerable interest for sustainable engineering applications. However, the uniform dispersion of nanofillers and the structural integrity of the polymer matrix are still challenging. In this research, a new green hybrid fabrication process was utilized to fabricate polylactic acid (PLA) reinforced with multiwall carbon nanotubes (MWCNTs) for 3D printing purposes. The approach entailed simultaneous mixing of precursors using ultrasonication and magnetic stirring, which was then subjected to subsequent solution casting and melt extrusion. This ensured homogeneous dispersion of the MWCNTs in the PLA matrix. The weight percentage of MWCNTs was also varied at 0.5, 0.75, and 1 wt.%, along with a neat PLA sample for reference. Detailed characterization methods, such as scanning electron microscopy (SEM), X‐ray diffraction (XRD), Fourier transform infrared spectroscopy (FTIR), differential scanning calorimetry (DSC), and thermogravimetric analysis (TGA), were employed to study the structural, thermal, and morphological characteristics of the composites. The ANSYS simulation results showed good agreement with experimental data, with deviations ranging from 4.9% to 6.7% across tensile, compressive, and flexural strengths. The findings exhibited increased mechanical strength, thermal stability, and enhanced structural integrity of PLA‐MWCNT nanocomposites over neat PLA. The designed fabrication method provides a scalable and environmentally friendly method for obtaining high‐performance polymer nanocomposites. These findings are of great promise in the area of biomedical implants, lightweight structural applications, and high‐end 3D printing, where increased mechanical properties and biodegradability are needed."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85007448294",
+    "eid": "2-s2.0-85007448294",
+    "dc:title": "Evaluation of nanoparticles of hydroxyapatite and MWCNT's in scaffolds of poly lactic acid",
+    "dc:creator": "Román-Doval R.",
+    "prism:publicationName": "Materials Research Express",
+    "prism:coverDate": "2016-12-01",
+    "prism:doi": "10.1088/2053-1591/3/12/125402",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105003548199",
+    "eid": "2-s2.0-105003548199",
+    "dc:title": "Enhancing Polylactic Acid/Carbon Fiber-Reinforced Biomedical Composites (PLA/CFRCs) with Multi-Walled Carbon Nanotube (MWCNT) Fillers: A Comparative Study on Reinforcing Techniques",
+    "dc:creator": "Paz-González J.A.",
+    "prism:publicationName": "Journal of Composites Science",
+    "prism:coverDate": "2025-04-01",
+    "prism:doi": "10.3390/jcs9040167",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "The limited mechanical properties of composite materials, including stiffness, strength, and biocompatibility, restrict their effectiveness in biomedical applications. This research enhanced the mechanical properties and biocompatibility of polylactic acid and carbon fiber-reinforced composites (PLA/CFRCs) by incorporating multi-walled carbon nanotube (MWCNT) fillers. The methodology involved synthesizing MWCNTs and integrating them into PLA/CFRC laminates using fusion-blending, dispersion, and interlaminar spray-coating. Raman spectroscopy confirmed the presence of MWCNTs, with characteristic D and G band peaks and an ID/IG of 1.44 ± 0.089. SEM revealed MWCNTs in the PLA/CFRC matrix and allowed size determination, with an outer diameter range of 125–150 nm and a length of 14,407 ± 2869 nm. FTIR identified interactions between the matrix and the MWCNTs, evidenced by band shifts. TGA/DSC analysis showed thermal stability above 338 °C for all composites. The tensile tests revealed that all composites had values greater than 19 GPa for the elastic modulus and 232 MPa for the ultimate strength. Cytotoxicity assays confirmed biocompatibility, and all samples maintained a cell growth rate greater than 80%. This study highlighted the potential of nanotechnology to optimize the mechanical behavior of polymer-based composites, expanding their applicability in biomedical fields."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85044970224",
+    "eid": "2-s2.0-85044970224",
+    "dc:title": "Functionalized MWCNTs modified flame retardant PLA nanocomposites and cold rolling process for improving mechanical properties",
+    "dc:creator": "Gu L.",
+    "prism:publicationName": "Composites Science and Technology",
+    "prism:coverDate": "2018-06-16",
+    "prism:doi": "10.1016/j.compscitech.2018.03.033",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85182426811",
+    "eid": "2-s2.0-85182426811",
+    "dc:title": "Investigation of Mechanical Properties of 3D-Printed PLA Coated with PU/MWCNTs in a Corrosive Environment",
+    "dc:creator": "Farajian J.",
+    "prism:publicationName": "Arabian Journal for Science and Engineering",
+    "prism:coverDate": "2024-08-01",
+    "prism:doi": "10.1007/s13369-023-08632-9",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85078542152",
+    "eid": "2-s2.0-85078542152",
+    "dc:title": "Replication and surface properties of micro injection molded PLA/MWCNT nanocomposites",
+    "dc:creator": "Lee J.H.",
+    "prism:publicationName": "Polymer Testing",
+    "prism:coverDate": "2020-03-01",
+    "prism:doi": "10.1016/j.polymertesting.2019.106321",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/77950543085",
+    "eid": "2-s2.0-77950543085",
+    "dc:title": "Effects of grafted chain length on mechanical and electrical properties of nanocomposites containing polylactide-grafted carbon nanotubes",
+    "dc:creator": "Yoon J.T.",
+    "prism:publicationName": "Composites Science and Technology",
+    "prism:coverDate": "2010-05-01",
+    "prism:doi": "10.1016/j.compscitech.2010.01.011",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85095126523",
+    "eid": "2-s2.0-85095126523",
+    "dc:title": "Properties and mechanism of antistatic biodegradable polylactic acid/multi-walled carbon nanotube composites",
+    "dc:creator": "Pan L.",
+    "prism:publicationName": "Journal of Engineered Fibers and Fabrics",
+    "prism:coverDate": "2020-01-01",
+    "prism:doi": "10.1177/1558925020968813",
+    "subtype": "re",
+    "subtypeDescription": "Review",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "In this study, antistatic biodegradable polylactic acid (PLA)/multi-walled carbon nanotube (PLA/MWCNT) composites were prepared by the melt-blending of MWCNT with PLA. The conductive, mechanical, thermal properties and microstructure of the PLA/MWCNT composites were investigated. Results revealed that with the loading of 1.0 to 1.5 wt% of MWCNT, the tensile strength, elongation at break, and crystallinity of the composites slightly increase, followed by a downward trend with the further increase in the loading amount of MWCNT. With the increase in the MWCNT loading amount to 3.0%, the volume resistivity and surface resistivity of the composites were reduced by nine orders of magnitude. According to the internal microstructure of PLA/MWCNT, by the loading of 1.5 wt% of MWCNT, the MWCNT formed a conductive network in the composite matrix, reaching the percolation threshold. The new composties can be applicated in medical protective clothing for protecting the electronic instrument."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84884826968",
+    "eid": "2-s2.0-84884826968",
+    "dc:title": "Effect of functionalized multi-walled carbon nanotubes on the interfacial properties of ramie fiber/polylactic acid (PLA) composites",
+    "dc:creator": "Zhou N.T.",
+    "prism:publicationName": "Advanced Materials Research",
+    "prism:coverDate": "2013-10-07",
+    "prism:doi": "10.4028/www.scientific.net/AMR.750-752.123",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "Effect of functionalized multi-walled carbon nanotubes (MWCNT) on the interfacial properties of ramie fiber/polylactic acid (PLA) matrix was studied. Ramie fibers were respectively covered by the pristine MWCNT, carboxyl functionalized MWCNT and hydroxide functionalized MWCNT through the simple dip coating method. Scanning electron microscopy (SEM) results showed that all kinds of MWCNT were distributed on the fiber surface at random with some aggregations. Compared to the pristine MWCNT coated fibers with a water contact angle of 84.5 degree, the functionalized MWCNT coating made the fiber surface more hydrophobic. Polarization microscopy indicated that the functional MWCNT could provide the nucleation to form the intact crystalline structure of PLA on the fiber surface. Micro-bond tests showed that the coating of MWCNT on the fiber surface had no significant effect on the interfacial shear strength (IFSS)."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85192688170",
+    "eid": "2-s2.0-85192688170",
+    "dc:title": "Biodegradation Behavior and Life Cycle Assessment of PLA/PHBV/Carbonaceous Materials Hybrid Nanocomposites for Antimicrobial Multifunctional Packaging",
+    "dc:creator": "dos Anjos E.G.R.",
+    "prism:publicationName": "Journal of Polymers and the Environment",
+    "prism:coverDate": "2024-10-01",
+    "prism:doi": "10.1007/s10924-024-03286-6",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85151241317",
+    "eid": "2-s2.0-85151241317",
+    "dc:title": "Effect of process parameter on tensile properties of FDM printed PLA",
+    "dc:creator": "Sandanamsamy L.",
+    "prism:publicationName": "Materials Today Proceedings",
+    "prism:coverDate": "2023-01-01",
+    "prism:doi": "10.1016/j.matpr.2023.03.217",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85116522053",
+    "eid": "2-s2.0-85116522053",
+    "dc:title": "Development of multiwalled carbon nanotube-reinforced biodegradable polylactic acid/polybutylene succinate blend membrane",
+    "dc:creator": "Alruwaili B.M.",
+    "prism:publicationName": "Membranes",
+    "prism:coverDate": "2021-10-01",
+    "prism:doi": "10.3390/membranes11100760",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "Currently, gas separation (GS) membranes are produced from petrochemical-based polymers, but their lifespan is severely impacting the environment. Therefore, there has recently been growing interest in developing ecofriendly biodegradable polymer-based GS membranes. This study developed a polylactic acid (PLA)/polybutylene succinate (PBS) blend composite membrane for GS using the dry/wet phase inversion technique. The influence of the multiwalled carbon nanotube (MWCNT) concentration in the PLA/PBS blend was studied by investigating tensile properties, porosity, percentage crystallinity, contact angle, and gas permeance.The obtained results demonstrate that the addition of MWCNT enhances the tensile strength, porosity, and percentage crystallinity, whereas it decreases the contact angle. The pure gas permeation was investigated at pressures of 2–4 bar at 25 °C. The gas permeation study revealed that the PLA/PBS blend with 0.5% wt. MWCNT enhanced the gas permeance and selectivity at 4 bar. The gas permeance acquired at 25 °C and 4 bar for PLA/PBS reinforced with MWCNT was highest in hydrogen followed by carbon dioxide, argon, and nitrogen. Additionally, a study of the membrane morphology illustrated the uniform dispersion of MWCNT in the PLA/PBS blend. The investigation concluded that membranes containing MWCNT are capable of separating gases at the molecular level, thereby reducing energy consumption."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85015077238",
+    "eid": "2-s2.0-85015077238",
+    "dc:title": "Antibacterial property and cytotoxicity of a poly(lactic acid)/nanosilver-doped multiwall carbon nanotube nanocomposite",
+    "dc:creator": "Tsou C.H.",
+    "prism:publicationName": "Polymers",
+    "prism:coverDate": "2017-01-01",
+    "prism:doi": "10.3390/polym9030100",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "A novel method was used to synthesize a nanosilver-doped multiwall carbon nanotube (MWCNT-Ag), and subsequently, the novel poly(lactic acid) (PLA)- and MWCNT-Ag-based biocompatible and antimicrobial nanocomposites were prepared by melt blending. Based on energy dispersive X-ray spectrometry images, an MWCNT-Ag was successfully synthesized. The effect of the MWCNT-Ag on the PLA bionanocomposites was investigated by evaluating their thermal and mechanical properties, antifungal activity, and cytotoxicity. The nanocomposites exhibited a high degree of biocompatibility with the MWCNT-Ag content, which was less than 0.3 phr. Furthermore, tensile strength testing, thermogravimetric analysis, differential scanning calorimetry, and antibacterial evaluation revealed that the tensile strength, thermostability, glass transition temperature, and antibacterial properties were enhanced by increasing the MWCNT-Ag content. Finally, hydrolysis analysis indicated that the low MWCNT-Ag content could increase the packing density of PLA."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84884809276",
+    "eid": "2-s2.0-84884809276",
+    "dc:title": "The effect of natural rubber toughening on mechanical properties of poly(lactic acid)/ multiwalled carbon nanotube nanocomposite",
+    "dc:creator": "Mat Desa M.",
+    "prism:publicationName": "Advanced Materials Research",
+    "prism:coverDate": "2013-10-04",
+    "prism:doi": "10.4028/www.scientific.net/AMR.747.639",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "nvestigation was done on the use of natural rubber (NR) as impact modifier in polylactic acid (PLA) nanocomposite containing carboxylic functionalized multiwalled carbon nanotubes (MWCNT) as nanofillers. NR toughened PLA nancomposite consisting of 1 phr MWCNT and NR contents varies from 5 to 20 wt% were prepared by direct melt blending in a counter-rotating twin-screw extruder followed by injection moulding into test specimens for mechanical properties analysis. The tensile, flexural and impact test analysis were carried out to investigate the mechanical properties of PLA/NR/MWCNT nanocomposites at different loading of NR. As comparison, pure PLA, PLA/NR with 5 wt% NR and PLA/MWCNT with 1 phr nanotubes were also prepared with similar method. Results indicated that introduction of NR into PLA/MWCNT contributed to significant improvement in impact strength and ductility of the nanocomposite. Moreover, the deterioration effect of nancomposites stiffness, mechanical and flexural strength due to the introduction of NR was minimized with the presence of MWCNT in the nanocomposite system."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85027301538",
+    "eid": "2-s2.0-85027301538",
+    "dc:title": "Chemically Functionalized Plant Fibers and Carbon Nanotubes for High Compatibility and Reinforcement in Polylactic Acid (PLA) Composite",
+    "dc:creator": "Chen P.Y.",
+    "prism:publicationName": "Journal of Polymers and the Environment",
+    "prism:coverDate": "2018-05-01",
+    "prism:doi": "10.1007/s10924-017-1092-4",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85068219620",
+    "eid": "2-s2.0-85068219620",
+    "dc:title": "Exploring thermal annealing and graphene-carbon nanotube additives to enhance crystallinity, thermal, electrical and tensile properties of aged poly(lactic) acid-based filament for 3D printing",
+    "dc:creator": "Kotsilkova R.",
+    "prism:publicationName": "Composites Science and Technology",
+    "prism:coverDate": "2019-09-08",
+    "prism:doi": "10.1016/j.compscitech.2019.107712",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "2",
+    "openaccessFlag": false,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85099917784",
+    "eid": "2-s2.0-85099917784",
+    "dc:title": "The effect of nanoparticles shape on the mechanical properties of poly lactic acid matrix",
+    "dc:creator": "Daneshpayeh S.",
+    "prism:publicationName": "Journal of Elastomers and Plastics",
+    "prism:coverDate": "2021-10-01",
+    "prism:doi": "10.1177/0095244320988168",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "In this research, mechanical properties of poly lactic acid (PLA)-based nanocomposites were investigated. The nanocomposites were fabricated by adding of three types of nano-materials including multi-walled carbon nanotubes (MWCNT), carbon black (CB) nanoparticles and graphene nano-platelets (GnPs) in four levels from 0 to 3 wt.% to PLA matrix by an internal mixer. Tensile and impact tests were performed to obtain the mechanical properties of nanocomposites. Moreover, field-emission scanning electron microscopy (FESEM) was used to observe the state of nano-fillers dispersion. The FESEM images showed that CB nanoparticles and MWCNT are well distributed in the matrix, but that GnPs are agglomerated. The results of the tensile tests showed that the addition of MWCNT and CB nanoparticles increased the tensile strength by 36% and 76% and the elastic modulus by 10% and 68%, respectively. Also, the presence of all three types of carbon fillers at low loading increased the elongation at break of PLA matrix, and this increase was more significant for GnPs by 55% in the 1 wt.% loading. Finally, the PLA polymer become more brittle with the addition of nanotubes and nano-platelets, and its impact strength was reduced. While, the CB nanoparticles increased the absorbing energy and impact strength."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85025446105",
+    "eid": "2-s2.0-85025446105",
+    "dc:title": "Synthesis and properties of carbon nanotube-grafted silica nanoarchitecture-reinforced poly(lactic acid)",
+    "dc:creator": "Hsu Y.W.",
+    "prism:publicationName": "Materials",
+    "prism:coverDate": "2017-07-19",
+    "prism:doi": "10.3390/ma10070829",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "A novel nanoarchitecture-reinforced poly(lactic acid) (PLA) nanocomposite was prepared using multi-walled carbon nanotube (MWCNT)-grafted silica nanohybrids as reinforcements. MWCNT-grafted silica nanohybrids were synthesized by the generation of silica nanoparticles on the MWCNT surface through the sol-gel technique. This synthetic method involves organo-modified MWCNTs that are dispersed in tetrahydrofuran, which incorporates tetraethoxysilane that undergoes an ultrasonic sol-gel process. Gelation yielded highly dispersed silica on the organo-modified MWCNTs. The structure and properties of the nanohybrids were established using 29Si nuclear magnetic resonance, Raman spectroscopy, wide-angle X-ray diffraction, thermogravimetric analysis, and transmission electron microscopy. The resulting MWCNT nanoarchitectures were covalently assembled into silica nanoparticles, which exhibited specific and controllable morphologies and were used to reinforce biodegradable PLA. The tensile strength and the heat deflection temperature (HDT) of the PLA/MWCNT-grafted silica nanocomposites increased when the MWCNT-grafted silica was applied to the PLA matrix; by contrast, the surface resistivity of the PLA/MWCNT-grafted silica nanocomposites appeared to decline as the amount of MWCNT-grafted silica in the PLA matrix increased. Overall, the reinforcement of PLA using MWCNT-grafted silica nanoarchitectures was efficient and improved its mechanical properties, heat resistance, and electrical resistivity."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85189958898",
+    "eid": "2-s2.0-85189958898",
+    "dc:title": "The role of multi-walled carbon nanotubes in enhancing the hydrolysis and thermal stability of PLA",
+    "dc:creator": "Diaz Varela J.Y.",
+    "prism:publicationName": "Scientific Reports",
+    "prism:coverDate": "2024-12-01",
+    "prism:doi": "10.1038/s41598-024-58755-8",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "Abstract  Polylactic acid (PLA) is a bioresorbable and biodegradable polymer extensively used in various biomedical and engineering applications. In this study, we investigated the mass loss and thermal properties of PLA-multi-walled carbon nanotube (MWCNT) composites under simulated physiological conditions. The composites were prepared by melting PLA with 0.1, 0.5, 1.0, and 5.0 wt% MWCNTs using an ultrasonic agitator, and FTIR analysis confirmed composite formation. Subsequently, the composites were subjected to hydrolysis under simulated physiological conditions (pH 7.4 and 37 °C) for up to 60 days. The results revealed that the mass loss of the composites decreased with increasing MWCNT content, suggesting that the presence of MWCNTs decelerated the hydrolysis process. On day 58, the mass loss of pure PLA was 12.5%, decreasing to 8.34% with 0.1% MWCNT, 5.94% with 0.5% MWCNT, 4.59% with 1% MWCNT, and 3.54% with 5.0% MWCNT. This study offers valuable insights into the behavior of PLA-MWCNT composites under physiologically simulated conditions, facilitating the development of new polymer composites with enhanced thermal stability and degradation resistance for biomedical applications."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85127821043",
+    "eid": "2-s2.0-85127821043",
+    "dc:title": "Enhanced thermal and tensile behaviour of MWCNT reinforced palm oil polyol based shape memory polyurethane",
+    "dc:creator": "Yusrizal A.A.",
+    "prism:publicationName": "Arabian Journal of Chemistry",
+    "prism:coverDate": "2022-07-01",
+    "prism:doi": "10.1016/j.arabjc.2022.103860",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85104795956",
+    "eid": "2-s2.0-85104795956",
+    "dc:title": "The effects of multi-walled carbon nanotube additives with different functionalities on the properties of polycarbonate/poly (lactic acid) blend",
+    "dc:creator": "Urtekin G.",
+    "prism:publicationName": "Journal of Polymer Research",
+    "prism:coverDate": "2021-05-01",
+    "prism:doi": "10.1007/s10965-021-02539-5",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85186473833",
+    "eid": "2-s2.0-85186473833",
+    "dc:title": "Tensile and flexural properties of PLA/Fe3O4 composite prepared with a novel powder delivery method and fused filament fabrication",
+    "dc:creator": "Pratama J.",
+    "prism:publicationName": "Progress in Additive Manufacturing",
+    "prism:coverDate": "2024-12-01",
+    "prism:doi": "10.1007/s40964-024-00571-7",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105003167894",
+    "eid": "2-s2.0-105003167894",
+    "dc:title": "Additive manufacturing MWCNT/ABS composites for hybrid rockets: Synergistic enhancement of regression rate and tensile strength",
+    "dc:creator": "Yu X.",
+    "prism:publicationName": "Fuel",
+    "prism:coverDate": "2025-10-01",
+    "prism:doi": "10.1016/j.fuel.2025.135462",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85063409527",
+    "eid": "2-s2.0-85063409527",
+    "dc:title": "Conductive nonwoven carbon nanotube-PLA composite nanofibers towards wound sensors via solution blow spinning",
+    "dc:creator": "Miller C.L.",
+    "prism:publicationName": "IEEE Transactions on Nanobioscience",
+    "prism:coverDate": "2019-04-01",
+    "prism:doi": "10.1109/TNB.2019.2905507",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85057804323",
+    "eid": "2-s2.0-85057804323",
+    "dc:title": "Research on the application of MWCNTs/PLA composite material in the manufacturing of conductive composite products in 3D printing",
+    "dc:creator": "Luo J.",
+    "prism:publicationName": "Micromachines",
+    "prism:coverDate": "2018-11-30",
+    "prism:doi": "10.3390/mi9120635",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "As an advanced manufacturing technology that has been developed in recent years, three-dimensional (3D) printing of macromolecular materials can create complex-shaped components that cannot be realized by traditional processing. However, only a few types of macromolecular materials are suitable for 3D printing: the structure must have a single function, and manufacturing macromolecular functional devices is difficult. In this study, using poly lactic acid (PLA) as a matrix, conductive composites were prepared by adding various contents of multi-walled carbon nanotubes (MWCNTs). The printability and properties of MWCNT/PLA composites with different MWCNT proportions were studied by using the fused deposition modeling (FDM) processing technology of 3D printing. The experimental results showed that high conductivity can be realized in 3D-printed products with a composite material containing 5% MWCNTs; its conductivity was 0.4 ± 0.2 S/cm, its tensile strength was 78.4 ± 12.4 MPa, and its elongation at break was 94.4% ± 14.3%. It had a good melt flow rate and thermal properties, and it enabled smooth printing, thus meeting all the requirements for the 3D printing of consumables."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85103920330",
+    "eid": "2-s2.0-85103920330",
+    "dc:title": "Modification of polylactide nonwovens with carbon nanotubes and ladder poly(silsesquioxane)",
+    "dc:creator": "Svyntkivska M.",
+    "prism:publicationName": "Molecules",
+    "prism:coverDate": "2021-01-01",
+    "prism:doi": "10.3390/molecules26051353",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "Electrospun nonwovens of poly(L-lactide) (PLLA) modified with multiwall carbon nanotubes (MWCNT) and linear ladder-like poly(silsesquioxane) with methoxycarbonyl side groups (LPSQ-COOMe) were obtained. MWCNT and LPSQ-COOMe were added to the polymer solution before the electrospinning. In addition, nonwovens of PLLA grafted to modified MWCNT were electrospun. All modified nonwovens exhibited higher tensile strength than the neat PLA nonwoven. The addition of 10 wt.% of LPSQ-COOMe and 0.1 wt.% of MWCNT to PLLA increased the tensile strength of the nonwovens 2.4 times, improving also the elongation at the maximum stress."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85177583706",
+    "eid": "2-s2.0-85177583706",
+    "dc:title": "Renewable PLA/PHBV Blend-Based Graphene Nanoplatelets and Carbon Nanotube Hybrid Nanocomposites for Electromagnetic and Electric-Related Applications",
+    "dc:creator": "dos Anjos E.G.R.",
+    "prism:publicationName": "ACS Applied Electronic Materials",
+    "prism:coverDate": "2023-11-28",
+    "prism:doi": "10.1021/acsaelm.3c01099",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84877855182",
+    "eid": "2-s2.0-84877855182",
+    "dc:title": "Effect of processing parameter and filler content on tensile properties of multi-walled carbon nanotubes reinforced polylactic acid nanocomposite",
+    "dc:creator": "Ali A.M.",
+    "prism:publicationName": "Aip Conference Proceedings",
+    "prism:coverDate": "2013-05-22",
+    "prism:doi": "10.1063/1.4803604",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfree2read"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Bronze"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85123418255",
+    "eid": "2-s2.0-85123418255",
+    "dc:title": "Experimental investigation on mechanical properties of nanocomposites based on poly lactic acid/ polyolefin elastomer reinforced with multi-walled carbon nanotubes, and graphene nanoplatelets",
+    "dc:creator": "Daneshpayeh S.",
+    "prism:publicationName": "Polymers and Polymer Composites",
+    "prism:coverDate": "2022-01-21",
+    "prism:doi": "10.1177/09673911211060943",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "The mechanical properties of nanocomposites based on poly lactic acid/polyolefin elastomer (PLA/POE) were investigated. The compounds were made using an internal mixer. POE in two levels at 10–20 wt.% and nano fillers, including multi-walled carbon nanotubes (MWCNT) and graphene nano-platelets (GnPs) in 1, 2, and 3 wt.% levels, were added to the PLA. Impact and tensile tests were conducted to extract the impact and tensile properties, respectively. The dispersion quality of the fillers was also studied by using field-emission scanning electron microscopy (FESEM) images. The FESEM images demonstrated that the MWCNT at all levels were well distributed in different orientations, while the GnPs accumulated into the PLA/POE matrix. The simultaneous presence of nano fillers was dispersed with high quality in the matrix only in low loading. The tensile test results showed that by increasing the nano fillers individually and in a hybrid form in the presence of different loadings of POE, Young’s modulus and T-strength were improved, but impact strength and deformation at break were decreased. The addition of the POE to the PLA matrix significantly increased the impact strength and deformation at break by 128% and 75%, respectively, and the presence of POE reduced Young’s modulus and T-strength of the PLA matrix."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85033551938",
+    "eid": "2-s2.0-85033551938",
+    "dc:title": "Influence of TiO2 Nanoparticles on the Crystallization Behaviour and Tensile Properties of Biodegradable PLA and PCL Nanocomposites",
+    "dc:creator": "Luyt A.S.",
+    "prism:publicationName": "Journal of Polymers and the Environment",
+    "prism:coverDate": "2018-06-01",
+    "prism:doi": "10.1007/s10924-017-1142-y",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85139245943",
+    "eid": "2-s2.0-85139245943",
+    "dc:title": "Electrical conductivity and tensile properties of carbon nanotube reinforced styrene-ethylene-butylene-styrene thermoplastic elastomer nanocomposites",
+    "dc:creator": "Zhu P.",
+    "prism:publicationName": "Journal of Thermoplastic Composite Materials",
+    "prism:coverDate": "2023-09-01",
+    "prism:doi": "10.1177/08927057221131228",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "In this study, nanocomposites based on styrene-ethylene-butylene-styrene (SEBS) thermoplastic elastomer (TPE) filled with multiwall carbon nanotubes (MWCNT) were produced using twin-screw extrusion. Two types of pre-mixing methods were applied to assess the dispersion-ability of the MWCNT. In Method A, the SEBS, MWCNT, and paraffinic process oil were mixed together in one step and fed simultaneously into the hopper for melt extrusion. In Method B, the MWCNT were first mixed with paraffinic process oil before being added to SEBS. The dispersion of MWCNT in SEBS TPE was characterized by transmission electron microscopy. The effects of the MWCNT on the electrical resistivity and tensile properties of the SEBS TPE were determined. A balance of tensile properties and electrical properties can be achieved by adding 3 wt% MWCNT into SEBS TPE, especially using Method B. Pre-mixing of MWCNT with paraffinic process oil promotes better dispersibility, higher electrical conductivity, and better tensile properties."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84871611994",
+    "eid": "2-s2.0-84871611994",
+    "dc:title": "Effect of multi-walled carbon nanotube dispersion on the electrical and rheological properties of poly(propylene carbonate)/poly(lactic acid)/multi-walled carbon nanotube composites",
+    "dc:creator": "Park D.",
+    "prism:publicationName": "Journal of Materials Science",
+    "prism:coverDate": "2013-01-01",
+    "prism:doi": "10.1007/s10853-012-6762-y",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85054828145",
+    "eid": "2-s2.0-85054828145",
+    "dc:title": "Selective Localization of MWCNT in Poly (Trimethylene Terephthalate)/Poly Ethylene Blends: Theoretical Analysis, Morphology, and Mechanical Properties",
+    "dc:creator": "Aswathi M.K.",
+    "prism:publicationName": "Macromolecular Symposia",
+    "prism:coverDate": "2018-10-01",
+    "prism:doi": "10.1002/masy.201800104",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "Theoretical analysis is carried out to predict the nature of selective localization of multi‐walled carbon nanotubes (MWCNTs) in poly(trimethylene terephthalate/polyethylene (PTT/PE) blends. In agreement with theoretical data experimental results clearly indicate that MWCNT prefers to get associated with PTT phase than with PE. Molecular interactions responsible for such selective localization of MWCNT to PTT component can be attributed to mutual and collective π–π interactions possible between the aromatic moieties present in PTT and MWCNT. In addition, the reinforcing effect of MWCNT in the PTT/PE system was determined using tensile analysis and the morphological features of blends and blend nanocomposites are studied using scanning electron microscope (SEM). Compared to the PTT/PE blend system MWCNT incorporated blend nanocomposites show better mechanical properties. The elongation at break of the blend system is seen to rise with increasing amount of PE content. Among various blend nanocomposites, we have investigated the nanocomposites with higher PTT content show higher tensile strength and Young's modulus. The blend nanocomposite with 90/10/1 composition shows 12% increment in Young's modulus and as much as 80% increment in tensile strength compared to 90/10 blend system which signifies the role MWCNT plays in the blend system."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84992712519",
+    "eid": "2-s2.0-84992712519",
+    "dc:title": "Effect of multi walled carbon nanotubes on thermal conductivity of polylactic acid nanocomposite",
+    "dc:creator": "Ali A.M.",
+    "prism:publicationName": "Malaysian Journal of Analytical Sciences",
+    "prism:coverDate": "2016-01-01",
+    "prism:doi": "10.17576/mjas-2016-2005-13",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85117697611",
+    "eid": "2-s2.0-85117697611",
+    "dc:title": "Properties of polylactide reinforced with montmorillonite/multiwalled carbon nanotube hybrid",
+    "dc:creator": "Sanusi O.M.",
+    "prism:publicationName": "Materials Today Proceedings",
+    "prism:coverDate": "2021-01-01",
+    "prism:doi": "10.1016/j.matpr.2021.06.448",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfree2read"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Bronze"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85078238530",
+    "eid": "2-s2.0-85078238530",
+    "dc:title": "Experimental and modeling stress concentration factor (SCF) of a tension poly lactic acid (PLA) plate with two circular holes",
+    "dc:creator": "Mohan A.E.",
+    "prism:publicationName": "Periodicals of Engineering and Natural Sciences",
+    "prism:coverDate": "2019-01-01",
+    "prism:doi": "10.21533/pen.v7i4.916",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105030034540",
+    "eid": "2-s2.0-105030034540",
+    "dc:title": "Development of a Hybrid 3D Printing and Ultrasonication-Assisted Casting Route for AA2024-MWCNT Nanocomposite Heat Sinks",
+    "dc:creator": "Amith S.C.",
+    "prism:publicationName": "International Journal of Metalcasting",
+    "prism:coverDate": "2026-01-01",
+    "prism:doi": "10.1007/s40962-026-01884-9",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85149029173",
+    "eid": "2-s2.0-85149029173",
+    "dc:title": "Multilayered Composites with Carbon Nanotubes for Electromagnetic Shielding Application",
+    "dc:creator": "Bertašius P.",
+    "prism:publicationName": "Polymers",
+    "prism:coverDate": "2023-02-01",
+    "prism:doi": "10.3390/polym15041053",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "Bulk polylactic acid (PLA)/multiwall carbon nanotube (MWCNT) composites were prepared and investigated in wide frequency ranges (20 Hz–1 MHz and 24–40 GHz). It was determined that the percolation threshold in bulk PLA/MWCNT composites is close to 0.2 vol.% MWCNT. However, the best microwave dielectric properties and absorption were observed in composites with 3.0–5.0 vol.% MWCNT. Therefore, for future investigations, we selected layered (laminate) polymeric structures with gradual changes in MWCNT concentration from 0.2 to 8.0 vol.% MWCNT. Two approaches to laminate structure designs were examined and compared: a five-layer composite and a nine-layer composite that included four pure PLA middle layers. The addition of MWCNT enhanced the elastic modulus by up to 1.4-fold and tensile strength by up to 1.2-fold, with the best performance achieved at 5.0 vol.% loading. High microwave shielding was observed for these layered PLA/MWCNT structures with a gradient change in MWCNT concentration (up to 26 dB in both transmission and absorption coefficients) in the broad frequency range (from 24 to 40 GHz). Obtained structures are highly anisotropic, and the absorption coefficient is 2–5 dB higher in the direction of MWCNT concentration increase; however, the transmission coefficient is the same in both directions. The properties of microwave absorption are mainly unaffected by the additional polymeric layers. The absorption of the layered structure is greater than the absorption of single-layer composites with an optimal MWCNT concentration of the same thickness. The proposed laminate structure design is promising in the field of efficient electromagnetic shielding."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85200967666",
+    "eid": "2-s2.0-85200967666",
+    "dc:title": "Investigation of thermodynamically induced nanoparticle localization in Poly(vinylidene fluoride)/Poly(lactic acid) blends with surface-grafted carbon nanotubes",
+    "dc:creator": "Li Y.",
+    "prism:publicationName": "Surfaces and Interfaces",
+    "prism:coverDate": "2024-09-01",
+    "prism:doi": "10.1016/j.surfin.2024.104908",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84875901675",
+    "eid": "2-s2.0-84875901675",
+    "dc:title": "Photo-oxidative stabilization of carbon nanotubes on polylactic acid",
+    "dc:creator": "Gorrasi G.",
+    "prism:publicationName": "Polymer Degradation and Stability",
+    "prism:coverDate": "2013-05-01",
+    "prism:doi": "10.1016/j.polymdegradstab.2013.02.012",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105001199590",
+    "eid": "2-s2.0-105001199590",
+    "dc:title": "Comparison of the Performance of Groundnut Shell-Based Carbon-Reinforced PLA Composites, Fabricated using Injection Molding and Pellet 3D Printing",
+    "dc:creator": "Radhika M.",
+    "prism:publicationName": "Archives of Metallurgy and Materials",
+    "prism:coverDate": "2025-01-01",
+    "prism:doi": "10.24425/amm.2025.152526",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "This study intended to investigate the impact of two distinct shaping methods, Injection molding and pellet additive manufacturing, on tensile and thermal properties of PLA based materials. It included comparisons of neat PLA and PLA reinforced with carbon nanoparticles derived from groundnut shells (GNSC) via pyrolysis at 800°C. These nanoparticles were characterized using FTIR, XRD, FESEM, and EDX analyses to assess their carbon content, morphology, and structure. The synthesized carbon was used as a reinforcement filler in the PLA matrix and biobased polymer nanocomposites were prepared by pellet 3D printing and injection molding. The mechanical and thermal characteristics of PLA/GNSC composite specimens with 0.25, 0.5, and 0.75 wt% of GNSC nanoparticles were compared. Reinforcing PLA with GNSC nanoparticles improved tensile properties in both shaping techniques. The PLA/GNSC_0.5 exhibited the greatest tensile strength, measuring 58.61 MPa for injection molded samples and 53.05 MPa for 3D printed samples, representing a 50% enhancement compared with neat PLA. The tensile modulus was also highest for PLA/GNSC_0.5, measuring 1.24 GPa for injection molded samples and 1.21 GPa for 3D printed samples, representing an improvement of 14% compared with neat PLA. The tensile characteristics showed a modest increase in tensile strength (9-13%) and a slight improvement in tensile modulus (2-3%) for injection molded samples compared to 3D printed samples. The thermal properties showed no substantial variation between the two shaping methods. These findings highlight the effectiveness of GNSC nanoparticles in enhancing the mechanical and thermal performance of PLA composites, regardless of the shaping technique."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84855795912",
+    "eid": "2-s2.0-84855795912",
+    "dc:title": "The effect of sonication time and dispersing medium on the mechanical properties of multiwalled carbon nanotube (MWCNT)/epoxy composite",
+    "dc:creator": "Montazeri A.",
+    "prism:publicationName": "International Journal of Polymer Analysis and Characterization",
+    "prism:coverDate": "2011-12-01",
+    "prism:doi": "10.1080/1023666X.2011.600517",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/36249019283",
+    "eid": "2-s2.0-36249019283",
+    "dc:title": "Solid and microcellular polylactide-carbon nanotube nanocomposites",
+    "dc:creator": "Pilla S.",
+    "prism:publicationName": "International Polymer Processing",
+    "prism:coverDate": "2007-11-01",
+    "prism:doi": "10.3139/217.2071",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "Abstract \n                   In this study, polylactide (PLA)-multi-walled carbon nanotube (MWCNT) nanocomposites were melt-compounded using a twin-screw extruder. Solid and microcellular tensile bar specimens were produced via conventional and microcellular injection molding, respectively. Various characterization techniques were applied to study the static and dynamic mechanical properties, degree of MWCNT dispersion, cell morphology, and crystallization behavior. The addition of a small amount of MWCNTs led to a decrease in the cell size and an increase in the cell density of the microcellular PLA specimens. A transmission electron microscopy analysis of the PLA-MWCNT specimens revealed a higher degree of MWCNT dispersion in the microcellular PLA-MWCNT composite compared with its solid counterpart, indicating that the microcellular injection molding process further dispersed the MWCNTs. For both solid and microcellular specimens, the addition of 1.5 wt% MWCNTs reduced the specific strength, specific toughness and strain-at-break while exerting less impact on the specific modulus. The storage modulus was not affected significantly with the addition of MWCNTs, but was found to be higher for the microcellular specimens compared with their solid counterparts. Finally, the crystallinity of PLA increased with the addition of MWCNTs."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85034589880",
+    "eid": "2-s2.0-85034589880",
+    "dc:title": "Unmodified multi-wall carbon nanotubes in polylactic acid for electrically conductive injection-moulded composites",
+    "dc:creator": "Rivière P.",
+    "prism:publicationName": "Journal of Thermoplastic Composite Materials",
+    "prism:coverDate": "2017-12-01",
+    "prism:doi": "10.1177/0892705716649651",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "Tailoring the properties of natural polymers such as electrical conductivity is vital to widen the range of future applications. In this article, the potential of electrically conducting multi-wall carbon nanotube (MWCNT)/polylactic acid (PLA) composites produced by industrially viable melt mixing is assessed simultaneously to MWCNT influence on the composite’s mechanical strength and polymer crystallinity. Atomic force microscopy observations showed that melt mixing achieved an effective distribution and individualization of unmodified nanotubes within the polymer matrix. However, as a trade-off of the poor tube/matrix adhesion, the tensile strength was lowered. With 10 wt% MWCNT loading, the tensile strength was 26% lower than for neat PLA. Differential scanning calorimetric measurements indicated that polymer crystallization after injection moulding was nearly unaffected by the presence of nanotubes and remained at 15%. The resulting composites became conductive below 5 wt% loading and reached conductivities of 51 S m −1  at 10 wt%, which is comparable with conductivities reported for similar nanocomposites obtained at lab scale."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85208051763",
+    "eid": "2-s2.0-85208051763",
+    "dc:title": "Microstructure-mechanical property relationships of polymer nanocomposite reinforced with lyophilized montmorillonite/carbon nanotubes hybrid particles",
+    "dc:creator": "Benelfellah A.",
+    "prism:publicationName": "Journal of Polymer Engineering",
+    "prism:coverDate": "2024-11-01",
+    "prism:doi": "10.1515/polyeng-2024-0077",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "Abstract \n                Introducing multi-walled carbon nanotubes (MWCNT) and montmorillonite (MMT) simultaneously into a polymer can significantly enhance its properties. Meanwhile, choosing the best technique to homogeneously disperse these nanohybrid particles in polymers, without agglomerates, is still a challenge. In this study, a hybrid MMT/MWCNT, prepared by lyophilization process, is introduced in polylactide (PLA). Morphology of the resulting nanocomposites displays synergistic relationships of the MMT/MWCNT, facilitating dispersion in PLA. The analysis of transmission electron microscopy (TEM) specific particle densities of PLA0.5hyb, PLA1.0hyb, and PLA2.0hyb shows values of 77, 64, and 35 µm⁻ 2 , respectively. This suggests that MMT platelets are significantly more exfoliated in PLA0.5hyb compared to the other nanocomposites. It also indicates that filler aggregation increases as the MMT/MWCNT concentration increases. Compared to neat PLA, elastic modulus of nanocomposites increased by up to 46 %, demonstrating the reinforcing effect of MMT/MWCNT hybrid nanofillers. The nanocomposites exhibit viscosity, plasticity and damage phenomena, which are significantly decreased because of the MMT/MWCNT incorporation, compared to neat PLA. Furthermore, the viscoelastic properties, analyzed by dynamic thermal-mechanical analysis, record about 27 % increase in the storage modulus of the nanocomposites compared to PLA, indicating the effectiveness of the hybrid MMT/MWCNT in increasing the resistance of PLA/MMT/MWCNT nanocomposite against thermomechanical aggression."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85055668967",
+    "eid": "2-s2.0-85055668967",
+    "dc:title": "Evaluation of mechanical properties of magnetite/PLA nanofibers",
+    "dc:creator": "Tanaka K.",
+    "prism:publicationName": "Zairyo Journal of the Society of Materials Science Japan",
+    "prism:coverDate": "2018-10-01",
+    "prism:doi": "10.2472/jsms.67.917",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85211057390",
+    "eid": "2-s2.0-85211057390",
+    "dc:title": "Optimizing polylactic acid composites: Role of sodium lignosulfonate-modified carbon nanotubes in mechanical and interfacial performance",
+    "dc:creator": "Meng F.",
+    "prism:publicationName": "International Journal of Biological Macromolecules",
+    "prism:coverDate": "2025-01-01",
+    "prism:doi": "10.1016/j.ijbiomac.2024.138220",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85124130040",
+    "eid": "2-s2.0-85124130040",
+    "dc:title": "Implications of MWCNT reinforcement on the morphology, mechanical and thermal properties of poly-(trimethylene terephthalate)/ polyethylene blend nanocomposites",
+    "dc:creator": "Madathinal Kunjappan A.",
+    "prism:publicationName": "Polymer Plastics Technology and Materials",
+    "prism:coverDate": "2022-01-01",
+    "prism:doi": "10.1080/25740881.2022.2029893",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85138357361",
+    "eid": "2-s2.0-85138357361",
+    "dc:title": "Thermal Conductivity and Mechanical Characterization of Bamboo Fiber and Rice Husk/MWCNT Filler Epoxy Hybrid Composite",
+    "dc:creator": "Ramu S.",
+    "prism:publicationName": "Journal of Nanomaterials",
+    "prism:coverDate": "2022-01-01",
+    "prism:doi": "10.1155/2022/5343461",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherhybridgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Hybrid Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "Recent trends utilizing recycled materials from around the world aim to improve a wide range of industrial and domestic applications. The natural fiber/filler matrix is used to evaluate the mechanical qualities of the hybrid nanocomposites. The specific concentration is dealing with a bidirectional bamboo fiber mat/rice husk particle/MWCNT blend with epoxy composite. The experimental work plan to execute with the three different proportional composites was as follows: bamboo fiber mat constant loading for all the specimens, but the filler particle ratio will be varied, prominently rice husk particle concentrated for all the three specimens: 5%, 10%, and 15%, and additionally, MWCNT drawn two specific specimens (2 and 3): 0.5% and 1% based on the fiber/filler concentration balanced the epoxy resin. The research presented here is hybrid nanocomposite experimented with thermal, mechanical, and morphological characterization. Thermal conductivity measured by Lee’s disc method is observed at 0.2577 W/mK for specimen 3. The tensile and flexural properties are higher for 0.5% MWCNT concentration (specimen 2): 42.66 MPa and 54.72 MPa, respectively. The maximum impact strength is reached at 1% MWCNT concentration (specimen 3). Bamboo fiber and rice husk filler matrix composite (specimen 1) reached extremities shore‐ D  hardness 84. Scanning electron microscopy was performed to examine the morphological characteristics of the tensile fractography specimen and analyzed the dispersion of the fiber/filler matrix adhesion of the surface. The bamboo fiber mat/rice husk/MWCNT (specimen 3) filler had better binding and observed fewer fiber pull‐out, fiber fracture, fiber extension, and voids. In the graphic comparison, 0.5% MWCNT achieved more mechanical properties than the other two combinations."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84907522658",
+    "eid": "2-s2.0-84907522658",
+    "dc:title": "Functionalized multi-walled carbon nanotube for improving the flame retardancy of ramie/poly(lactic acid) composite",
+    "dc:creator": "Yu T.",
+    "prism:publicationName": "Composites Science and Technology",
+    "prism:coverDate": "2014-11-01",
+    "prism:doi": "10.1016/j.compscitech.2014.08.021",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105012874808",
+    "eid": "2-s2.0-105012874808",
+    "dc:title": "Assessment of hybrid nanocomposite AFOs for pediatric cerebral palsy: mechanical, spectroscopic, and finite element analysis",
+    "dc:creator": "Abdelgawad N.",
+    "prism:publicationName": "Scientific Reports",
+    "prism:coverDate": "2025-12-01",
+    "prism:doi": "10.1038/s41598-025-13344-1",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "Abstract \n           Cerebral Palsy (CP) is a neurological disorder that affects motor function and causes gait abnormalities in children. Ankle–Foot Orthoses (AFOs) are external aiding devices that provide stability and improve mobility for pediatrics. However, conventional AFO materials often fail to achieve an optimal balance of strength, flexibility, and energy absorption for dynamic movements. This study introduces a novel composite material for pediatric ankle–foot orthoses (AFOs), based on Orthocryl and reinforced with multi-walled carbon nanotubes (MWCNTs) and polylactic acid (PLA). The proposed formulation is engineered to overcome the limitations of conventional materials by providing enhanced mechanical performance and improved functional suitability for clinical applications. Four composite concentrations were fabricated: pure Orthocryl, 0.5% MWCNTs, 0.5% MWCNTs/1.0% PLA, and 0.5% MWCNTs/1.5% PLA. Mechanical and morphological characterizations were performed using a universal testing machine for tensile, flexural, and impact testing, Fourier Transform Infrared Spectroscopy (FT-IR) for material composition analysis, and Field Emission Scanning Electron Microscopy (FE-SEM) for surface morphology examination. To simulate practical application, Finite Element Analysis was performed using ANSYS software, recognizing gait loading conditions. The experimental findings demonstrated that incorporating 0.5% MWCNT into Orthocryl significantly enhanced its mechanical properties, with a 12.5% increase in tensile strength (from 52.79 to 59.4 MPa), a 59.3% increase in flexural strength (from 52.08 to 82.93 MPa), and a 22% improvement in impact resistance (from 28.12 to 34.3 kJ/m 2 ). These improvements confirm the effectiveness of MWCNT reinforcement. Additionally, FE-SEM and FT-IR analyses confirmed the uniform distribution of CNTs within the matrix and stronger interfacial bonding between the filler and polymer. Simulation results showed that the 0.5% MWCNT/1.5% PLA composite had the highest deformation (10.95 mm) with a safety factor of 1.12, indicating acceptable safety. In contrast, the 0.5% MWCNT composite showed the lowest deformation (4.17 mm), 12.6% less than pure Orthocryl, and the highest safety factor (3.2), reflecting an optimal balance of strength and flexibility for pediatric AFOs in CP patients."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85071244304",
+    "eid": "2-s2.0-85071244304",
+    "dc:title": "The role of multiwalled carbon nanotubes in the mechanical, thermal, rheological, and electrical properties of pp/pla/mwcnts nanocomposites",
+    "dc:creator": "Azizi S.",
+    "prism:publicationName": "Journal of Composites Science",
+    "prism:coverDate": "2019-01-01",
+    "prism:doi": "10.3390/jcs3030064",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "Polypropylene/polylactic acid (PP/PLA) blend (10–40% of PLA) and PP/PLA/MWCNTs nanocomposites (0.5, 1, and 2 wt% of MWCNTs) were prepared via melt compounding. Scanning electron microscopy revealed a co-continuous PLA phase in the PP/PLA blends with high PLA content. Moreover, the addition of 2 wt% multi-walled carbon nanotubes (MWCNTs) increased the tensile modulus and tensile strength of the PP/PLA40% by 60% and 95%, respectively. A conductive network was found with the addition of 2 wt% MWCNTs, where the electrical conductivity of the PP/PLA increased by nine orders of magnitude. At 2 wt% MWCNTs, a solid network within the composite was characterized by rheological assessment, where the composite turned from nonterminal to terminal behavior. Soil burial testing of the PP/PLA blend within 30 days in natural humus compost soil featured suitable biodegradation, which indicates the PP/PLA blend is as an appropriate candidate for food packing applications."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85046546097",
+    "eid": "2-s2.0-85046546097",
+    "dc:title": "Electro-spun PLA-PEG-yarns for tissue engineering applications",
+    "dc:creator": "Kruse M.",
+    "prism:publicationName": "Biomedizinische Technik",
+    "prism:coverDate": "2018-06-27",
+    "prism:doi": "10.1515/bmt-2017-0232",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "Abstract  Electro-spinning is widely used in tissue-engineered applications mostly in form of non-woven structures. The development of e-spun yarn opens the door for textile fabrics which combine the micro to nanoscale dimension of electro-spun filaments with three-dimensional (3D) drapable textile fabrics. Therefore, the aim of the study was the implementation of a process for electro-spun yarns. Polylactic acid (PLA) and polyethylene glycol (PEG) were spun from chloroform solutions with varying PLA/PEG ratios (100:0, 90:10, 75:25 and 50:50). The yarn samples produced were analyzed regarding their morphology, tensile strength, water uptake and cytocompatibility. It was found that the yarn diameter decreased when the funnel collector rotation was increasd, however, the fiber diameter was not influenced. The tensile strength was also found to be dependent on the PEG content. While samples composed of 100% PLA showed a tensile strength of 2.5±0.7 cN/tex, the tensile strength increased with a decreasing PLA content (PLA 75%/PEG 25%) to 6.2±0.5 cN/tex. The variation of the PEG content also influenced the viscosity of the spinning solutions. The investigation of the cytocompatibility with endothelial cells was conducted for PLA/PEG 90:10 and 75:25 and indicated that the samples are cytocompatible."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85201945059",
+    "eid": "2-s2.0-85201945059",
+    "dc:title": "Optimization of FFF process parameters to improve the tensile strength and impact energy of polylactic acid/carbon nanotube composite",
+    "dc:creator": "Hardani H.",
+    "prism:publicationName": "Polymer Engineering and Science",
+    "prism:coverDate": "2024-10-01",
+    "prism:doi": "10.1002/pen.26900",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfree2read"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Bronze"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "Abstract    In this study, the process parameters of fused filament fabrication are optimized to improve the tensile strength and impact energy of polylactic acid/carbon nanotube (PLA/CNT) composite. Hence, the utility function (UF) technique and response surface method (RSM) are applied to explore the optimal levels of the effective parameters of print speed, nozzle temperature, and CNT content. The differential scanning calorimetry (DSC), thermogravimetric analysis (TGA), and SEM analyses are employed to examine the thermal properties of the printed samples. The results of DSC and TGA analyses exhibited that the incorporation of CNT into PLA enhanced the thermal strength of PLA/CNT composite. The addition of CNTs in the composite improved the tensile strength by 37%, while the addition of CNTs up to 4 wt% improved the impact energy by 29%. Moreover, an increment of the print speed to 60 mm/s reduced the impact energy (12%) and tensile strength (22%), while an increment of the nozzle temperature to 200°C enhanced the impact energy (9%) and tensile strength (12%). The optimization results demonstrated that the strength and impact energy of PLA/CNT composite optimized at CNT content of 2.8 wt%, print speed of 20 mm/s, and nozzle temperature of 209°C. Additionally, the impact energy and tensile strength of the PLA/CNT composite enhanced up to 62.5 MPa and 2.14 J at the optimum conditions.    Highlights   \n  Application of FFF process for producing the PLA/CNT composite  \n  Investigating the impact of FFF parameters on the mechanical properties  \n  Estimating the optimal conditions of the FFF process"
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85103183410",
+    "eid": "2-s2.0-85103183410",
+    "dc:title": "Evaluation of the macromechanical properties of PLA-based nanocomposites by means of three-point bending method",
+    "dc:creator": "Batakliev T.",
+    "prism:publicationName": "Journal of Theoretical and Applied Mechanics Bulgaria",
+    "prism:coverDate": "2021-01-01",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85174942311",
+    "eid": "2-s2.0-85174942311",
+    "dc:title": "Experimental investigation on fatigue life and tensile strength of carbon fiber-reinforced PLA composites based on fused deposition modeling",
+    "dc:creator": "Kargar E.",
+    "prism:publicationName": "Scientific Reports",
+    "prism:coverDate": "2023-12-01",
+    "prism:doi": "10.1038/s41598-023-45046-x",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "Abstract  Fused deposition modeling (FDM) is a widely used additive manufacturing (AM) method that offers great flexibility in fabricating complex geometries without requiring expensive equipment. However, compared to other manufacturing methods, FDM-produced parts generally exhibit lower strength and fatigue life. To overcome this limitation, researchers have explored the use of fibers and reinforcements to enhance the mechanical properties of FDM parts. Nevertheless, the performance of FDM-produced parts can be significantly affected by various manufacturing parameters, including infill density, which is a key factor in balancing time and cost. In this study, the tensile strength and fatigue life of carbon fiber-reinforced polylactic acid (PLA) composites produced by FDM were investigated by varying the infill density (50 and 75%) and raster angle (0°, 45°, and 90°). The effects of 100% filling density, raster width, and nozzle diameter on mechanical properties were also examined. The experimental results demonstrated that increasing the infill density and decreasing the raster angle can enhance the tensile strength, although the fatigue behavior was found to be more complex and dependent on the infill density. The optimal parameters for producing FDM parts with improved mechanical properties were identified based on the analysis of the tensile strength and fatigue life data. This research has yielded significant findings concerning the diverse fatigue behavior associated with the raster angle at different infill densities. Specifically, noteworthy observations reveal that a raster angle of 45 degrees at 50% infill density, and a raster angle of 0 degrees at 75% infill density, exhibited the most prolonged fatigue life. This outcome can be ascribed to the specific loading conditions and the inherent strength of the sediment layer at the critical point of stress concentration."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85135862827",
+    "eid": "2-s2.0-85135862827",
+    "dc:title": "Investigation and optimization of the tensile properties of nanocomposites based on polylactic acid/polyolefin elastomer: Using fuzzy inference system and particle swarm optimization method",
+    "dc:creator": "Daneshpayeh S.",
+    "prism:publicationName": "Polymer Composites",
+    "prism:coverDate": "2022-09-01",
+    "prism:doi": "10.1002/pc.26965",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "Abstract \n                   \n                    In this paper, tensile properties of polylactic acid/polyolefin elastomer/multiwall carbon nanotubes/carbon black particles (PLA/POE/MWCNT/CB) nanocomposites were investigated. Nanocomposites, including each nano‐filler at 0, 0.5,1, 1.5, 2, and 3 wt% levels were made by an internal mixer. Tensile tests were carried out to extract the tensile properties of samples. Field emission electron microscopy (FESEM) was also performed to observe the dispersion quality of nano‐fillers in the matrix. FESEM images indicate a proper dispersion of all loadings of nanotubes in the matrix, in contrast the presence of more than 2 wt% of carbon black into the matrix is associated with their agglomeration. Based on the tensile tests, the separate and simultaneous addition of nano‐fillers into binary matrix leads to an increase in strength, modulus, and elongation by 72%, 30%, and 22%, respectively. Furthermore, predicted data from the rules section of the fuzzy inference system (FIS) method with the lowest error led to extracting regression models with\n                     R \n                     2 \n                    above 90% for all responses. Finally, the particle swarm optimization (PSO) method showed that to achieve balancing between the strength and elongation at break the nano‐fillers must be set at 0.64 wt% for nanotubes and 0.94 wt% for carbon black particles."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85151216483",
+    "eid": "2-s2.0-85151216483",
+    "dc:title": "On Co-Relational Analysis for Properties of PLA Composite Reinforced With Mn Doped ZnO Nano Particles",
+    "dc:creator": "Kumar R.",
+    "prism:publicationName": "Encyclopedia of Materials Plastics and Polymers",
+    "prism:coverDate": "2022-01-01",
+    "prism:doi": "10.1016/B978-0-12-820352-1.00138-3",
+    "subtype": "ch",
+    "subtypeDescription": "Book Chapter",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105016787730",
+    "eid": "2-s2.0-105016787730",
+    "dc:title": "Influence of UV irradiation on mechanical performance and shape memory response of 4D printed SMPU/MWCNT nanocomposites",
+    "dc:creator": "Namathoti S.",
+    "prism:publicationName": "Journal of Polymer Research",
+    "prism:coverDate": "2025-10-01",
+    "prism:doi": "10.1007/s10965-025-04585-9",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85055868186",
+    "eid": "2-s2.0-85055868186",
+    "dc:title": "Improved fracture toughness and ductility of PLA composites by incorporating a small amount of surface-modified helical carbon nanotubes",
+    "dc:creator": "Wang Y.",
+    "prism:publicationName": "Composites Part B Engineering",
+    "prism:coverDate": "2019-04-01",
+    "prism:doi": "10.1016/j.compositesb.2018.10.060",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84981488781",
+    "eid": "2-s2.0-84981488781",
+    "dc:title": "Space-resolved thermal properties of thermoplastics reinforced with carbon nanotubes",
+    "dc:creator": "Rivière P.",
+    "prism:publicationName": "Journal of Thermal Analysis and Calorimetry",
+    "prism:coverDate": "2017-03-01",
+    "prism:doi": "10.1007/s10973-016-5751-9",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85114019648",
+    "eid": "2-s2.0-85114019648",
+    "dc:title": "Barrier performance and biodegradability of antibacterial poly(butylene adipate-co-terephthalate) nanocomposites reinforced with a new MWCNT-ZnO nanomaterial",
+    "dc:creator": "Ge F.F.",
+    "prism:publicationName": "Nanotechnology",
+    "prism:coverDate": "2021-11-26",
+    "prism:doi": "10.1088/1361-6528/ac1b52",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "Abstract \n                   A new nanomaterial or nano-filler in the form of multiwalled carbon nanotube-zinc oxide (MWCNT-ZnO) was synthesized for the purpose of modifying poly(butylene adipate-co-terephthalate) (PBAT) and its derivative (modified PBAT or MPBAT) through a melt-blending method (MPBAT was obtained by introducing maleic anhydride groups into PBAT). The effect of the new nano-filler on the properties of resultant nanocomposites was determined from the characterization of mechanical properties, morphology, crystallinity, thermal stability, barrier properties, hydrophilicity, conductivity, antibacterial property, and biodegradability. The results showed that MPBAT nanocomposites had stronger mechanical properties, better barrier properties, and higher electrical conductivity than PBAT nanocomposites. Scanning electron microscopy illustrated that MWCNT-ZnO had better compatibility with MPBAT than with PBAT. At 0.2% MWCNT-ZnO, the MPBAT/MWCNT-ZnO nanocomposite film exhibited the greatest mechanical properties (17.74% increase in tensile strength, 22.17% in yield strength, and 14.29% in elongation at break). When the MWCNT-ZnO content was 0.4%, the nanocomposite film demonstrated the best water vapor barrier ability (an increase of 30.4%). The MPBAT/MWCNT-ZnO film with 0.6% MWCNT-ZnO turned out to have the best oxygen barrier performance (an increase of 130% relative to pure PBAT). It was shown from the results of antibacterial evaluation that the new nanomaterial could impart PBAT and MPBAT with antibacterial activity. The biodegradability tests indicated that an MWCNT-ZnO content of 0.2% could slightly reduce the biodegradability, and when the content was higher than 0.2%, the weight loss rate would increase."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105024531876",
+    "eid": "2-s2.0-105024531876",
+    "dc:title": "Comparative Mechanical Response of PLA Nanocomposites Reinforced with Multi-Walled Carbon Nanotubes and Halloysite Nanotubes Processed by Injection Moulding",
+    "dc:creator": "Cobos C.",
+    "prism:publicationName": "Polymers",
+    "prism:coverDate": "2025-12-01",
+    "prism:doi": "10.3390/polym17233149",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryvor"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "Polylactic acid (PLA) is a biodegradable polymer with an ever-increasing number of applications, although its inherent brittleness limits its performance somewhat in structural applications. In this study, we analysed the influence of incorporating multi-walled carbon nanotubes (MWCNTs) and halloysite nanotubes (HNTs) at different concentrations (0.5, 0.75 and 1 wt%) on the mechanical properties of injection-moulded PLA nanocomposites. The effects of the nanofillers were characterised by tensile, flexural, and impact tests, hardness measurements, and FESEM examination. The results showed that MWCNTs increased the flexural strength and stiffness by up to 60% compared to neat PLA (84.3 vs. 52.6 MPa), although this was accompanied by a reduction in elongation at break (from 2.30% to 1.57%) due to agglomeration. Conversely, HNTs improved the elongation at break up to 6.39%, enhanced flexural strength by approximately 62% (85.1 MPa), and maintained stiffness around 3.0 GPa, indicating a better balance between strength and ductility. The FESEM micrographs confirmed the presence of clusters in MWCNTs and a more homogeneous dispersion in HNTs, thus explaining the differences in behaviour. Overall, MWCNTs are more suitable for applications requiring high stiffness and strength, whereas HNTs are preferable when greater ductility and impact resistance are required."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85049873341",
+    "eid": "2-s2.0-85049873341",
+    "dc:title": "Design of super-tough co-continuous PLA/NR/SiO2 TPVs with balanced stiffness-toughness based on reinforced rubber and interfacial compatibilization",
+    "dc:creator": "Liu Y.",
+    "prism:publicationName": "Composites Science and Technology",
+    "prism:coverDate": "2018-09-08",
+    "prism:doi": "10.1016/j.compscitech.2018.07.005",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85096374239",
+    "eid": "2-s2.0-85096374239",
+    "dc:title": "Influence of montmorillonite/carbon nanotube hybrid nanofillers on the properties of poly(lactic acid)",
+    "dc:creator": "Sanusi O.M.",
+    "prism:publicationName": "Applied Clay Science",
+    "prism:coverDate": "2021-02-01",
+    "prism:doi": "10.1016/j.clay.2020.105925",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfree2read"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Bronze"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84862817956",
+    "eid": "2-s2.0-84862817956",
+    "dc:title": "Enhancement of electrical conductivity by changing phase morphology for composites consisting of polylactide and poly(ε-caprolactone) filled with acid-oxidized multiwalled carbon nanotubes",
+    "dc:creator": "Xu Z.",
+    "prism:publicationName": "ACS Applied Materials and Interfaces",
+    "prism:coverDate": "2011-12-28",
+    "prism:doi": "10.1021/am201355j",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105021125299",
+    "eid": "2-s2.0-105021125299",
+    "dc:title": "Polylactic acid (PLA) and epoxy resin-based bio nanocomposites reinforced with hexagon born nitride for structural applications",
+    "dc:creator": "Nimbagal V.",
+    "prism:publicationName": "Aip Conference Proceedings",
+    "prism:coverDate": "2025-10-03",
+    "prism:doi": "10.1063/5.0295705",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84977262780",
+    "eid": "2-s2.0-84977262780",
+    "dc:title": "Improving PLA ductility using only 0.05% of CNTs and 0.25% of an azo-dye",
+    "dc:creator": "Ribba L.",
+    "prism:publicationName": "Materials Letters",
+    "prism:coverDate": "2016-11-01",
+    "prism:doi": "10.1016/j.matlet.2016.06.090",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfree2read"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Bronze"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85028694832",
+    "eid": "2-s2.0-85028694832",
+    "dc:title": "Mechanical and thermal properties of PLA melt blended with high molecular weight PEG modified with peroxide and organo-clay",
+    "dc:creator": "Thongpina C.",
+    "prism:publicationName": "Key Engineering Materials",
+    "prism:coverDate": "2017-01-01",
+    "prism:doi": "10.4028/www.scientific.net/KEM.751.337",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "The thermal and mechanical properties of poly (lactic acid) blended with high molecular weight PEG, i.e. PEG1000 and PEG6000 were compared. The contents of PEG added were 10, 12.5 and 15 % by weight, with respect to PLA. The PLA/PEG blends were modified by addition of organic peroxide in order to induced crosslinking. Addition of organic modified montmorrillonite (Cloisite 30B, C30B) was also performed in order to modify mechanical performance of PLA/PEG blends. C30B was prepared via master batch in PLA. Morphology, crystallization, thermal stability and mechanical properties of the blends were investigated using SEM, DSC, TGA and universal testing macine, respectively. Morphology of cryogenic fracture surface showed smooth brittle surface. PEG1000 well plasticized PLA where as PEG6000 shows better thermal stability and mechanical properties. The presence of PEG induced PLA to perform cold crystallization. T m  in PLA was slightly changed whereas degree of crystallinity of PLA was improved by PEG but slightly decreased by peroxide. The thermal stability of PLA was enhanced with the addtion of PEG6000. The toughening of PLA was confirmed by the increment of elongation at break. The exfoliation of C30B was interfered by the crosslink PLA. Then tensile strength of PLA/PEG/C30B/Luperox101 was then suppressed. The optimum properties, in term of toughening and thermal stability, were found at PEG content of 10 % rather than 15% by weight, for both PEG1000 and PEG6000."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85089914269",
+    "eid": "2-s2.0-85089914269",
+    "dc:title": "Influence of MWCNTs and nano-Fe3O4 on the properties and structure of MWCNTs/ Fe3O4/PLA composite film with electromagnetic interference shielding function",
+    "dc:creator": "Liu S.",
+    "prism:publicationName": "Journal of Polymer Research",
+    "prism:coverDate": "2020-09-01",
+    "prism:doi": "10.1007/s10965-020-02234-x",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105031076380",
+    "eid": "2-s2.0-105031076380",
+    "dc:title": "Development of PLA-ZnO Nanocomposites for Food Packaging Applications",
+    "dc:creator": "Aradhya R.",
+    "prism:publicationName": "Macromolecular Symposia",
+    "prism:coverDate": "2026-01-01",
+    "prism:doi": "10.1002/masy.70300",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "ABSTRACT \n                   Vegetables and fruits are widely consumed and highly perishable commodities, developing effective packaging materials essential to extend their shelf life while maintaining quality and safety. A Packing material with excellent tensile strength is eco‐friendly, non‐toxic, and better alternative to polyethylene material. The present work explores the utilization of zinc oxide (ZnO) nanoparticles embedded within Polylactic Acid (PLA) as an innovative packaging material. The PLA is used in a wide range of applications, such as health care, implants, memory devices, food packaging, and tissue engineering, because it is biodegradable in nature. The addition of ZnO into PLA enhances electrical, mechanical, anti‐UV, and antibacterial properties. The PLA‐ZnO composites were prepared by the solution‐blending method. The Tensile strength and modulus of PLA‐ZnO nanocomposites increase as compared with the virgin PLA. The results from electrical properties exhibit a significant enhancement in dielectric constant and a decrease in dissipation factor of the nanocomposite. In addition, antibacterial results show that the prepared nanocomposite films exhibit strong antimicrobial ability at very low ZnO addition. The results demonstrate that the novel nanocomposites could be a good candidate material for food packaging applications."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105012943171",
+    "eid": "2-s2.0-105012943171",
+    "dc:title": "Fuzzy Logic-Based Prediction of Tensile Strength in Fused Filament Fabrication: A Case Study on Polylactic Acid",
+    "dc:creator": "Toprak İ.B.",
+    "prism:publicationName": "Journal of Materials Engineering and Performance",
+    "prism:coverDate": "2025-09-01",
+    "prism:doi": "10.1007/s11665-025-11742-0",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85106002605",
+    "eid": "2-s2.0-85106002605",
+    "dc:title": "Studies on Hybrid Bio-Nanocomposites for Structural Applications",
+    "dc:creator": "Nimbagal V.",
+    "prism:publicationName": "Journal of Materials Engineering and Performance",
+    "prism:coverDate": "2021-09-01",
+    "prism:doi": "10.1007/s11665-021-05843-9",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85121837577",
+    "eid": "2-s2.0-85121837577",
+    "dc:title": "INFLUENCE of GRAPHENE NANOPLATES and MULTIWALL CARBON NANOTUBES on RHEOLOGY, STRUCTURE, and PROPERTIES RELATIONSHIP of POLY (LACTIC ACID)",
+    "dc:creator": "Ivanova R.",
+    "prism:publicationName": "Journal of Theoretical and Applied Mechanics Bulgaria",
+    "prism:coverDate": "2021-01-01",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85118793723",
+    "eid": "2-s2.0-85118793723",
+    "dc:title": "Effect of in fill patterns on 3d printed multiwall carbon nanotube based acrylonitrile butadiene styrene nanocomposite on mechanical properties",
+    "dc:creator": "Kulkarni S.C.",
+    "prism:publicationName": "International SAMPE Technical Conference",
+    "prism:coverDate": "2021-01-01",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84886260402",
+    "eid": "2-s2.0-84886260402",
+    "dc:title": "Effects of multi-walled carbon nanotubes (MWCNTS) on the mechanical and thermal properties of plasticized polylactic acid nanocomposites",
+    "dc:creator": "Maizatulnisa O.",
+    "prism:publicationName": "Advanced Materials Research",
+    "prism:coverDate": "2013-10-29",
+    "prism:doi": "10.4028/www.scientific.net/AMR.812.181",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "A multi-walled carbon nanotube (MWCNT)/plasticized polylactic acid (PLA) composite was prepared using a two-roll mill set at 170°C and 50 rev/min. The material was characterized using dynamic mechanical analyzer (DMA). Characterization works include obtaining mechanical properties, such as tensile and flexural properties of the nanocomposites. Polyethylene glycol (PEG) at 6 wt% was used as the plasticizer for blending with the PLA. It was found that the tensile and flexural strengths of the nanocomposites increased up to 43.8 MPa and 81.4 MPa respectively with the addition of 0.15 wt% MWCNTs. The DMA results revealed that the storage modulus and the glass transition temperature (Tg) of the nanocomposites improved with the addition of 0.15 wt% CNTs, which was previously reduced by the incorporation of PEG."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105001063900",
+    "eid": "2-s2.0-105001063900",
+    "dc:title": "Enhancing mechanical properties of PLA-based bio composite filament reinforced with horse gram filler for 3D printing applications",
+    "dc:creator": "Nataraj G.",
+    "prism:publicationName": "Journal of Vinyl and Additive Technology",
+    "prism:coverDate": "2025-03-01",
+    "prism:doi": "10.1002/vnl.22182",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "Abstract \n                   \n                     \n                     Green composites for 3D printing have gained significant attention due to the potential of incorporating natural fillers to reduce costs and enhance performance while maintaining environmental benefits. The use of agricultural by‐products, such as horse gram (Hg), not only promotes waste utilization but also seeks to improve the mechanical properties of biopolymers like PLA. In this study, Hg powder was utilized as a natural filler to enhance the mechanical properties of PLA‐based composites. The composites were fabricated with 1%, 2%, 3%, and 4% Hg powder filler content, and the filament was processed through a single screw extruder machine. Their mechanical properties were systematically evaluated to determine the optimal filler ratio. The results indicate that the incorporation of 1% Hg filler into PLA provided superior mechanical performance compared to Neat PLA. Specifically, tensile strength increased by 11.19%, flexural strength improved by 5.32%, and compression strength increased by 5.94%. In contrast, composites with 2% and 3% Hg filler showed a reduction in these mechanical properties, highlighting that the 1% Hg/PLA composite achieves the best balance between strength and filler content. The findings suggest that the 1% Hg/PLA composite offers an optimized combination of tensile, flexural, and compression properties, making it a strong candidate for environmentally sustainable engineering applications such as lightweight structural components, automotive interior parts, and consumer product casings. \n                   \n                   \n                     Highlights \n                     \n                       \n                         \n                           One percent Hg filler improved tensile, flexural strength, and hardness through uniform dispersion. \n                         \n                         \n                           Higher filler content (3%–4%) led to agglomeration, reducing composite performance. \n                         \n                         \n                           XRD and SEM analyses revealed reduced PLA crystallinity and structural defects at higher filler levels."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85216088066",
+    "eid": "2-s2.0-85216088066",
+    "dc:title": "Polylactic Acid/Polybutylene Adipate Terephthalate-Carbon Nanotube Nanobiocomposites with a Segregated Toughening Morphology Yielding Large Ductility for Biocompatible Materials",
+    "dc:creator": "Ayan U.",
+    "prism:publicationName": "ACS Applied Nano Materials",
+    "prism:coverDate": "2025-01-24",
+    "prism:doi": "10.1021/acsanm.4c06353",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105001044979",
+    "eid": "2-s2.0-105001044979",
+    "dc:title": "Enhanced mechanical strength and biodegradability of PLA-based bioplastics reinforced with TiO2 and graphene oxide",
+    "dc:creator": "Sathish T.",
+    "prism:publicationName": "Materials Technology",
+    "prism:coverDate": "2025-01-01",
+    "prism:doi": "10.1080/10667857.2025.2482786",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfree2read"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Bronze"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85186176608",
+    "eid": "2-s2.0-85186176608",
+    "dc:title": "Influence of Varied MWCNTs Dispersion on EMI Shielding, UV Absorption, and Surface Properties of Electroless NiP/MWCNT-Coated UHMWPE Fabric",
+    "dc:creator": "Biradar A.",
+    "prism:publicationName": "Fibers and Polymers",
+    "prism:coverDate": "2024-04-01",
+    "prism:doi": "10.1007/s12221-024-00502-x",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105023951285",
+    "eid": "2-s2.0-105023951285",
+    "dc:title": "Effect of PA6/PA12 Composition on the Multifunctional Behavior of PA/MWCNT Nanocomposite Films",
+    "dc:creator": "Arnal T.",
+    "prism:publicationName": "Polymers for Advanced Technologies",
+    "prism:coverDate": "2025-12-01",
+    "prism:doi": "10.1002/pat.70452",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "ABSTRACT \n                   \n                    This study investigates the impact of PA6/PA12 ratio on the multifunctional properties of nanocomposite films based on polyamide blends and multi‐walled carbon nanotubes (MWCNTs). Blends of PA6/PA12 were prepared in various weight ratios (25/75, 50/50, and 75/25) with and without 3.5 wt.% of MWCNTs (this value being the electrical percolation threshold for the 75/25 blend according to a previous investigation). Morphological analysis revealed that MWCNTs could have acted as compatibilizing agents, altering the nanocomposites' morphology. Thermal characterization showed that MWCNTs preferentially interact with PA6, changing its crystallization behavior across all blend ratios. Rheological studies demonstrated different viscoelastic properties in nanocomposites, with a transition to more solid‐like behavior at higher frequencies, indicating the formation of a MWCNT network structure. Mechanical testing revealed a trade‐off between strength and ductility upon MWCNT incorporation. Young's modulus and tensile strength generally improved, while strain at break decreased, particularly for blends with higher PA6 content. Fracture toughness, measured by\n                     J \n                     max \n                    showed a decreasing trend with MWCNT addition. The 50/50 PA6/PA12 blend exhibited unique behavior, displaying both ductile and semi‐ductile responses in tensile and fracture tests. Electrical conductivity measurements confirmed the functional behavior of the nanocomposites, with values in the semiconductor range. These findings provide insights into the complex interplay between blend composition, MWCNT incorporation, and resulting material properties, offering potential for tailoring nanocomposites for specific applications."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85135175811",
+    "eid": "2-s2.0-85135175811",
+    "dc:title": "Materials Today: Proceedings",
+    "prism:publicationName": "Materials Today Proceedings",
+    "prism:coverDate": "2019-01-01",
+    "subtype": "cr",
+    "subtypeDescription": "Conference Review",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85181401006",
+    "eid": "2-s2.0-85181401006",
+    "dc:title": "Polyamide 6 (PA6)/carbon nanotubes (MWCNT) nanocomposites for antistatic application: tailoring mechanical and electrical properties for electronic product protection",
+    "dc:creator": "da Silva F.S.",
+    "prism:publicationName": "Journal of Polymer Research",
+    "prism:coverDate": "2024-01-01",
+    "prism:doi": "10.1007/s10965-023-03861-w",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84989953706",
+    "eid": "2-s2.0-84989953706",
+    "dc:title": "Effects of hydrogen bonding between MWCNT and PPS on the properties of PPS/MWCNT composites",
+    "dc:creator": "Zhang M.",
+    "prism:publicationName": "Rsc Advances",
+    "prism:coverDate": "2016-01-01",
+    "prism:doi": "10.1039/c6ra19119c",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "PPS/MWCNT composites were prepared from PPS and MWCNT-OH or MWCNT-COOH by the 1-chloronaphthalene blending method, and the effects of noncovalent interaction between PPS and fillers on the properties of the composites were studied."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85216248664",
+    "eid": "2-s2.0-85216248664",
+    "dc:title": "Effect of recycling on the time- and temperature-dependent mechanical properties of PP/MWCNT composite liner materials",
+    "dc:creator": "Bata A.",
+    "prism:publicationName": "Results in Engineering",
+    "prism:coverDate": "2025-03-01",
+    "prism:doi": "10.1016/j.rineng.2025.104150",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": ""
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85183581343",
+    "eid": "2-s2.0-85183581343",
+    "dc:title": "Studies on (polytrimethylene terephthalate)/graphene oxide/f-MWCNT hybrid nanocomposites",
+    "dc:creator": "Rath A.P.",
+    "prism:publicationName": "Discover Nano",
+    "prism:coverDate": "2024-12-01",
+    "prism:doi": "10.1186/s11671-024-03966-1",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    },
+    "_abstract": "",
+    "_abstract_cr": "Abstract  Natural resource-driven approaches to bioengineering plastics are being developed to compete in the automobiles, power, and other sectors. Polytrimethylene terephthalate (PTT) is a particular of them, and it was chosen for the current investigation to build an advanced nanocomposite material. Using a twin-screw micro compounder, injection moulded PTT/Graphene-Oxide (GO)/Carboxyl functionalized Multiwall Carbon nanotube (f-MWCNT) hybrid nanocomposites were prepared. The impact of GO and f-MWCNT reinforcement on the composite’s thermal and mechanical characteristics of hybrid nanocomposites was examined. GO was synthesized from the graphite powder by modified Hummer’s method and MWCNTs were functionalized using the concentrated sulfuric acid (H 2 SO 4 ) and nitric acid (HNO 3 ) with a volume ratio of 3:1 in an ultrasonic bath at room temperature. In all formulations, the investigation was done at a constant filler amount of 2 wt%. To understand the chemical interaction between PTT and nanofiller, Raman spectroscopy was used and to examine the state of dispersion, scanning electron microscopy (SEM) was systematically analysed. In comparison to pristine PTT, the water absorption, tensile strength, flexural strength and impact strength of hybrid nanocomposites were improved marginally. It was also observed that GO has more prominent in increasing the mechanical properties of the hybrid and f-MWCNT in thermal properties. The 3-D geometrical bridge between GO (2-D) and f-MWCNT (1-D) made the hybrid more dispersible and effective for different applications."
+  },
+  {
+    "@_fa": "true",
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85144606022",
+    "eid": "2-s2.0-85144606022",
+    "dc:title": "Evaluation of Shape Memory in Poly(lactic acid)/ thermoplastic Polyurethane Filaments with Carbon Nanotubes and Graphene Nanoplatelets",
+    "dc:creator": "de Moura N.K.",
+    "prism:publicationName": "Macromolecular Symposia",
+    "prism:coverDate": "2022-12-01",
+    "prism:doi": "10.1002/masy.202200020",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "openaccess": "0",
+    "openaccessFlag": false,
+    "_abstract": "",
+    "_abstract_cr": "Abstract  Medical sutures are used in tissues to join the edges of wounds to help a healing process or stabilize implants. The patient's feverish state can lead to premature suture rupture, due to the increase in body temperature and the swelling due to an inflammatory process in the wound. Some materials can adapt to body temperature and may prevent this disruption, being polymers with shape memory an alternative for this application, such as poly(lactic acid) (PLA) and thermoplastic polyurethane (TPU). The addition of carbon nanotubes (MWCNT) and graphene nanoplatelets (GNP) can induce antimicrobial activity since the wound and/or suture tend to facilitate the proliferation of microorganisms, which can harm or avoid the healing process. In this work, PLA/TPU (60/40) and nanocomposites with 2 wt% of GNP and hybrids with 1 wt% of MWCNT and 1 wt% of GNP are prepared using the extrusion process. The samples are characterized by tensile test, thermogravimetric analysis (TGA), differential scanning calorimetry, field emission scanning electron microscopy, shape memory, and antimicrobial activity. The polymer blend and nanocomposites present an average shape recovery (≈6.5% in length) and the addition of nanofillers induced antimicrobial activity, being these materials promising for application in antimicrobial sutures with shape memory."
+  }
+]
