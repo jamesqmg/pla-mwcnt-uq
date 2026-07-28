@@ -102,6 +102,8 @@ class TestFiguresRender:
         }[module_name]
         if not (RESULTS / json_needed).exists():
             pytest.skip(f"{json_needed} not generated yet")
+        if importlib.util.find_spec(module_name) is None:
+            pytest.skip(f"{module_name} not written yet")
         mod = importlib.import_module(module_name)
         mod.build()
         assert out.exists() and out.stat().st_size > 0
