@@ -6,3 +6,8 @@ line-length = 100
 # Q, R, Cm, Cf...) directly from the cited equations (Tandon-Weng, Qiu & Weng,
 # Halpin-Tsai) -- renaming would hurt traceability between code and papers.
 ignore = ["N803", "N806"]
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: sampler refits and FE solves; deselect with -m 'not slow'",
+]

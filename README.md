@@ -57,7 +57,7 @@ src/uq/
   rve_ensemble.py           Monte Carlo ensemble wrapper
   run_*.py                  drivers that write into results/
 
-src/tests/                  432 tests across 28 files
+src/tests/                  442 tests across 28 files
 results/                    JSON outputs, one per experiment
 figures/                    generators (*.py) and outputs; style.py holds the shared palette
 data/extraction/            master_dataset.csv and per-paper CSVs
@@ -79,7 +79,7 @@ pip install pymc==5.28.4 arviz==0.23.4 scikit-learn==1.8.0 scikit-fem==12.0.1 \
 ## Tests
 
 ```bash
-python -m pytest src/tests/ -q                 # 432 tests
+python -m pytest src/tests/ -q                 # 442 tests
 python -m pytest src/tests/ -q -m "not slow"   # skip NUTS and the FE solves
 ```
 
