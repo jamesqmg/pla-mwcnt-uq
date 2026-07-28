@@ -61,11 +61,10 @@ src/tests/                  442 tests across 28 files
 results/                    JSON outputs, one per experiment
 figures/                    generators (*.py) and outputs; style.py holds the shared palette
 data/extraction/            master_dataset.csv and per-paper CSVs
-analysis/                   exploratory notebooks
-manuscript/                 thesis manuscript and the ICES conference paper
-Thesis2/                    Tier-3 FE-RVE track for the INCON paper
-Presentations/              defense deck and animations
+References/                 references.bib
 ```
+
+This repository carries the code, data and results. The manuscript, the conference papers and the defense material live separately and are not published here.
 
 ## Setup
 

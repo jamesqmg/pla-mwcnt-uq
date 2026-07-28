@@ -10,36 +10,17 @@ __pycache__/
 .DS_Store
 ~$*
 *.bak
-*.bak2
 *.tmp
 *.log
 
-# Agent and session scaffolding (local only)
-context/
-workspace/
-
-# Code-graph index (regenerated on demand)
+# Local tooling
 graphify-out/
 
 # Solver caches and intermediate arrays (regenerable, large)
 *.npz
-Thesis2/_html_primer_states/
-Thesis2/_archive-figures/
 
 # Source data under redistribution restriction
 data/raw/hiremath/
 data/extraction/markdown_cache/
 data/pdfs/
 data/images/
-
-# Administrative and personal documents (not research artifacts)
-Thesis-procedure/
-References/thesis_templates/
-Learning-Modules/
-Thesis-procedure/drive-download-*/
-
-# Manuscript working files and similarity reports
-manuscript/*backup*.docx
-*.bak.docx
-**/Turnitin-*.pdf
-manuscript/revisions/
