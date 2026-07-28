@@ -87,3 +87,8 @@ MCMC runs are gated on convergence: R-hat below 1.01 and ESS above 400, checked 
 ## Stack
 
 Python 3.13 · PyMC 5.28.4 · arviz 0.23.4 · scikit-learn 1.8.0 · scikit-fem 12.0.1 · numpy 2.4
+
+## License
+
+MIT, see [LICENSE](LICENSE). The dataset under `data/extraction/` is curated from published
+literature; cite the original papers listed in `References/references.bib` if you use it.
