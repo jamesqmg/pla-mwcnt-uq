@@ -1,0 +1,8 @@
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+# N803/N806: this codebase mirrors physics-paper notation (E, nu, V_f, S, T,
+# Q, R, Cm, Cf...) directly from the cited equations (Tandon-Weng, Qiu & Weng,
+# Halpin-Tsai) -- renaming would hurt traceability between code and papers.
+ignore = ["N803", "N806"]

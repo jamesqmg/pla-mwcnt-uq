@@ -76,26 +76,51 @@ import numpy as np
 # 5 named neon-vivid colors + 2 neutrals. High chroma but not pure RGB
 # saturated — readable on white, distinct in greyscale print.
 PALETTE: dict[str, str] = {
-    # Primary method colors
-    "bootstrap": "#0091FF",   # electric blue  — Bootstrap / FDM group
-    "bayesian":  "#FF4757",   # vivid coral-red — Bayesian NUTS / non-FDM group
+    # Primary method colors — ALLOTROPE-LIGHT CANON (locked 2026-06-10).
+    # Violet hero + warm-orange complement: a split-complementary, colour-blind-
+    # safe pair shared with iaapt_viz so thesis + quant + lab figures read as one
+    # visual family. Hues tuned for legibility on white at print DPI.
+    "bootstrap": "#8B5CF6",   # violet  — Bootstrap / FDM group (HERO)
+    "bayesian":  "#F97316",   # orange  — Bayesian NUTS / non-FDM group (warm complement)
     # Hierarchical / structural
-    "hier":      "#00D2A0",   # emerald teal    — hierarchical / population level
+    "hier":      "#2DD4BF",   # teal    — hierarchical / population level
     # Annotation / accent
-    "amber":     "#FFB300",   # vivid amber     — population mean / threshold markers
-    "violet":    "#A855F7",   # electric violet  — secondary accent / calibration
+    "sky":       "#38BDF8",   # sky     — secondary series / benchmark
+    "orchid":    "#E879F9",   # orchid  — threshold / n* / target markers
+    "amber":     "#C9A227",   # gold (still reads "amber") — population mean β_pop
+    "violet":    "#A78BFA",   # soft violet — tertiary accent / calibration
     # Neutrals (arrows, spines, excluded boxes)
-    "dark":      "#333333",   # near-black       — spines, tick labels
+    "dark":      "#2A2433",   # warm near-black  — spines, tick labels, text
     "mid":       "#777777",   # medium gray      — arrows, secondary lines
     "light":     "#CCCCCC",   # light gray       — grid, shading
     # Semantic aliases (use these in figure scripts for readability)
-    "include":   "#00D2A0",   # = hier — main inclusion path in attrition flow
-    "exclude":   "#FF4757",   # = bayesian — excluded / dropped boxes
-    "branch":    "#0091FF",   # = bootstrap — side-use path (subsampling parent)
+    "include":   "#2DD4BF",   # = hier — main inclusion path in attrition flow
+    "exclude":   "#F97316",   # = bayesian — excluded / dropped boxes
+    "branch":    "#8B5CF6",   # = bootstrap — side-use path (subsampling parent)
+    # ── Petrol & Gold register — FE-RVE / INCON figures (locked 2026-07-15) ──
+    # Discreet journal palette for the INCON FE-RVE figures ONLY. Kept SEPARATE
+    # from the bootstrap/bayesian semantics above (which stay violet/orange for
+    # the main-thesis figures) so nothing here cascades to them. FE-RVE scripts
+    # opt in explicitly via these names + apply_style(serif=True). See
+    # Thesis2/fe-rve-viz-strategy.md §1. cividis is the field/ordered-data cmap.
+    "petrol":       "#1E6E86",  # deep teal-blue — primary FE-RVE series (measured/axial)
+    "gold":         "#C0912C",  # antique gold   — second striking series / analytical
+    "purple_bayes": "#4A3A9E",  # deep violet    — RESERVED: Bayesian/MCMC semantic only
+    "charcoal":     "#23242B",  # near-black neutral — text / reference lines
+    "slate":        "#5B6672",  # muted blue-gray — sober 3rd/4th series in multi-line panels
+    "rust":         "#9E4A2C",  # muted terracotta — sober series color (NOT the girlish set)
 }
 
 # Convenience references used across scripts
 C = PALETTE  # short alias: C["bootstrap"], C["bayesian"], etc.
+
+# Ordered SOBER series for multi-line FE-RVE panels (Petrol & Gold register).
+# Differentiate series by COLOR, not by marker/linestyle (Jimbo, 2026-07-15) — the
+# anchor papers pack multiple comparisons per panel using colored lines. Use in
+# order; all print-safe and distinct from the retired "girlish" MULTI_SERIES set.
+FE_RVE_SERIES: list[str] = [
+    PALETTE["petrol"], PALETTE["gold"], PALETTE["rust"], PALETTE["slate"], PALETTE["charcoal"],
+]
 
 # ── 1b. MULTI-SERIES SEQUENCE ────────────────────────────────────────────────
 # Ordered list for plots with 4–7 distinct series (CDFs, calibration curves).
@@ -103,27 +128,33 @@ C = PALETTE  # short alias: C["bootstrap"], C["bayesian"], etc.
 # series order black → blue → forest green → deep magenta → cyan/teal → coral.
 # Use zip(MULTI_SERIES, series_labels) in figure scripts.
 MULTI_SERIES: list[str] = [
-    "#1A1A1A",  # near-black  — primary / unnotched baseline
-    "#0091FF",  # electric blue (= bootstrap) — first variant
-    "#00875A",  # forest green — second variant
-    "#C2185B",  # deep magenta — third variant
-    "#00ACC1",  # cyan-teal    — fourth variant
-    "#FF4757",  # vivid coral  (= bayesian) — fifth variant
-    "#A855F7",  # violet       (= accent)   — sixth variant if needed
+    "#1A1A1A",  # near-black — baseline
+    "#8B5CF6",  # violet     — series 2 (= bootstrap hero)
+    "#38BDF8",  # sky        — series 3
+    "#2DD4BF",  # teal       — series 4
+    "#F97316",  # orange     — series 5 (warm pop)
+    "#E879F9",  # orchid     — series 6
+    "#6366F1",  # indigo     — series 7 (CEILING — see note below)
 ]
+# >7-CATEGORY ESCAPE HATCH (Results/Discussion future-proofing):
+# saturated-distinct tops out at 7. Beyond that, hues collide and stop being
+# colour-blind / greyscale separable. For a figure with >7 categories do NOT
+# extend this list — switch that figure to SEQ_CMAP (ordered/sequential) and
+# lean on marker/linestyle redundancy, or facet into small multiples.
+SEQ_CMAP: str = "viridis"
 
 # ── 1c. FLOWCHART COLOR FILLS ────────────────────────────────────────────────
 # Cat2024 Fig. 1 convention: light-blue boxes for the main bootstrap pipeline;
 # light-green boxes for all Bayesian analysis steps; red dashed border for the
 # entire Bayesian block; white diamond for YES/NO decision nodes.
 FLOWCHART: dict[str, str] = {
-    "main_fill":    "#AED6F1",   # light blue  — bootstrap / main pipeline boxes
-    "bayes_fill":   "#A9DFBF",   # light green — Bayesian analysis step boxes
-    "terminal":     "#A9DFBF",   # light green — START / END ovals
-    "decision":     "#FFFFFF",   # white       — YES/NO diamond interiors
-    "main_border":  "#333333",   # near-black  — standard box outlines
-    "bayes_border": "#FF4757",   # coral-red   — dashed outline of Bayesian block
-    "label_text":   "#000000",   # black       — all in-box label text
+    "main_fill":    "#E4DAF8",   # light violet — bootstrap / main pipeline boxes
+    "bayes_fill":   "#FBE2CE",   # light orange — Bayesian analysis step boxes
+    "terminal":     "#D6F7F1",   # light teal   — START / END ovals
+    "decision":     "#FFFFFF",   # white        — YES/NO diamond interiors
+    "main_border":  "#2A2433",   # warm near-black — standard box outlines
+    "bayes_border": "#F97316",   # orange       — dashed outline of Bayesian block
+    "label_text":   "#000000",   # black        — all in-box label text
 }
 
 
@@ -168,15 +199,43 @@ FONT_FAMILY: list[str] = ["Helvetica Neue", "Helvetica", "Arial", "DejaVu Sans"]
 # render in serif italic instead of sans-serif italic.
 MATH_FONTSET: str = "dejavusans"
 
+# FE-RVE / INCON register (serif). Opt-in via apply_style(serif=True) — NOT the
+# default, because the main-thesis figures follow a sans-serif anchor
+# (Catalanotti 2024). Source Serif (the strategy-doc choice) is NOT installed on
+# this machine; STIX Two Text is the doc's named fallback (a refined journal
+# serif) and STIX Two Math pairs with it for inline math. See
+# fe-rve-viz-strategy.md §1.
+FONT_FAMILY_SERIF: list[str] = [
+    "STIX Two Text", "Source Serif 4", "Source Serif Pro", "Charter", "DejaVu Serif",
+]
+MATH_FONTSET_SERIF: str = "stix"
+
 FONTSIZE: dict[str, int] = {
-    "title":      10,   # subplot/figure title
-    "axis_label": 9,    # x/y axis labels
-    "tick":       8,    # tick labels
-    "annotation": 7,    # in-figure annotations and shrinkage Δ labels
-    "legend":     8,    # legend text
-    "panel":      11,   # panel label (a), (b), (c) — bold
-    "caption":    8,    # not rendered in matplotlib; kept for reference
+    "title":      11,   # subplot/figure title
+    "axis_label": 11,   # x/y axis labels   (bumped 2026-07-16 — fonts read small vs figure)
+    "tick":       10,   # tick labels        (bumped)
+    "annotation": 8,    # in-figure annotations and shrinkage Δ labels (bumped)
+    "legend":     9,    # legend text        (bumped)
+    "panel":      12,   # panel label (a), (b), (c) — bold (bumped)
+    "caption":    9,    # not rendered in matplotlib; kept for reference
 }
+
+# ── Per-figure font scaling ───────────────────────────────────────────────────
+# Set by apply_style(axis_scale=, inside_scale=); read by fs() and label_panel.
+# axis_scale  → axis labels, ticks, colorbar labels ("outside" / X-Y).
+# inside_scale → titles, panel labels, annotations, legends ("inside").
+_AXIS_SCALE: float = 1.0
+_INSIDE_SCALE: float = 1.0
+
+
+def fs(key: str, kind: str = "inside") -> int:
+    """FONTSIZE[key] scaled by the current apply_style scale.
+
+    kind='axis' for axis/tick/colorbar labels; 'inside' for titles, panel
+    labels, annotations, and legends.
+    """
+    scale = _AXIS_SCALE if kind == "axis" else _INSIDE_SCALE
+    return max(1, round(FONTSIZE[key] * scale))
 
 
 # ── 5. PANEL LABEL SPEC ───────────────────────────────────────────────────────
@@ -199,11 +258,17 @@ TIGHT_HSPACE: float = 0.40  # default vertical space between subplots
 
 # ── 7. APPLY STYLE ────────────────────────────────────────────────────────────
 
-def apply_style() -> None:
+def apply_style(*, serif: bool = False, axis_scale: float = 1.0,
+                inside_scale: float = 1.0) -> None:
     """Apply the global rcParams for the thesis figure style.
 
     Call once at the top of every figure script, before any plt.subplots() call.
     Handles optional scienceplots gracefully.
+
+    Args:
+        serif: Opt into the FE-RVE / INCON serif register (STIX Two Text + stix
+            mathtext). Default False keeps the main-thesis sans-serif anchor
+            (Catalanotti 2024) — so existing callers are unaffected.
     """
     try:
         import scienceplots  # noqa: F401
@@ -214,17 +279,23 @@ def apply_style() -> None:
     except ImportError:
         pass
 
+    family = "serif" if serif else "sans-serif"
+    math_fontset = MATH_FONTSET_SERIF if serif else MATH_FONTSET
+    global _AXIS_SCALE, _INSIDE_SCALE
+    _AXIS_SCALE, _INSIDE_SCALE = axis_scale, inside_scale
+
     matplotlib.rcParams.update({
         # Typography
-        "font.family":           "sans-serif",
+        "font.family":           family,
         "font.sans-serif":       FONT_FAMILY,
-        "mathtext.fontset":      MATH_FONTSET,
-        "font.size":             FONTSIZE["tick"],
-        "axes.titlesize":        FONTSIZE["title"],
-        "axes.labelsize":        FONTSIZE["axis_label"],
-        "xtick.labelsize":       FONTSIZE["tick"],
-        "ytick.labelsize":       FONTSIZE["tick"],
-        "legend.fontsize":       FONTSIZE["legend"],
+        "font.serif":            FONT_FAMILY_SERIF,
+        "mathtext.fontset":      math_fontset,
+        "font.size":             round(FONTSIZE["tick"] * axis_scale),
+        "axes.titlesize":        round(FONTSIZE["title"] * inside_scale),
+        "axes.labelsize":        round(FONTSIZE["axis_label"] * axis_scale),
+        "xtick.labelsize":       round(FONTSIZE["tick"] * axis_scale),
+        "ytick.labelsize":       round(FONTSIZE["tick"] * axis_scale),
+        "legend.fontsize":       round(FONTSIZE["legend"] * inside_scale),
         # Spines — left + bottom only (Catalanotti 2024 open-axes style)
         "axes.spines.top":       False,
         "axes.spines.right":     False,
@@ -274,7 +345,7 @@ def label_panel(
         xy[0], xy[1],
         f"({label})",
         transform=ax.transAxes,
-        fontsize=FONTSIZE["panel"],
+        fontsize=fs("panel"),
         fontweight="bold",
         ha="left",
         va="bottom",
@@ -457,4 +528,110 @@ STYLE_ANCHORS: dict[str, dict] = {
         "anchor": "Catalanotti 2024 Fig. 1 — blue boxes main pipeline, red dashed Bayesian block.",
         "pdf":    "catalanotti_2024_composites-sci-tech.pdf p.3",
     },
+    "fe_field_and_mc": {
+        "rule":   "FE scalar fields: triangulated domain, BoundaryNorm-banded "
+                  "sequential colormap (FIELD_CMAP), thin white mesh overlay (MESH_EDGE), "
+                  "dark inclusions with white edge, labelled colorbar (add_field_colorbar), "
+                  "Fixed-end hatch + tensile-load arrows. Monte-Carlo ensembles: translucent "
+                  "'spaghetti' paths (MC_PATHS) + bold median (MC_MEDIAN) + percentile band (BAND_KW).",
+        "anchor": "Chahar 2026 Fig. 5 (matrix-damage contours: meshed domain, discrete banded "
+                  "colorbar) and Fig. 4B (Fixed-end / Tensile-load BC schematic).",
+        "pdf":    "chahar_2026_composite-structures.pdf p.8-9",
+    },
 }
+
+
+# ── 14. SIMULATION / FIELD AESTHETIC (Phase-4 validation figures) ─────────────
+# FE field contours follow Chahar 2026 (Composite Structures): a triangulated
+# domain, a discrete-banded sequential colormap with a labelled colorbar, a thin
+# mesh overlay, and Fixed-end/Tensile-load boundary markers. Monte-Carlo
+# ensembles render as translucent "spaghetti" paths beneath a bold median and a
+# percentile band. Keep an "illustrative" note on synthetic/2D fields — the full
+# 3D periodic homogenisation is Thesis-2 work.
+FIELD_CMAP: str = "inferno"        # perceptually-uniform scalar field (von Mises)
+FIELD_LEVELS: int = 12             # discrete colorbar/contour bands (Chahar-style)
+MESH_EDGE: dict = dict(color="#FFFFFF", linewidth=0.12, alpha=0.45)
+INCLUSION_FILL: str = "#10131A"    # stiff inclusion interior (near-black)
+INCLUSION_EDGE: dict = dict(edgecolor="#FFFFFF", linewidth=0.6)
+
+# Monte-Carlo ensemble styling
+MC_PATHS: dict = dict(color=PALETTE["bootstrap"], linewidth=0.4, alpha=0.05)
+MC_MEDIAN: dict = dict(color="#1A1A1A", linewidth=2.0)
+MC_BAND: dict = dict(color=PALETTE["hier"], alpha=0.30, linewidth=0)
+MC_N_PATHS: int = 400              # ensemble size to draw
+
+
+def add_field_colorbar(fig, mappable, ax, label: str):
+    """Chahar-style labelled colorbar for an FE field panel."""
+    cb = fig.colorbar(mappable, ax=ax, fraction=0.046, pad=0.04)
+    cb.set_label(label, fontsize=FONTSIZE["axis_label"])
+    cb.ax.tick_params(labelsize=FONTSIZE["tick"])
+    cb.outline.set_linewidth(LW["spine"])
+    return cb
+
+
+# ── 15. ALLOTROPE-LIGHT TREATMENT HELPERS (canon 2026-06-10) ──────────────────
+# Ported from iaapt_viz so thesis figures share the IAAPT visual DNA on the
+# white/print profile. THREE tools, with a rule for each:
+#   glow_line  — soft neon halo under a data line. Use on the 1–2 primary method
+#                lines per panel (Bootstrap / Bayesian). Keep subtle.
+#   band       — flat ±1σ / PI uncertainty band with a faint edge. THE default for
+#                uncertainty regions: crisp edge so the reader can read the spread.
+#   gradient_fill — vertical alpha gradient from a curve to a baseline. RESERVE for
+#                genuinely cumulative / equity-like curves where area-to-baseline is
+#                meaningful. Do NOT use it for ±σ bands (the edge goes fuzzy).
+
+def glow_line(ax, x, y, color, *, lw: float = 1.9, zorder: int = 3,
+              glow=((6.5, 0.05), (4.2, 0.09), (2.6, 0.15))):
+    """Plot a line with a soft glow (stacked translucent strokes). Subtle on white."""
+    for gw, ga in glow:
+        ax.plot(x, y, color=color, lw=gw, alpha=ga, zorder=zorder,
+                solid_capstyle="round")
+    return ax.plot(x, y, color=color, lw=lw, zorder=zorder + 1,
+                   solid_capstyle="round")
+
+
+def band(ax, x, y, std, color, *, alpha: float = 0.15, edge_alpha: float = 0.45,
+         zorder: int = 2):
+    """Flat ±1σ uncertainty band with a faint edge — the canonical uncertainty fill.
+
+    Crisp edges (unlike a gradient) so the reader can read the spread magnitude.
+    """
+    import numpy as np
+    y = np.asarray(y, float); std = np.asarray(std, float)
+    ax.fill_between(x, y - std, y + std, color=color, alpha=alpha, lw=0, zorder=zorder)
+    ax.plot(x, y - std, color=color, lw=0.6, alpha=edge_alpha, zorder=zorder)
+    ax.plot(x, y + std, color=color, lw=0.6, alpha=edge_alpha, zorder=zorder)
+
+
+def gradient_fill(ax, x, y, color, *, baseline: float = 0.0,
+                  alpha_peak: float = 0.30, direction: str = "auto",
+                  zorder: int = 2):
+    """Vertical alpha-gradient fill from a curve to a baseline (equity-curve look).
+
+    RESERVED for cumulative / monotone-ish curves. Strongest next to the line,
+    fading to transparent toward the baseline. No-op on empty / all-NaN input.
+    """
+    import numpy as np
+    import matplotlib.colors as mcolors
+    from matplotlib.patches import Polygon as _Polygon
+
+    x = np.asarray(x, float); y = np.asarray(y, float)
+    if len(x) < 2 or not np.any(np.isfinite(y)):
+        return None
+    if direction == "auto":
+        direction = "down" if np.nanmean(y) < baseline else "up"
+    rgb = mcolors.to_rgb(color)
+    grad = np.empty((256, 1, 4)); grad[:, :, :3] = rgb
+    ramp = np.linspace(0.0, alpha_peak, 256)
+    grad[:, :, 3] = (ramp if direction == "up" else ramp[::-1])[:, None]
+    ymin = min(baseline, float(np.nanmin(y))); ymax = max(baseline, float(np.nanmax(y)))
+    if ymax == ymin:
+        return None
+    im = ax.imshow(grad, aspect="auto", origin="lower",
+                   extent=[float(x.min()), float(x.max()), ymin, ymax], zorder=zorder)
+    verts = np.column_stack([np.concatenate([x, x[::-1]]),
+                             np.concatenate([y, np.full_like(x, baseline)[::-1]])])
+    clip = _Polygon(verts, closed=True, facecolor="none", edgecolor="none")
+    ax.add_patch(clip); im.set_clip_path(clip)
+    return im

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  /* Allotrope-light canon (figures/style.py) — print profile, no glow */
+  :root{
+    --violet:#8B5CF6; --orange:#F97316; --teal:#2DD4BF; --amber:#C9A227;
+    --dark:#2A2433; --mid:#777777; --ink:#2A2433;
+    --rule:#E7E3F0; --tint-v:#F3EFFC; --tint-o:#FEF1E7; --tint-t:#EAFAF6;
+    --font:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  .panel{
+    width:680px; background:#fff; color:var(--ink); font-family:var(--font);
+    border:1px solid var(--rule); padding:22px 26px 20px;
+  }
+  .kicker{font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--mid); font-weight:700;}
+  h1{font-size:19px; font-weight:800; letter-spacing:-.01em; margin-top:3px;}
+  .sub{font-size:11.5px; color:var(--mid); margin-top:3px;}
+  table{border-collapse:collapse; width:100%; margin-top:15px; font-size:12.5px;}
+  thead th{font-size:11px; text-align:left; padding:0 0 7px; color:var(--mid);
+    font-weight:700;}
+  thead th .chip{display:inline-block; width:9px; height:9px; border-radius:2px;
+    margin-right:6px; vertical-align:middle;}
+  thead th small{display:block; font-weight:600; font-size:9.5px; margin-top:1px;
+    letter-spacing:0;}
+  tbody td{padding:6.5px 0; border-top:1px solid var(--rule); vertical-align:baseline;}
+  tbody td.metric{color:var(--ink); font-weight:600;}
+  tbody td.num{font-variant-numeric:tabular-nums; font-weight:700; width:150px;}
+  .v{color:var(--violet)} .o{color:var(--orange)} .t{color:var(--teal)}
+  .note{font-size:10px; color:var(--mid); font-weight:600; margin-left:7px;}
+  em{font-style:italic; font-family:Georgia,"Times New Roman",serif;}
+  .row-floor td{background:var(--tint-t);}
+  .takeaway{margin-top:16px; border-left:3px solid var(--teal); background:var(--tint-t);
+    padding:11px 13px; font-size:12px; line-height:1.5;}
+  .takeaway b{color:var(--dark)}
+</style>
+</head>
+<body>
+  <div class="panel">
+    <div class="kicker">Summary</div>
+    <h1>Key findings at a glance</h1>
+    <div class="sub">PLA/MWCNT/FDM tensile strength · strict set <em>n</em>&nbsp;=&nbsp;26 · multi-route pool <em>n</em>&nbsp;=&nbsp;44 · leave-one-out evaluation</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width:46%">Metric (90% level)</th>
+          <th><span class="chip" style="background:var(--violet)"></span>Bootstrap<small class="v">under-covers · overconfident</small></th>
+          <th><span class="chip" style="background:var(--orange)"></span>Bayesian NUTS<small class="o">over-covers · conservative</small></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="metric">PICP (coverage)</td><td class="num v">0.846</td><td class="num o">1.000</td></tr>
+        <tr><td class="metric">MPIW, MPa (width)</td><td class="num v">25.9 <span class="note">sharper</span></td><td class="num o">28.9</td></tr>
+        <tr><td class="metric">NLPD</td><td class="num">3.59</td><td class="num">3.58 <span class="note">tied</span></td></tr>
+        <tr><td class="metric">CRPS</td><td class="num">4.59</td><td class="num">5.03</td></tr>
+        <tr><td class="metric">ECE</td><td class="num">0.105</td><td class="num">0.099 <span class="note">~tied</span></td></tr>
+        <tr class="row-floor"><td class="metric">Min. specimens (PICP&nbsp;&ge;&nbsp;0.88)</td><td class="num">5</td><td class="num">5</td></tr>
+        <tr><td class="metric">Relative per-fit cost</td><td class="num">1&times;</td><td class="num">~350&times;</td></tr>
+      </tbody>
+    </table>
+
+    <div class="takeaway">
+      Under like-for-like LOO the two flat methods are <b>statistically equivalent on score</b> &mdash; they differ only in <b>failure mode</b> (bootstrap overconfident and sharp; Bayesian conservative and wide). The decisive Bayesian gain is <b>hierarchical</b>: partial pooling recovers a credible <span class="t">+0.166</span> CNT-loading slope for the <em>n</em>&nbsp;=&nbsp;10 non-FDM group that bootstrap cannot fit, exposing a <span class="t">2.2&times;</span> FDM-vs-non-FDM route effect a flat model conceals.
+    </div>
+  </div>
+</body>
+</html>

@@ -1,13 +1,14 @@
 """
-Figure 8 — Divergence Curves PICP(n) and MPIW(n)
-Thesis §3.3 / §4 — shows how Bootstrap and Bayesian NUTS PICP and MPIW diverge
-as n decreases from 44 to 5, with the divergence threshold n* ≈ 10 marked.
+Figure 9 — Divergence Curves PICP(n) and MPIW(n)
+Thesis §3.6 — shows how Bootstrap and Bayesian NUTS PICP and MPIW track as n
+decreases from 44 to 5. The methods stay close across the ladder (largest
+between-method PICP gap is annotated); there is no sharp divergence threshold.
 
 Data source: results/subsampling_combined.json
 
-Run:  python figures/fig8_divergence_curves.py
-Outputs: figures/fig8_divergence_curves.svg
-         figures/fig8_divergence_curves.png
+Run:  python figures/fig9_divergence_curves.py
+Outputs: figures/fig9_divergence_curves.svg
+         figures/fig9_divergence_curves.png
 """
 import json
 import sys
@@ -82,11 +83,6 @@ def main():
     # ── Panel (a): PICP ──────────────────────────────────────────────────────
     ax1.axhline(NOMINAL_PICP, color=C["dark"], lw=LW["ref"], ls="--",
                 alpha=0.6, label=f"Nominal {int(NOMINAL_PICP*100)}%")
-    ax1.axvline(THRESHOLD_N, color=C["mid"], lw=LW["threshold"], ls=":",
-                alpha=0.85, zorder=1)
-    ax1.text(THRESHOLD_N + 0.5, PICP_YLIM[0] + 0.03,
-             f"$n^* \\approx {THRESHOLD_N}$", fontsize=FONTSIZE["annotation"],
-             color=C["mid"], va="bottom")
 
     # Bootstrap ±1 std band
     lo = np.clip([p - s for p, s in zip(boot_picp, boot_pstd)], PICP_YLIM[0], None)
@@ -100,6 +96,26 @@ def main():
              color=COLOR_BAYES, lw=LW["data"], ms=FONTSIZE["annotation"],
              label="Bayesian NUTS")
 
+    # Annotate the largest between-method PICP gap (matches §3.6 text: ~0.04)
+    _boot_at = dict(zip(ns_arr.tolist(), boot_picp))
+    _gaps = [(abs(_boot_at[n] - y), n, _boot_at[n], y)
+             for n, y in zip(ns_bayes_arr.tolist(), bayes_picp) if n in _boot_at]
+    if _gaps:
+        _g, _gn, _gb, _gy = max(_gaps)
+        ax1.annotate("", xy=(_gn, _gb), xytext=(_gn, _gy),
+                     arrowprops=dict(arrowstyle="<->", color=C["mid"], lw=1.3))
+        ax1.text(_gn + 1.8, (_gb + _gy) / 2,
+                 f"max gap $\\approx$ {_g:.2f}",
+                 fontsize=FONTSIZE["annotation"], color=C["mid"], va="center",
+                 bbox=dict(boxstyle="round,pad=0.2", facecolor="white",
+                           edgecolor="none", alpha=0.8))
+
+    # Data-scarcity ceiling: the calibrated (bootstrap) curve plateaus just below 0.90.
+    ax1.annotate("plateau $\\approx$ 0.885 < 0.90\n(data-scarcity ceiling)",
+                 xy=(30, 0.888), xytext=(19, 0.745),
+                 fontsize=FONTSIZE["annotation"], color=C["mid"], ha="center",
+                 arrowprops=dict(arrowstyle="->", color=C["mid"], lw=1.0))
+
     ax1.set_xlabel("Sample size $n$")
     ax1.set_ylabel("PICP at 90% nominal")
     ax1.set_xlim(ns_arr[0] - 1, ns_arr[-1] + 1)
@@ -108,12 +124,6 @@ def main():
     label_panel(ax1, "a")
 
     # ── Panel (b): MPIW ──────────────────────────────────────────────────────
-    ax2.axvline(THRESHOLD_N, color=C["mid"], lw=LW["threshold"], ls=":",
-                alpha=0.85, zorder=1)
-    ax2.text(THRESHOLD_N + 0.5, MPIW_YLIM[1] * 0.92,
-             f"$n^* \\approx {THRESHOLD_N}$", fontsize=FONTSIZE["annotation"],
-             color=C["mid"], va="top")
-
     lo_m = np.clip([m - s for m, s in zip(boot_mpiw, boot_mstd)], 0, None)
     hi_m = np.clip([m + s for m, s in zip(boot_mpiw, boot_mstd)],
                    None, MPIW_YLIM[1])
@@ -125,6 +135,19 @@ def main():
     ax2.plot(ns_bayes_arr, bayes_mpiw, f"{MARKER_BAYES}--",
              color=COLOR_BAYES, lw=LW["data"], ms=FONTSIZE["annotation"],
              label="Bayesian NUTS")
+
+    # Width budget: 50 MPa target (Table III). Bootstrap stays below it throughout;
+    # Bayesian meets it only from n ~ 31.
+    ax2.axhline(50, color=C["dark"], lw=LW["ref"], ls=":", alpha=0.75, zorder=1)
+    ax2.text(ns_arr[-1], 52, "50 MPa budget", ha="right", va="bottom",
+             fontsize=FONTSIZE["annotation"], color=C["dark"],
+             bbox=dict(boxstyle="round,pad=0.15", facecolor="white",
+                       edgecolor="none", alpha=0.85))
+    ax2.annotate("Bayesian meets\nfrom $n \\approx$ 31", xy=(31, 50.3), xytext=(21, 66),
+                 fontsize=FONTSIZE["annotation"], color=COLOR_BAYES, ha="center",
+                 bbox=dict(boxstyle="round,pad=0.2", facecolor="white",
+                           edgecolor="none", alpha=0.8),
+                 arrowprops=dict(arrowstyle="->", color=COLOR_BAYES, lw=1.0))
 
     ax2.set_xlabel("Sample size $n$")
     ax2.set_ylabel("MPIW at 90% nominal (MPa)")

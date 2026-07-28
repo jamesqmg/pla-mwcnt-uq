@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- Fig 8 — method-selection decision guide. Swiss-Modernism direction
+     (ui-ux-pro-max) on the Allotrope palette. Rendered by build_fig_decision.py
+     via headless Chromium. The #fig width/height must match W,H in that script. -->
+<style>
+  :root{
+    --ink:#1F2430; --body:#3A3F4B; --muted:#8B92A0; --line:#8A909E;
+    --teal:#2DD4BF; --teal-d:#0E9382; --teal-bg:#ECFBF8;
+    --violet:#8B5CF6; --violet-d:#6D28D9; --violet-bg:#F3EEFE;
+    --orange:#F97316; --orange-d:#C2530A; --orange-bg:#FEF1E7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  #fig{position:relative;width:1000px;height:600px;background:#fff;
+       font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink)}
+  .overline{position:absolute;left:16px;top:10px;font-size:12px;font-weight:700;
+            letter-spacing:.22em;color:var(--muted);text-transform:uppercase}
+
+  /* decision nodes */
+  .node{position:absolute;width:320px;background:#fff;border:2px solid var(--ink);
+        border-radius:12px;display:flex;align-items:center;justify-content:center;
+        text-align:center;padding:0 22px;font-size:18px;font-weight:600;line-height:1.32}
+  #d1{left:16px;top:78px;height:118px}
+  #d2{left:16px;top:398px;height:118px}
+
+  /* outcome cards */
+  .card{position:absolute;left:490px;width:494px;border-radius:12px;padding:16px 22px}
+  .card .t{font-size:19px;font-weight:800;letter-spacing:-.01em;margin-bottom:6px}
+  .card .b{font-size:14.5px;font-weight:400;line-height:1.4;color:var(--body)}
+  .chip{display:inline-block;margin-top:9px;font-size:14px;font-weight:700;letter-spacing:.01em}
+
+  #a{top:56px;height:150px;background:var(--teal-bg);border:1.6px solid var(--teal)}
+  #a .t{color:var(--teal-d)} #a .chip{color:var(--teal-d)}
+  #b{top:238px;height:132px;background:var(--violet-bg);border:1.6px solid var(--violet)}
+  #b .t{color:var(--violet-d)} #b .chip{color:var(--violet-d)}
+  #c{top:420px;height:150px;background:var(--orange-bg);border:1.6px solid var(--orange)}
+  #c .t{color:var(--orange-d)} #c .chip{color:var(--orange-d)}
+
+  /* edge labels */
+  .lab{position:absolute;background:#fff;padding:1px 7px;border-radius:6px;
+       font-size:13px;font-weight:600;color:var(--line)}
+  #lyes{left:372px;top:96px} #lno{left:210px;top:290px}
+  #lcost{left:372px;top:300px} #lsafe{left:352px;top:446px}
+
+  svg{position:absolute;left:0;top:0;width:1000px;height:600px;pointer-events:none}
+</style>
+</head>
+<body>
+<div id="fig">
+  <div class="overline">Method selection</div>
+
+  <div class="node" id="d1">Does the data span multiple processing routes?</div>
+  <div class="node" id="d2">Single-route data:<br>what is the priority?</div>
+
+  <div class="card" id="a">
+    <div class="t">Hierarchical Bayesian</div>
+    <div class="b">Recovers per-route slopes and stabilises small groups that a flat model cannot fit.</div>
+    <span class="chip">2.2&times; FDM vs non-FDM</span>
+  </div>
+  <div class="card" id="b">
+    <div class="t">Bootstrap</div>
+    <div class="b">Sharpest intervals, ~350&times; cheaper; overconfident &mdash; under-covers.</div>
+    <span class="chip">PICP 0.846</span>
+  </div>
+  <div class="card" id="c">
+    <div class="t">Bayesian NUTS</div>
+    <div class="b">Conservative coverage guarantee for qualification margins; wider, costlier.</div>
+    <span class="chip">PICP 1.000</span>
+  </div>
+
+  <div class="lab" id="lyes">Yes</div>
+  <div class="lab" id="lno">No</div>
+  <div class="lab" id="lcost">cost &middot; n &ge; 20</div>
+  <div class="lab" id="lsafe">safety-critical</div>
+
+  <svg viewBox="0 0 1000 600">
+    <defs>
+      <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="4.2"
+              orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M0,0 L9,4.2 L0,8.4 z" fill="#8A909E"/>
+      </marker>
+    </defs>
+    <g fill="none" stroke="#8A909E" stroke-width="2.4" marker-end="url(#ah)">
+      <!-- D1 -> A (Yes) -->
+      <path d="M336,120 C420,120 430,131 486,131"/>
+      <!-- D1 -> D2 (No) -->
+      <path d="M176,200 L176,394"/>
+      <!-- D2 -> B (cost) -->
+      <path d="M336,440 C430,430 430,306 486,306"/>
+      <!-- D2 -> C (safety) -->
+      <path d="M336,478 C430,492 430,496 486,496"/>
+    </g>
+  </svg>
+</div>
+</body>
+</html>

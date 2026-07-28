@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  :root{
+    --violet:#8B5CF6; --orange:#F97316; --teal:#2DD4BF; --dark:#2A2433;
+    --mid:#777777; --ink:#2A2433; --rule:#E7E3F0;
+    --tint-v:#F3EFFC; --tint-o:#FEF1E7; --tint-t:#EAFAF6;
+    --font:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  .panel{width:680px; background:#fff; color:var(--ink); font-family:var(--font);
+    border:1px solid var(--rule); padding:22px 26px 24px;}
+  .kicker{font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--mid); font-weight:700;}
+  h1{font-size:19px; font-weight:800; letter-spacing:-.01em; margin-top:3px;}
+  em{font-style:italic;}
+
+  .stage{position:relative; width:628px; height:330px; margin-top:16px;}
+  .stage svg{position:absolute; inset:0; z-index:0;}
+  .node{position:absolute; z-index:1;}
+
+  /* decision pills */
+  .dec{background:#fff; border:1.5px solid var(--teal); border-radius:30px;
+    padding:11px 16px; font-size:12.5px; font-weight:700; color:var(--dark);
+    text-align:center; line-height:1.3; box-shadow:0 1px 0 rgba(0,0,0,.02);}
+  .dec .hint{display:block; font-size:10px; font-weight:600; color:var(--mid);
+    text-transform:uppercase; letter-spacing:.05em; margin-bottom:2px;}
+
+  /* terminal method cards */
+  .term{background:#fff; border:1px solid var(--rule); padding:10px 13px 11px;}
+  .term .name{font-size:14px; font-weight:800;}
+  .term .desc{font-size:11px; line-height:1.45; color:var(--ink); margin-top:3px;}
+  .term .desc b{color:var(--dark)}
+  .t-hier{border-top:4px solid var(--teal);}    .t-hier .name{color:var(--teal)}
+  .t-boot{border-top:4px solid var(--violet);}  .t-boot .name{color:var(--violet)}
+  .t-bayes{border-top:4px solid var(--orange);} .t-bayes .name{color:var(--orange)}
+
+  /* edge labels */
+  .elab{position:absolute; z-index:2; font-size:10px; font-weight:800;
+    letter-spacing:.03em; color:var(--mid); background:#fff; padding:1px 4px;}
+  .elab.yes{color:var(--teal)}
+</style>
+</head>
+<body>
+  <div class="panel">
+    <div class="kicker">Practical guideline</div>
+    <h1>Method-selection flow</h1>
+
+    <div class="stage">
+      <svg width="628" height="330" viewBox="0 0 628 330">
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7"
+                  markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#777777"/>
+          </marker>
+        </defs>
+        <!-- D1 -> Hier (yes) -->
+        <path d="M262,35 L330,33" stroke="#777777" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+        <!-- D1 -> D2 (no, down) -->
+        <path d="M131,64 L131,150" stroke="#777777" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+        <!-- D2 -> Bootstrap -->
+        <path d="M262,170 C300,164 308,156 330,154" stroke="#777777" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+        <!-- D2 -> Bayesian -->
+        <path d="M262,186 C300,210 305,240 330,247" stroke="#777777" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+      </svg>
+
+      <!-- decision 1 -->
+      <div class="node dec" style="left:6px; top:8px; width:250px;">
+        <span class="hint">Start</span>
+        Does the data span multiple processing routes?
+      </div>
+      <!-- decision 2 -->
+      <div class="node dec" style="left:6px; top:150px; width:250px;">
+        <span class="hint">No &middot; single route</span>
+        What is the priority?
+      </div>
+
+      <!-- terminals -->
+      <div class="node term t-hier" style="left:332px; top:2px; width:288px;">
+        <div class="name">Hierarchical Bayesian</div>
+        <div class="desc">Recovers each route's slope (here <b>2.2&times;</b> FDM vs non-FDM) and stabilises small groups bootstrap cannot fit.</div>
+      </div>
+      <div class="node term t-boot" style="left:332px; top:120px; width:288px;">
+        <div class="name">Bootstrap</div>
+        <div class="desc">Sharpest intervals (25.9 MPa), ~350&times; cheaper. <b>Overconfident</b> &mdash; under-covers (PICP 0.846).</div>
+      </div>
+      <div class="node term t-bayes" style="left:332px; top:214px; width:288px;">
+        <div class="name">Bayesian NUTS</div>
+        <div class="desc">Conservative coverage guarantee (PICP 1.000) for qualification margins; wider and costlier.</div>
+      </div>
+
+      <!-- edge labels -->
+      <div class="elab yes" style="left:280px; top:18px;">YES</div>
+      <div class="elab" style="left:262px; top:138px;">cost &middot; <em>n</em>&nbsp;&ge;&nbsp;20</div>
+      <div class="elab" style="left:262px; top:214px;">safety-critical</div>
+    </div>
+  </div>
+</body>
+</html>

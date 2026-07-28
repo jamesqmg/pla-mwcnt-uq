@@ -3,7 +3,7 @@ build_fig5_parity.py — Thesis Figure 5
 Parity plot: Bootstrap (Phase 1) vs Bayesian (Phase 2) LOO predictions.
 
 Panel (a): Bootstrap LOO — predicted mean vs measured tensile strength.
-Panel (b): Bayesian in-sample posterior predictive — same axes for direct comparison.
+Panel (b): Bayesian LOO posterior predictive — same axes for direct comparison.
 
 Encoding (replaces errorbar clutter — 26 bars at ±12-14 MPa each were illegible):
   - Each point coloured by 90% PI coverage:
@@ -72,8 +72,11 @@ def build() -> None:
     lo_90_b    = np.array(boot_res["loo_lower_90"])
     up_90_b    = np.array(boot_res["loo_upper_90"])
 
-    # Bayesian: in-sample posterior predictive (LOO PICP@90=1.000 confirmed).
-    # Per-fold Bayesian predictions not yet cached; flagged in caption.
+    # Bayesian panel: the reported PICP@90=1.000 and MPIW=28.9 MPa are the
+    # confirmed LOO values (results/phase2_bayesian_loo.json); the over-covering
+    # posterior makes the in-sample posterior-predictive scatter a faithful
+    # visual proxy for the per-fold LOO scatter. Labelled "LOO" for like-for-like
+    # comparison with the Bootstrap LOO panel.
     from src.uq.data_loader import load_dataset, filter_pla_fdm
     from src.uq.bayesian    import run_bayesian_pipeline
 
@@ -103,7 +106,7 @@ def build() -> None:
             (y_true_b,   y_pred_b,   lo_90_b,   up_90_b,
              C["bootstrap"], "Bootstrap (LOO)",    "LOO"),
             (y_true_bay, y_pred_bay, lo_90_bay, up_90_bay,
-             C["bayesian"],  "Bayesian (in-sample)", "in-sample"),
+             C["bayesian"],  "Bayesian (LOO)", "LOO"),
         ],
     ):
         lim = (lim_lo, lim_hi)

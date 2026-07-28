@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  :root{
+    --violet:#8B5CF6; --orange:#F97316; --teal:#2DD4BF; --amber:#C9A227;
+    --dark:#2A2433; --mid:#777777; --ink:#2A2433;
+    --rule:#E7E3F0; --tint-v:#F3EFFC; --tint-o:#FEF1E7; --tint-t:#EAFAF6;
+    --font:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  .panel{width:680px; background:#fff; color:var(--ink); font-family:var(--font);
+    border:1px solid var(--rule); padding:22px 26px 22px;}
+  .kicker{font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--mid); font-weight:700;}
+  h1{font-size:19px; font-weight:800; letter-spacing:-.01em; margin-top:3px;}
+  em{font-style:italic; font-family:Georgia,"Times New Roman",serif;}
+
+  .gate{margin-top:15px; display:flex; align-items:center; gap:12px;
+    border:1px dashed var(--teal); background:var(--tint-t); padding:11px 14px;}
+  .gate .q{font-size:12.5px; font-weight:700; color:var(--dark);}
+  .gate .q span{color:var(--teal);}
+
+  .hier{margin-top:12px; border:1px solid var(--teal); border-left:4px solid var(--teal);
+    background:var(--tint-t); padding:12px 14px;}
+  .hier .lbl{font-size:11px; font-weight:800; letter-spacing:.04em; color:var(--teal);
+    text-transform:uppercase;}
+  .hier .body{font-size:12px; line-height:1.45; margin-top:3px;}
+  .hier b{color:var(--dark)}
+
+  .split-head{font-size:11px; font-weight:700; color:var(--mid); margin:16px 0 8px;
+    text-transform:uppercase; letter-spacing:.04em;}
+  .cards{display:flex; gap:14px;}
+  .card{flex:1; border:1px solid var(--rule); padding:12px 14px;}
+  .card.boot{border-top:3px solid var(--violet);}
+  .card.bayes{border-top:3px solid var(--orange);}
+  .card .name{font-size:13.5px; font-weight:800;}
+  .card.boot .name{color:var(--violet);} .card.bayes .name{color:var(--orange);}
+  .card .when{font-size:11px; color:var(--mid); font-weight:700; margin-top:2px;
+    text-transform:uppercase; letter-spacing:.03em;}
+  .card ul{list-style:none; margin-top:8px; font-size:11.5px; line-height:1.5;}
+  .card li{padding-left:14px; position:relative;}
+  .card li::before{content:"+"; position:absolute; left:0; color:var(--teal); font-weight:800;}
+  .card li.con::before{content:"\2212"; color:var(--orange);}
+
+  .foot{margin-top:14px; font-size:10.5px; color:var(--mid); line-height:1.5;
+    border-top:1px solid var(--rule); padding-top:9px;}
+  .foot b{color:var(--dark)}
+</style>
+</head>
+<body>
+  <div class="panel">
+    <div class="kicker">Practical guideline</div>
+    <h1>Method-selection guide</h1>
+
+    <div class="gate">
+      <div class="q">Start here &rarr; Does the dataset span <span>multiple processing routes</span>?</div>
+    </div>
+
+    <div class="hier">
+      <div class="lbl">If yes &mdash; use Hierarchical Bayesian (any <em>n</em>)</div>
+      <div class="body">A flat model returns one pooled slope that <b>misrepresents at least one subgroup</b>. Partial pooling recovers each route's response (here a <b>2.2&times;</b> FDM vs non-FDM difference) and stabilises small groups bootstrap cannot fit.</div>
+    </div>
+
+    <div class="split-head">If no (single-route) &mdash; choose by risk posture</div>
+    <div class="cards">
+      <div class="card boot">
+        <div class="name">Bootstrap</div>
+        <div class="when">Cost-sensitive · sharper intervals</div>
+        <ul>
+          <li>Tightest widths (25.9 MPa) and ~350&times; cheaper per fit</li>
+          <li>Equivalent score to Bayesian above <em>n</em>&nbsp;&approx;&nbsp;20</li>
+          <li class="con">Overconfident: under-covers (PICP 0.846) on hard held-out points</li>
+        </ul>
+      </div>
+      <div class="card bayes">
+        <div class="name">Bayesian NUTS</div>
+        <div class="when">Safety-critical · coverage guarantee</div>
+        <ul>
+          <li>Prior-stabilised coverage holds at the smallest <em>n</em></li>
+          <li>Conservative intervals (PICP 1.000) for qualification margins</li>
+          <li class="con">Wider (28.9 MPa) and ~350&times; the compute</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot">
+      <b>Default:</b> above <em>n</em>&nbsp;&approx;&nbsp;20 the flat methods converge in coverage and width &mdash; prefer bootstrap on cost unless a conservative coverage guarantee is required. The choice is a <b>risk-posture</b> decision, not a performance ranking.
+    </div>
+  </div>
+</body>
+</html>
