@@ -25,6 +25,7 @@ from src.uq.bayesian import (
     prior_predictive_check,
     run_bayesian_pipeline,
     compute_bayesian_nlpd,
+    standardized_slope_prior,
 )
 
 RNG = np.random.default_rng(42)
@@ -118,6 +119,71 @@ class TestBuildModel:
         x_std, y_std, _ = standardize(x, y)
         model = build_model(x_std, y_std, degree=2)
         assert isinstance(model, pm.Model)
+
+
+# ── informed slope prior (Phase 2 expansion / Halpin-Tsai) ──────────────────────
+
+class TestSlopePrior:
+    """Opt-in physics-informed prior on the CNT-loading slope (§3.5).
+
+    slope_prior=None must preserve the flat Normal(0,1) baseline byte-stably;
+    a (mu, sigma) tuple recentres only the degree-1 coefficient.
+    """
+
+    def test_default_is_none(self):
+        import inspect
+        assert inspect.signature(build_model).parameters["slope_prior"].default is None
+
+    def test_none_keeps_flat_baseline(self, linear_data):
+        import pymc as pm
+        x, y = linear_data
+        x_std, y_std, _ = standardize(x, y)
+        model = build_model(x_std, y_std, slope_prior=None)
+        with model:
+            pr = pm.sample_prior_predictive(samples=3000, random_seed=0, var_names=["beta"])
+        beta = pr.prior["beta"].values.reshape(-1, 2)
+        assert abs(beta[:, 1].mean()) < 0.15        # slope centred at 0
+        assert abs(beta[:, 1].std() - 1.0) < 0.15   # unit dispersion
+
+    def test_informed_prior_recentres_slope(self, linear_data):
+        import pymc as pm
+        x, y = linear_data
+        x_std, y_std, _ = standardize(x, y)
+        model = build_model(x_std, y_std, slope_prior=(2.0, 0.5))
+        with model:
+            pr = pm.sample_prior_predictive(samples=5000, random_seed=0, var_names=["beta"])
+        beta = pr.prior["beta"].values.reshape(-1, 2)
+        assert abs(beta[:, 1].mean() - 2.0) < 0.1   # slope recentred at mu
+        assert abs(beta[:, 1].std() - 0.5) < 0.1    # narrowed to sigma
+        assert abs(beta[:, 0].mean()) < 0.15        # intercept untouched (flat)
+
+    def test_informed_prior_requires_slope_term(self, linear_data):
+        x, y = linear_data
+        x_std, y_std, _ = standardize(x, y)
+        with pytest.raises(ValueError):
+            build_model(x_std, y_std, degree=0, slope_prior=(2.0, 0.5))
+
+    def test_standardized_slope_prior_conversion(self):
+        params = {"x_mean": 0.0, "x_std": 2.0, "y_mean": 0.0, "y_std": 10.0}
+        mu_std, sigma_std = standardized_slope_prior(5.0, 3.0, params)
+        assert mu_std == pytest.approx(5.0 * 2.0 / 10.0)
+        assert sigma_std == pytest.approx(3.0 * 2.0 / 10.0)
+
+    def test_standardized_slope_prior_rejects_nonpositive_sigma(self):
+        params = {"x_mean": 0.0, "x_std": 2.0, "y_mean": 0.0, "y_std": 10.0}
+        with pytest.raises(ValueError):
+            standardized_slope_prior(5.0, 0.0, params)
+
+    def test_standardized_slope_prior_rejects_zero_y_std(self):
+        params = {"x_mean": 0.0, "x_std": 2.0, "y_mean": 0.0, "y_std": 0.0}
+        with pytest.raises(ValueError):
+            standardized_slope_prior(5.0, 1.0, params)
+
+    def test_informed_prior_rejects_zero_sigma(self, linear_data):
+        x, y = linear_data
+        x_std, y_std, _ = standardize(x, y)
+        with pytest.raises(ValueError):
+            build_model(x_std, y_std, slope_prior=(2.0, 0.0))
 
 
 # ── prior_predictive_check ────────────────────────────────────────────────────

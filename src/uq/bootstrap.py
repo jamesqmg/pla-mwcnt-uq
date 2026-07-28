@@ -22,6 +22,19 @@ __all__ = [
 COVERAGE_LEVELS: list[float] = [0.50, 0.60, 0.70, 0.80, 0.90, 0.95]
 
 
+def _make_loo_folds(n: int, groups: np.ndarray | None = None) -> list[np.ndarray]:
+    """Held-out index sets for LOO.
+
+    groups=None → leave-one-ROW-out (one singleton fold per index).
+    groups given → leave-one-GROUP-out (one fold per unique group label); each
+    index is held out exactly once, in the fold of its group.
+    """
+    if groups is None:
+        return [np.array([i]) for i in range(n)]
+    groups = np.asarray(groups)
+    return [np.where(groups == g)[0] for g in np.unique(groups)]
+
+
 def fit_regression(
     x: np.ndarray,
     y: np.ndarray,
@@ -161,11 +174,15 @@ def run_bootstrap_pipeline(
     seed: int | None = None,
     eval_mode: str = "bootstrap",
     add_noise: bool = True,
+    groups: np.ndarray | None = None,
 ) -> dict:
     """
     End-to-end bootstrap pipeline.
 
     eval_mode: "bootstrap" = in-sample; "loo" = leave-one-out cross-validation.
+    groups: optional per-row group labels (e.g. source_paper). When given under
+        eval_mode="loo", the LOO becomes leave-one-GROUP-out so same-group rows
+        never leak into a held-out row's training fold. None = leave-one-row-out.
     """
     if eval_mode not in {"bootstrap", "loo"}:
         raise ValueError(f"eval_mode must be 'bootstrap' or 'loo', got {eval_mode!r}")
@@ -173,6 +190,8 @@ def run_bootstrap_pipeline(
     x = np.asarray(x, dtype=float)
     y = np.asarray(y, dtype=float)
     n = len(x)
+    if groups is not None and len(groups) != n:
+        raise ValueError(f"groups length {len(groups)} must match n={n}")
 
     ss = np.random.SeedSequence(seed)
     rng_main = np.random.default_rng(ss.spawn(1)[0])
@@ -197,30 +216,39 @@ def run_bootstrap_pipeline(
         loo_lowers: dict[float, np.ndarray] = {lv: np.empty(n) for lv in COVERAGE_LEVELS}
         loo_uppers: dict[float, np.ndarray] = {lv: np.empty(n) for lv in COVERAGE_LEVELS}
 
-        for i in range(n):
-            idx = np.delete(np.arange(n), i)
-            rng_i90 = np.random.default_rng(child_seeds[i])
-            rng_i95 = np.random.default_rng(child_seeds[n + i])
-            b_i = max(B // 2, 100)
+        folds = _make_loo_folds(n, groups)
+        if groups is not None and len(folds) < 2:
+            raise ValueError(
+                "leave-one-group-out requires >= 2 distinct groups; got "
+                f"{len(folds)} — the only fold would hold out every row, leaving "
+                "no training data"
+            )
+        b_i = max(B // 2, 100)
+        for f, fold_idx in enumerate(folds):
+            train = np.setdiff1d(np.arange(n), fold_idx)
+            rng_f90 = np.random.default_rng(child_seeds[f])
+            rng_f95 = np.random.default_rng(child_seeds[n + f])
             mat90 = _bootstrap_sample_matrix(
-                x[idx], y[idx], x[[i]], b_i, degree, rng_i90, add_noise
+                x[train], y[train], x[fold_idx], b_i, degree, rng_f90, add_noise
             )
             mat95 = _bootstrap_sample_matrix(
-                x[idx], y[idx], x[[i]], b_i, degree, rng_i95, add_noise
+                x[train], y[train], x[fold_idx], b_i, degree, rng_f95, add_noise
             )
-            loo_lo_90[i] = np.quantile(mat90, 0.05)
-            loo_up_90[i] = np.quantile(mat90, 0.95)
-            loo_lo_95[i] = np.quantile(mat95, 0.025)
-            loo_up_95[i] = np.quantile(mat95, 0.975)
-            # Per-fold moments from mat90 (sufficient for Gaussian NLPD approximation)
-            samples_i = mat90.flatten()
-            loo_y_true[i]    = y[i]
-            loo_pred_mean[i] = samples_i.mean()
-            loo_pred_std[i]  = max(samples_i.std(ddof=1), 1e-6)  # guard against zero std
-            for lv in COVERAGE_LEVELS:
-                tail = (1.0 - lv) / 2.0
-                loo_lowers[lv][i] = np.quantile(samples_i, tail)
-                loo_uppers[lv][i] = np.quantile(samples_i, 1.0 - tail)
+            for j, i in enumerate(fold_idx):
+                col90 = mat90[:, j]
+                col95 = mat95[:, j]
+                loo_lo_90[i] = np.quantile(col90, 0.05)
+                loo_up_90[i] = np.quantile(col90, 0.95)
+                loo_lo_95[i] = np.quantile(col95, 0.025)
+                loo_up_95[i] = np.quantile(col95, 0.975)
+                # Per-fold moments from mat90 (Gaussian NLPD approximation)
+                loo_y_true[i]    = y[i]
+                loo_pred_mean[i] = col90.mean()
+                loo_pred_std[i]  = max(col90.std(ddof=1), 1e-6)  # guard against zero std
+                for lv in COVERAGE_LEVELS:
+                    tail = (1.0 - lv) / 2.0
+                    loo_lowers[lv][i] = np.quantile(col90, tail)
+                    loo_uppers[lv][i] = np.quantile(col90, 1.0 - tail)
 
         eval_lo_90, eval_up_90 = loo_lo_90, loo_up_90
         eval_lo_95, eval_up_95 = loo_lo_95, loo_up_95
@@ -249,6 +277,10 @@ def run_bootstrap_pipeline(
         "add_noise":     add_noise,
     }
     if eval_mode == "loo":
+        result["eval_scheme"] = (
+            "leave-one-group-out" if groups is not None else "leave-one-row-out"
+        )
+        result["n_groups"] = len(folds)
         result["nlpd"] = compute_nlpd(loo_y_true, loo_pred_mean, loo_pred_std)
         result["ece"]  = compute_ece(loo_y_true, loo_lowers, loo_uppers, COVERAGE_LEVELS)
         result["ece_by_coverage"] = {

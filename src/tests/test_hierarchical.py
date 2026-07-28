@@ -31,10 +31,14 @@ from src.uq.hierarchical import (
     GROUP_NON_FDM,
     PROCESS_TO_GROUP,
     assign_groups,
+    assign_papers,
     build_hierarchical_model,
+    build_hierarchical_model_v2,
     load_hierarchical_data,
+    load_hierarchical_data_with_papers,
     posterior_predict_hierarchical,
     run_hierarchical_pipeline,
+    run_hierarchical_v2_pipeline,
 )
 
 RNG = np.random.default_rng(42)
@@ -296,3 +300,124 @@ class TestPosteriorPredictHierarchical:
         )
         assert point.shape == lo.shape == up.shape == x.shape
         assert (up >= lo).all(), "upper must be >= lower elementwise"
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Phase 2c — per-paper random intercept (additive; v1 must stay green)
+# ──────────────────────────────────────────────────────────────────────────────
+
+class TestAssignPapers:
+
+    def test_returns_codes_and_names(self) -> None:
+        s = pd.Series(["a", "b", "a", "c", "b"])
+        codes, names = assign_papers(s)
+        assert codes.dtype == int
+        assert len(codes) == len(s)
+        assert names == ["a", "b", "c"]
+
+    def test_codes_are_contiguous_from_zero(self) -> None:
+        codes, names = assign_papers(pd.Series(["p", "q", "r", "p"]))
+        assert set(codes) == set(range(len(names)))
+
+    def test_codes_index_back_to_names(self) -> None:
+        s = pd.Series(["x", "y", "x"])
+        codes, names = assign_papers(s)
+        assert [names[c] for c in codes] == ["x", "y", "x"]
+
+
+class TestLoadWithPapers:
+
+    def test_returns_five_arrays_and_consistent_lengths(self) -> None:
+        x, y, g, p, names = load_hierarchical_data_with_papers(MASTER_CSV)
+        assert len(x) == len(y) == len(g) == len(p) == 44
+        assert len(names) == len(set(p))
+
+    def test_six_papers_in_complete_pool(self) -> None:
+        # The n=44 modelled pool has 6 papers; the 7th source contributes only an
+        # incomplete row dropped by the (wt%, strength) mask.
+        _, _, _, p, names = load_hierarchical_data_with_papers(MASTER_CSV)
+        assert len(names) == 6
+        assert int(p.max()) + 1 == 6
+
+
+@pytest.fixture
+def synth_paper_data():
+    """Two groups x four papers (two per group) with distinct intercept offsets.
+
+    Each group holds two papers so the group-level and paper-level intercepts stay
+    jointly identifiable; a single paper per group would confound the two intercepts
+    and induce a hierarchical funnel.
+    """
+    rng = np.random.default_rng(7)
+    blocks, gs, ps = [], [], []
+    # (paper, group, intercept offset): monotone offsets, papers split across groups.
+    spec = [(0, GROUP_FDM, -1.5), (1, GROUP_FDM, -0.5),
+            (2, GROUP_NON_FDM, 0.5), (3, GROUP_NON_FDM, 1.5)]
+    for paper, grp, off in spec:
+        xb = rng.uniform(-2, 2, 20)
+        yb = off + 0.6 * xb + rng.normal(0, 0.3, 20)
+        blocks.append((xb, yb))
+        gs += [grp] * 20
+        ps += [paper] * 20
+    x = np.concatenate([b[0] for b in blocks])
+    y = np.concatenate([b[1] for b in blocks])
+    return x, y, np.array(gs, dtype=int), np.array(ps, dtype=int)
+
+
+class TestBuildHierarchicalModelV2:
+
+    def test_returns_model_with_paper_intercept_vars(self, synth_paper_data) -> None:
+        import pymc as pm
+        x, y, g, p = synth_paper_data
+        model = build_hierarchical_model_v2(x, y, g, p, n_groups=2, n_papers=4)
+        assert isinstance(model, pm.Model)
+        names = {rv.name for rv in model.unobserved_RVs}
+        for var in ("beta_pop", "tau_beta", "beta_g", "tau_alpha", "z_paper",
+                    "alpha_paper", "sigma_obs"):
+            assert var in names, f"missing {var} (have {names})"
+
+    def test_alpha_paper_has_paper_dimension(self, synth_paper_data) -> None:
+        x, y, g, p = synth_paper_data
+        model = build_hierarchical_model_v2(x, y, g, p, n_groups=2, n_papers=4)
+        alpha = next(rv for rv in model.unobserved_RVs if rv.name == "alpha_paper")
+        assert 4 in tuple(alpha.shape.eval())
+
+    def test_slope_pooling_preserved(self, synth_paper_data) -> None:
+        # beta_g must still be present so v2 is strictly additive over v1.
+        x, y, g, p = synth_paper_data
+        model = build_hierarchical_model_v2(x, y, g, p, n_groups=2, n_papers=4)
+        assert "beta_g" in {rv.name for rv in model.unobserved_RVs}
+
+
+class TestRunHierarchicalV2Pipeline:
+
+    @pytest.mark.slow
+    def test_recovers_paper_offsets_and_reports_tau_alpha(self, synth_paper_data) -> None:
+        x, y, g, p = synth_paper_data
+        res = run_hierarchical_v2_pipeline(
+            x, y, g, p, n_groups=2, n_papers=4, draws=1000, tune=1000, chains=4, seed=42
+        )
+        assert res["convergence"]["passed"], res["convergence"]
+        assert "tau_alpha_posterior_mean" in res
+        assert res["tau_alpha_posterior_mean"] > 0.0
+        # paper intercepts should recover the -1.5/-0.5/+0.5/+1.5 ordering (monotone).
+        alpha = res["alpha_paper_posterior_mean"]
+        assert alpha[0] < alpha[1] < alpha[2] < alpha[3]
+
+    def test_noncontiguous_paper_idx_raises(self, synth_paper_data) -> None:
+        # A gapped paper index (missing level 1) must fail loud, not silently
+        # allocate a phantom paper level.
+        x, y, g, _ = synth_paper_data
+        gapped = np.array([0, 2] * (len(x) // 2), dtype=int)[: len(x)]
+        with pytest.raises(ValueError):
+            run_hierarchical_v2_pipeline(
+                x, y, g, gapped, n_groups=2, draws=50, tune=50, chains=2, seed=1
+            )
+
+    @pytest.mark.slow
+    def test_infers_n_papers_when_omitted(self, synth_paper_data) -> None:
+        x, y, g, p = synth_paper_data
+        res = run_hierarchical_v2_pipeline(
+            x, y, g, p, n_groups=2, draws=400, tune=400, chains=2, seed=1
+        )
+        assert res["n_papers"] == 4
