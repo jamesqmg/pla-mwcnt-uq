@@ -24,7 +24,7 @@ On a pool of 44 rows split by processing route (FDM 34, non-FDM 10), a hierarchi
 
 ## Scope note
 
-On held-out FDM rows (fit on n, score the remaining 34 − n), neither method holds 90 percent coverage at any training size from 10 to 30. The bootstrap under-covers by 4 to 10 points throughout; the Bayesian model is near nominal only where its intervals are wide. Pool variance, not algorithm choice, is what binds here.
+On held-out FDM rows (fit on n, score the remaining 34 − n), neither method holds 90 percent coverage reliably. The bootstrap under-covers by 4 to 10 points at every training size from 10 to 30; the Bayesian model reaches nominal only at the two ends of that range, where its intervals are wide. Pool variance, not algorithm choice, is what binds here.
 
 ## What this does
 
