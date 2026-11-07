@@ -1,0 +1,44 @@
+{
+  "description": "Phase 2 Halpin-Tsai informed-prior sensitivity (flat-prior model remains primary).",
+  "n": 21,
+  "seed": 42,
+  "sampler": {
+    "draws": 1000,
+    "tune": 1000,
+    "chains": 4
+  },
+  "informed_prior_spec": {
+    "slope_mean_mpa_per_wt": 2.0,
+    "slope_sd_mpa_per_wt": 1.21580547112462,
+    "standardized_mu": 0.4017705626164989,
+    "standardized_sigma": 0.24423742408297805,
+    "dispersion_rule": "90% interval spans 0 -> 2x mean (F2)",
+    "scope_caveat": "Informs sign + order of magnitude of the reinforcement slope only; Halpin-Tsai predicts modulus, not strength (F1)."
+  },
+  "flat_prior": {
+    "slope_raw_mpa_per_wt": 1.8316505274065578,
+    "slope_std_mean": 0.3679516314564698,
+    "slope_std_sd": 0.2131463239579266,
+    "picp_90_insample": 1.0,
+    "mpiw_90_mpa": 27.1411371710795,
+    "crps": 4.200513283415332,
+    "nlpd_psis_loo": 1.4634526208949352,
+    "ece": 0.055158730158730164,
+    "rhat_max": 1.0007940684738734,
+    "ess_min": 3315.443473635279,
+    "converged": true
+  },
+  "informed_prior": {
+    "slope_raw_mpa_per_wt": 1.975086651431392,
+    "slope_std_mean": 0.3967658375809636,
+    "slope_std_sd": 0.1588426024724643,
+    "picp_90_insample": 1.0,
+    "mpiw_90_mpa": 26.520368764424482,
+    "crps": 4.180565786321969,
+    "nlpd_psis_loo": 1.4471909233967448,
+    "ece": 0.055158730158730164,
+    "rhat_max": 1.0018092624350288,
+    "ess_min": 3946.878718134308,
+    "converged": true
+  }
+}

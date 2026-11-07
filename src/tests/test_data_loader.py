@@ -139,3 +139,22 @@ class TestFilterPlaFdm:
         result = filter_pla_fdm(df)
         assert (result["tensile_mpa"] > 0).all()
         assert (result["tensile_mpa"] < 500).all()
+
+    def test_negated_process_and_standard_are_rejected(self):
+        """'NOT FDM' and 'NOT ASTM D638' contain the keywords but deny them (Velu 2025)."""
+        df = pd.DataFrame({
+            "polymer": ["PLA", "PLA", "PLA"],
+            "process": ["FFF", "Filament (Melt Mixing + Single-Screw Extrusion — NOT FDM)", "FFF"],
+            "testing_std": ["ASTM D638", "ASTM D638", "Non-standard (NOT ASTM D638)"],
+            "cnt_wt_pct": [1.0, 1.0, 1.0],
+            "tensile_mpa": [50.0, 50.0, 50.0],
+        })
+        result = filter_pla_fdm(df)
+        assert len(result) == 1
+        assert result["process"].iloc[0] == "FFF"
+
+    def test_strict_set_is_hardani_and_vidakis(self):
+        """After the negation fix the strict set is the two FDM + D638 studies, n = 21."""
+        result = filter_pla_fdm(load_dataset(STRICT_CSV))
+        assert len(result) == 21
+        assert set(result["source_paper"]) == {"hardani_2024_pen", "vidakis_2021_taylorandfrancis"}

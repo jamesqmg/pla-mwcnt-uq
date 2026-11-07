@@ -120,13 +120,16 @@ def build_hierarchical_model(
     group_idx: np.ndarray,
     n_groups: int,
     degree: int = 1,
+    beta_pop_sigma: float = 1.0,
+    tau_beta_sigma: float = 0.5,
 ) -> pm.Model:
     """Hierarchical regression with partial pooling on the slope coefficients.
 
     Each group g gets its own coefficient vector β_g of length (degree + 1).
     β_g is drawn from N(β_pop, τ_β), where β_pop is the population mean and
     τ_β controls how tightly groups cluster. Small τ_β → near-complete pooling;
-    large τ_β → near-unpooled.
+    large τ_β → near-unpooled. ``beta_pop_sigma`` and ``tau_beta_sigma`` exist for the
+    prior-sensitivity check; the defaults are the locked §4.1 priors.
     """
     x = np.asarray(x, dtype=float)
     y = np.asarray(y, dtype=float)
@@ -136,9 +139,9 @@ def build_hierarchical_model(
     n_coef = degree + 1
 
     with pm.Model() as model:
-        beta_pop  = pm.Normal("beta_pop", mu=0.0, sigma=1.0, shape=n_coef)
+        beta_pop  = pm.Normal("beta_pop", mu=0.0, sigma=beta_pop_sigma, shape=n_coef)
         sigma_pop = pm.HalfNormal("sigma_pop", sigma=1.0)
-        tau_beta  = pm.HalfNormal("tau_beta", sigma=0.5)
+        tau_beta  = pm.HalfNormal("tau_beta", sigma=tau_beta_sigma)
 
         # Non-centered parameterization to avoid the hierarchical funnel
         # (centered form was producing >100 divergences on n=44 real data).

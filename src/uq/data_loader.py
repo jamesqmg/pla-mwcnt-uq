@@ -51,14 +51,26 @@ def load_dataset(csv_path: str | Path) -> pd.DataFrame:
     return df
 
 
+def _affirms(series: pd.Series, pattern: str) -> pd.Series:
+    """True where the text names the pattern and does not negate it.
+
+    Extraction notes write exclusions as 'NOT FDM' or 'NOT ASTM D638'; a plain substring
+    match counts those as hits (that let Velu 2025's extruded filaments into the strict
+    set until 2026-11-07).
+    """
+    hit = series.str.contains(pattern, flags=re.I, na=False)
+    negated = series.str.contains(rf"\bnot\b[^;,()]*?(?:{pattern})", flags=re.I, na=False)
+    return hit & ~negated
+
+
 def filter_pla_fdm(df: pd.DataFrame) -> pd.DataFrame:
     """
     Apply the three-way thesis filter: PLA polymer + FDM/FFF process + ASTM D638 or ISO 527.
     Also drops rows with missing CNT wt% or tensile strength values.
     """
     mask_pla     = df["polymer"].str.contains("PLA", case=False, na=False)
-    mask_fdm     = df["process"].str.contains(_FDM_PATTERN, flags=re.I, na=False)
-    mask_std     = df["testing_std"].str.contains(r"D638|527", na=False)
+    mask_fdm     = _affirms(df["process"], _FDM_PATTERN)
+    mask_std     = _affirms(df["testing_std"], r"D638|527")
     mask_numeric = df["cnt_wt_pct"].notna() & df["tensile_mpa"].notna()
 
     return df[mask_pla & mask_fdm & mask_std & mask_numeric].copy().reset_index(drop=True)

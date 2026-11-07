@@ -1,0 +1,23 @@
+{
+  "prior": "flat",
+  "independent_of_tensile_data": true,
+  "orientation": "in-plane-random",
+  "ht_relative_modulus_slope_per_wt": 0.69880474174749,
+  "data_slope_raw_mpa_per_wt": 1.8316505274065578,
+  "data_relative_strength_slope_per_wt": 0.035151942056164745,
+  "data_slope_ci": [
+    0.08624787457222771,
+    3.577053180240888
+  ],
+  "data_slope_excludes_zero": true,
+  "trend_sign_agreement": true,
+  "magnitude_ratio_modulus_to_strength": 19.87954863577552,
+  "verdict": "Directional consistency confirmed: physics and data agree on positive reinforcement; the large modulus-to-strength magnitude ratio is the expected modulus != strength gap, so the surrogate validates the reinforcement trend, not pointwise strength.",
+  "caveats": [
+    "Halpin-Tsai predicts elastic modulus, not failure strength; only the reinforcement trend (sign + order of magnitude) is cross-checked.",
+    "A deterministic surrogate cannot validate a probabilistic prediction on its own; the Bayesian framework supplies the omitted uncertainty.",
+    "Absolute-strength micromechanics requires interfacial parameters (interfacial shear strength, critical fibre length) not recoverable from the literature dataset."
+  ],
+  "n": 21,
+  "mean_strength_mpa": 52.10666666666667
+}
